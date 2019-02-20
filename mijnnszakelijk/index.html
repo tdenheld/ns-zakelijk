@@ -1,0 +1,32 @@
+---
+no-footer: true
+---
+
+<section class="mz gd-r-yellow-subtle">
+    <div class="mz-container">
+        <h1 class="mz-title">Hoe wil je inloggen op Mijn NS zakelijk?</h1>
+
+        <div class="mb-4">
+            {% include mz-tile.html
+            url='/mijnnszakelijk/inloggen-kaarthouder'
+            icon='business-card--large'
+            title='Kaarthouder'
+            description='Je laatste reizen, geld terug bij vertraging'
+            %}
+            
+            {% include mz-tile.html
+            url='/mijnnszakelijk/inloggen-contracthouder'
+            icon='invoice--large'
+            title='Contracthouder'
+            description='Facturen en contract inzien'
+            %}
+        </div>
+
+        <div class="txt-r">
+            <button class="button btn-ghost w-100 w-auto-sm">Account aanmaken</button>
+        </div>
+
+        {% include mz-footer.html %}
+
+    </div>
+</section>

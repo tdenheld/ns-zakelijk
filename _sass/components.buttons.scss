@@ -39,12 +39,13 @@
 .btn-ghost {
     background: transparent;
     border: 1px solid $ns-blue;
-    box-shadow: 0 1px 0 $ns-blue;
+    box-shadow: none;
     background-color: rgba($ns-blue, 0);
     color: $ns-blue;
+    transition: $fade-link;
 
     &:hover {
-        box-shadow: 0 1px 0 $ns-blue;
+        box-shadow: none;
         background-color: rgba($ns-blue, 0.1);
         color: $ns-blue;
     }
@@ -53,7 +54,9 @@
     &:focus,
     &:visited {
         background: transparent;
+        box-shadow: none;
         outline: none;
+        color: $ns-blue;
     }
 
     svg {
@@ -130,7 +133,7 @@
 
 // icon link
 .tk-link-icon {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     cursor: pointer;
     color: $ns-light-blue;
@@ -154,7 +157,6 @@
 }
 
 .tk-link-icon--blue {
-    font-weight: bold;
     color: $ns-blue;
 
     svg {

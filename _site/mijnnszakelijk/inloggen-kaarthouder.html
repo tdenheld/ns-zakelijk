@@ -1534,32 +1534,51 @@
     <div class="content">
         <section class="mz gd-r-yellow-subtle">
     <div class="mz-container">
-        <h1 class="mz-title">Hoe wil je inloggen op Mijn NS zakelijk?</h1>
-        <div class="mz-tile">
-    <div class="mz-tile__icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="45.01" height="35.5" viewBox="0 0 45.01 35.5"><defs><style>.a{fill:none;}</style></defs><title>business-card--large</title><path class="a" d="M34,2a1,1,0,0,0-1-1H2A1,1,0,0,0,1,2V5H34Z"/><path class="a" d="M1,18v3a1,1,0,0,0,1,1H22.709c-.315-1.521-.617-2.988-.825-4Z"/><path class="a" d="M30.354,22H33a1,1,0,0,0,1-1V18H28.951Z"/><path class="a" d="M18,8V7H34V6H1V7H16V8H1V9H19v1H1v1H12v1H1v1H17v1H1v1H14v1H1v1H21.678c-.035-.172-.059-.289-.067-.327A3.459,3.459,0,0,1,21.567,16H16V15h5.771a3.122,3.122,0,0,1,.6-1H19V13h5.25a4.014,4.014,0,0,1,1.164,0H34V12H14V11H34V10H21V9H34V8Z"/><path class="a" d="M27.868,15H34V14H27.236A3.809,3.809,0,0,1,27.868,15Z"/><polygon class="a" points="28.6 17 34 17 34 16 28.249 16 28.6 17"/><path d="M44.348,18.141c-.48-.465-8.212-8.209-9.348-9.347V2a2,2,0,0,0-2-2H2A2,2,0,0,0,0,2V21a2,2,0,0,0,2,2H22.916c.549,2.646,1.078,5.173,1.152,5.442a3.767,3.767,0,0,0,1.083,1.915c.095.093,5,5,5,5a.5.5,0,0,0,.708-.707l-5.012-5.012a2.789,2.789,0,0,1-.809-1.457c-.123-.448-1.8-8.6-2.438-11.687A2.125,2.125,0,0,1,24.2,14.008a2.3,2.3,0,0,1,2.858,1.624l2.468,7.033a.494.494,0,0,0,.47.33V23h3a2,2,0,0,0,2-2V10.209c2.256,2.26,8.22,8.233,8.652,8.651.36.349.369.786.353,1.663L44,35a.5.5,0,0,0,1,0V21l.005-.46A2.931,2.931,0,0,0,44.348,18.141ZM1,2A1,1,0,0,1,2,1H33a1,1,0,0,1,1,1V5H1ZM2,22a1,1,0,0,1-1-1V18H21.884c.208,1.012.511,2.479.825,4Zm32-1a1,1,0,0,1-1,1H30.354l-1.4-4H34Zm0-4H28.6l-.351-1H34Zm0-2H27.868a3.835,3.835,0,0,0-.632-1H34Zm0-6H21v1H34v1H14v1H34v1H25.414a4.014,4.014,0,0,0-1.164,0H19v1h3.368a3.14,3.14,0,0,0-.6,1H16v1h5.567a3.539,3.539,0,0,0,.044.673c.008.038.032.155.067.327H1V16H14V15H1V14H17V13H1V12H12V11H1V10H19V9H1V8H16V7H1V6H34V7H18V8H34Z"/></svg>
-    </div>
-    <div class="mz-tile__txt mr-2">
-        <h3 class="mz-tile__title">Kaarthouder</h3>
-        <p class="mz-tile__description">Je laatste reizen, geld terug bij vertraging</p>
-    </div>
-    <div class="mz-tile__chevron">
-        <svg xmlns="http://www.w3.org/2000/svg" width="7.1" height="11" viewBox="0 0 7.1 11"><title>chevron-m--small</title><polygon points="5.5 5.5 0 11 1.6 11 7.1 5.5 1.6 0 0 0 5.5 5.5"/></svg>
-    </div>
+        <h1 class="mz-title">Inloggen als kaarthouder</h1>
+
+        <form class="mb-4">
+            <div class="tk-ff mxw-init js-ff-email">
+                <label for="email" class="is-hidden">E-mailadres</label>
+                <div class="tk-ff__input-container">
+                    <input class="textInput tk-ff__input tk-ff__input--coloured" type="email" id="email" placeholder="E-mailadres" required />
+                    <span class="tk-ff__icon tk-ff__icon--approved">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.75 8.125"><path d="M3.5,8.125a1,1,0,0,1-.707-.293l-2.5-2.5A1,1,0,0,1,1.707,3.918L3.443,5.654,7.991.349a1,1,0,1,1,1.518,1.3L4.259,7.775a1,1,0,0,1-.72.349Z"/></svg>
+                    </span>
+                </div>
+                <div class="tk-ff__error">
+                    Vul een e-mailadres in
+                </div>
+            </div>
+
+            <div class="tk-ff mxw-init js-ff-default">
+                <label for="password" class="is-hidden">Wachtwoord</label>
+                <div class="tk-ff__input-container">
+                    <input class="textInput tk-ff__input tk-ff__input--coloured" type="password" id="password" placeholder="Wachtwoord" required />
+                    <span class="tk-ff__icon tk-ff__icon--approved">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.75 8.125"><path d="M3.5,8.125a1,1,0,0,1-.707-.293l-2.5-2.5A1,1,0,0,1,1.707,3.918L3.443,5.654,7.991.349a1,1,0,1,1,1.518,1.3L4.259,7.775a1,1,0,0,1-.72.349Z"/></svg>
+                    </span>
+                </div>
+                <div class="tk-ff__error">
+                    Vul een wachtwoord in
+                </div>
+            </div>
+
+            <div class="txt-r">
+                <button class="button" type="submit">Inloggen</button>
+            </div>
+        </form>
+
+
+        <button class="button btn-ghost w-100">Inloggen als contactpersoon</button>
+
+
+        <div class="bo-b-a15 mt-4 mb-1"></div>
+<div class="f-a60 f12">
+    <a class="unlink">Voorwaarden</a>
+    <a class="unlink ml-2">Privacy</a>
+    <a class="unlink ml-2">Klantenservice</a>
 </div>
 
-        <div class="mz-tile">
-    <div class="mz-tile__icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="21" viewBox="0 0 15 21"><title>invoice--small</title><path d="M9.878.048,9.756,0H0V21H15V5.1ZM10,1.51,13.341,5H10ZM14,20H1V1H9V6h5Z"/><rect x="4" y="9" width="2" height="1"/><rect x="7" y="9" width="2" height="1"/><rect x="10" y="9" width="1" height="1"/><rect x="4" y="13" width="2" height="1"/><rect x="4" y="11" width="2" height="1"/><rect x="7" y="13" width="2" height="1"/><rect x="7" y="11" width="2" height="1"/><rect x="10" y="13" width="1" height="1"/><rect x="10" y="11" width="1" height="1"/><rect x="8" y="16" width="3" height="1"/></svg>
-    </div>
-    <div class="mz-tile__txt mr-2">
-        <h3 class="mz-tile__title">Kaarthouder</h3>
-        <p class="mz-tile__description">Je laatste reizen, geld terug bij vertraging</p>
-    </div>
-    <div class="mz-tile__chevron">
-        <svg xmlns="http://www.w3.org/2000/svg" width="7.1" height="11" viewBox="0 0 7.1 11"><title>chevron-m--small</title><polygon points="5.5 5.5 0 11 1.6 11 7.1 5.5 1.6 0 0 0 5.5 5.5"/></svg>
-    </div>
-</div>
     </div>
 </section>
     </div>
@@ -1570,6 +1589,7 @@
     <script src="/assets/js/ns.generic.min.js"></script>
     <script src="/assets/js/plugins.bundle.min.js"></script>
     <script src="/assets/js/tk.generic.js"></script>
+    <script src="/assets/js/tk.form.js"></script>
 
 </body>
 
