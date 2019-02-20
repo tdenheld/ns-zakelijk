@@ -1,0 +1,251 @@
+/*-------------------
+       Buttons
+--------------------*/
+
+.btn {
+    position: relative;
+    transition: $fade-link;
+
+    &--rounded {
+        border-radius: 4px;
+    }
+
+    &--pill {
+        border-radius: 100px;
+    }
+
+    &--yellow {
+        background: linear-gradient(110deg, $ns-yellow 0%, #FFE48A 100%);
+    }
+
+    &--blue {
+        background: linear-gradient(110deg, #0050A8 0%, $ns-light-blue 100%);
+    }
+
+    &--small {
+        min-width: 4rem;
+        padding: 0 $half-gutter;
+        height: 38px;
+        font-size: calculate-rem(14px);
+        line-height: $lh-solid;
+        width: auto;
+    }
+
+    svg {
+        position: absolute;
+    }
+}
+
+.btn-ghost {
+    background: transparent;
+    border: 1px solid $ns-blue;
+    box-shadow: 0 1px 0 $ns-blue;
+    background-color: rgba($ns-blue, 0);
+    color: $ns-blue;
+
+    &:hover {
+        box-shadow: 0 1px 0 $ns-blue;
+        background-color: rgba($ns-blue, 0.1);
+        color: $ns-blue;
+    }
+
+    &:active,
+    &:focus,
+    &:visited {
+        background: transparent;
+        outline: none;
+    }
+
+    svg {
+        fill: $ns-blue;
+    }
+
+    &--white {
+        color: $ns-white;
+        text-shadow: 1px 1px rgba($ns-grey, 0.5);
+        border: 1px solid $white;
+        box-shadow: 0 1px 0 $white;
+        background-color: rgba($ns-white, 0);
+
+        &:hover {
+            box-shadow: 0 1px 0 $white;
+            color: $ns-white;
+            background-color: rgba($ns-white, 0.1);
+        }
+
+        svg {
+            fill: $ns-white;
+        }
+    }
+
+    &--small {
+        height: 38px;
+        font-size: 14px;
+        line-height: 1;
+        width: auto !important;
+        box-shadow: none;
+    }
+}
+
+
+
+
+// links
+// -------------------------------------------
+.tk-link-reset,
+.tk-link-reset:hover,
+.tk-link-reset:visited,
+.tk-link-reset:focus {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: inherit;
+    font-weight: inherit;
+    box-shadow: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.tk-link {
+    color: $ns-light-blue;
+    box-shadow: 0 1px 0 rgba($ns-light-blue, 1);
+    font-weight: normal;
+    transition: $fade-link;
+
+    &:hover {
+        color: $ns-blue;
+        box-shadow: 0 1px 0 rgba($ns-blue, 1);
+    }
+}
+
+.tk-link-blue {
+    color: $ns-blue;
+    box-shadow: 0 1px 0 $ns-grey-alpha-40;
+    font-weight: normal;
+
+    &:hover {
+        box-shadow: 0 1px 0 rgba($ns-blue, 1);
+    }
+}
+
+// icon link
+.tk-link-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: $ns-light-blue;
+    transition: color 250ms $ease;
+    @include font(16px, normal, 0.6);
+
+    svg {
+        margin-right: $half-gutter;
+        fill: $ns-light-blue;
+        transition: $fade-link;
+    }
+
+    &:hover {
+        color: $ns-blue;
+
+        svg {
+            fill: $ns-blue;
+            transform: translateX(5px);
+        }
+    }
+}
+
+.tk-link-icon--blue {
+    font-weight: bold;
+    color: $ns-blue;
+
+    svg {
+        fill: $ns-blue;
+    }
+}
+
+
+
+
+// round scroll down button
+// ----------------------------------------
+.btn-round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: $ns-white;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba($ns-grey, 0.25);
+    cursor: pointer;
+    transition: transform 200ms $ease;
+
+    &:hover {
+        transform: scale(1.15);
+    }
+
+    &--down {
+        svg {
+            position: relative;
+            top: 2px;
+            transform: rotate(90deg);
+        }
+    }
+
+    svg {
+        fill: $ns-blue;
+    }
+}
+
+
+
+
+// scroll down indicator
+// ----------------------------------------
+.scroll-down {
+    cursor: pointer;
+}
+
+.scroll-down__icon {
+    // size and styling
+    width: 36px;
+    height: 72px;
+    border: 2px solid $ns-white;
+    border-radius: 36px;
+}
+
+.scroll-down__icon-circle {
+
+    // animation
+    // this one is a potential chrome helper CPU killer on retina screens
+    @keyframes fall-down {
+        0% {
+            transform: none;
+        }
+
+        48% {
+            transform: translate3d(0, 32px, 0);
+        }
+
+        96% {
+            transform: translate3d(0, 32px, 0);
+        }
+
+        100% {
+            transform: none;
+        }
+    }
+
+    animation: fall-down 3s infinite;
+    animation-timing-function: $ease;
+    animation-delay: 1.5s;
+
+    // size and styling
+    width: 12px;
+    height: 12px;
+    border: 2px solid $ns-white;
+    border-radius: 100%;
+
+    // positioning
+    margin: 0 auto;
+    margin-top: 12px;
+}

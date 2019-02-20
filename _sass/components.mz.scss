@@ -1,0 +1,78 @@
+.mz {
+    padding: $gutter 0;
+    min-height: calc(100vh - 60px);
+
+    @include md {
+        @include full(absolute);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.mz-container {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 0 calculate-rem(21px);
+
+    @include sm {
+        padding: 0 2rem;
+    }
+}
+
+.mz-title {
+    margin-bottom: $gutter;
+    @include font(24px, bold, $lh-title);
+    color: $ns-blue;
+
+    @include sm {
+        font-size: calculate-rem(38px);
+    }
+}
+
+
+// tile
+// ----------------------------------
+.mz-tile {
+    display: grid;
+    grid-template-columns: 64px 1fr max-content;
+    align-items: center;
+    padding: calculate-rem(21px);
+    background-color: $ns-white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: $fade-all;
+    margin-bottom: $half-gutter;
+    
+    &:hover {
+        box-shadow: $box-shadow-soft;
+    }
+}
+
+.mz-tile__title {
+    margin-bottom: 4px;
+    @include font(18px, bold, $lh-title);
+    color: $ns-blue;
+}
+
+.mz-tile__description {
+    @include font(14px, normal, $lh-copy);
+    color: $ns-grey-4;
+}
+
+.mz-tile__icon {
+    line-height: 0;
+
+    svg {
+        fill: $ns-blue;
+    }
+}
+
+.mz-tile__chevron {
+    margin-right: 7px;
+    line-height: 0;
+
+    svg {
+        fill: $ns-blue;
+    }
+}
