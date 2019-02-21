@@ -12,7 +12,7 @@
 }
 
 .mz-container {
-    max-width: 560px;
+    max-width: 480px;
     margin: 0 auto;
     padding: 0 calculate-rem(21px);
 
@@ -27,8 +27,15 @@
     color: $ns-blue;
 
     @include sm {
-        font-size: calculate-rem(38px);
+        font-size: calculate-rem(32px);
     }
+}
+
+.mz-cta {
+    margin: $gutter 0 $one-half-gutter;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 

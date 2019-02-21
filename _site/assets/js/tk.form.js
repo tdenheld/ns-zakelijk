@@ -25,6 +25,22 @@ function form() {
 
 
 
+    document.addEventListener("DOMContentLoaded", function() {
+        var elements = document.getElementsByTagName("INPUT");
+        for (var i = 0; i < elements.length; i++) {
+            elements[i].oninvalid = function(e) {
+                e.target.setCustomValidity("");
+                if (!e.target.validity.valid) {
+                    e.target.setCustomValidity("This field cannot be left blank");
+                }
+            };
+            elements[i].oninput = function(e) {
+                e.target.setCustomValidity("");
+            };
+        }
+    });
+
+
     // default form field
     // --------------------------------------------------------------------------
     function formField(i) {
@@ -60,7 +76,6 @@ function form() {
         });
 
         checkValue();
-        submitButton(input, error);
     };
 
     if ($(".js-ff-default")[0]) {
@@ -165,7 +180,7 @@ function form() {
                 sessionStorage.setItem("email", $("#email").val());
             } else {
                 tick.removeClass("is-active");
-                errorMessage.show();
+                //errorMessage.show();
             };
         };
 
@@ -184,6 +199,9 @@ function form() {
         };
     };
     checkEmail();
+
+
+
 
 
 

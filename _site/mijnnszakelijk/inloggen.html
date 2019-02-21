@@ -1535,8 +1535,13 @@
         <section class="mz gd-r-yellow-subtle">
     <div class="mz-container">
         <h1 class="mz-title">Inloggen als kaarthouder</h1>
+        <p class="f-red f14 lh-copy mb-4">
+            De combinatie van het e-mailadres en wachtwoord is onjuist.
+            <a class="unlink tk-link-blue">Wachtwoord vergeten?</a>
+        </p>
 
-        <form class="mb-4">
+
+        <form class="mb-4" id="mz-login-form">
             <div class="tk-ff mxw-init js-ff-email">
                 <label for="email" class="is-hidden">E-mailadres</label>
                 <div class="tk-ff__input-container">
@@ -1546,11 +1551,11 @@
                     </span>
                 </div>
                 <div class="tk-ff__error">
-                    Vul een e-mailadres in
+                    Vul een geldig e-mailadres in
                 </div>
             </div>
 
-            <div class="tk-ff mxw-init js-ff-default">
+            <div class="tk-ff mxw-init js-ff-default mb-1">
                 <label for="password" class="is-hidden">Wachtwoord</label>
                 <div class="tk-ff__input-container">
                     <input class="textInput tk-ff__input tk-ff__input--coloured" type="password" id="password" placeholder="Wachtwoord" required />
@@ -1562,14 +1567,13 @@
                     Vul een wachtwoord in
                 </div>
             </div>
+            <a class="unlink tk-link-blue f14">Wachtwoord vergeten?</a>
 
-            <div class="txt-r">
+            <div class="mz-cta">
+                <a class="arrowLink">Ik ben contactpersoon</a>
                 <button class="button" type="submit">Inloggen</button>
             </div>
         </form>
-
-
-        <button class="button btn-ghost w-100">Inloggen als contactpersoon</button>
 
 
         <div class="bo-b-a15 mt-4 mb-1"></div>
