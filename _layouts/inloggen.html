@@ -1,13 +1,12 @@
 ---
-no-footer: true
+layout: default
 ---
 
 <section class="mz gd-r-yellow-subtle">
     <div class="mz-container">
-        <h1 class="mz-title">Inloggen als kaarthouder</h1>
+        <h1 class="mz-title">{{ page.title }}</h1>
         <div class="is-hidden f14 lh-copy f-red mb-4 js-form-error">
             <p class="fw-b">Oeps! De combinatie van het e-mailadres en wachtwoord is onjuist. Probeer het nog eens.</p>
-           
         </div>
 
 
@@ -39,11 +38,11 @@ no-footer: true
                     Vul een wachtwoord in
                 </div>
             </div>
-            <a class="unlink tk-link-blue f14">Wachtwoord vergeten?</a>
+            <a href="{{ page.recover.url }}" class="unlink tk-link-blue f14">{{ page.recover.text }}</a>
         </form>
         <div class="mz-cta mb-3">
-            <a class="arrowLink">Ik ben contactpersoon</a>
-            <button class="button btn btn--login js-submit">
+            <a href="{{ page.switch.url }}" class="unlink f-light-blue fw-b">{{ page.switch.text }}</a>
+            <button class="button btn btn--pill btn--login js-submit">
                 <span class="btn__content">Inloggen</span>
                 <div class="btn__loader-icon js-submit-loader-icon">
                     {% include /icons/loader--small.svg %}
