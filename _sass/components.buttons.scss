@@ -82,6 +82,8 @@
 
 .btn--login {
     margin-bottom: $half-gutter;
+    min-width: 160px;
+    font-weight: bold;
     width: 100%;
 
     @include sm {
