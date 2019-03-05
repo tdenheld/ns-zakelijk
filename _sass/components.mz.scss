@@ -47,8 +47,7 @@
 // tile
 // ----------------------------------
 .mz-tile {
-    display: grid;
-    grid-template-columns: max-content 1fr max-content;
+    display: flex;
     align-items: center;
     padding: calculate-rem(21px);
     background-color: $ns-white;

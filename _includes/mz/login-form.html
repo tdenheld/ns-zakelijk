@@ -1,0 +1,24 @@
+<form class="mb-4" id="mz-login-form">
+    <div class="tk-ff mxw-init js-ff-email">
+        <label for="email" class="is-hidden">E-mailadres</label>
+        <div class="tk-ff__input-container">
+            <input class="textInput tk-ff__input tk-ff__input--coloured" type="email" id="email"
+                placeholder="E-mailadres" required />
+        </div>
+        <div class="tk-ff__error">
+            Vul een geldig e-mailadres in
+        </div>
+    </div>
+
+    <div class="tk-ff mxw-init js-ff-default mb-1">
+        <label for="password" class="is-hidden">Wachtwoord</label>
+        <div class="tk-ff__input-container">
+            <input class="textInput tk-ff__input tk-ff__input--coloured" type="password" id="password"
+                placeholder="Wachtwoord" required />
+        </div>
+        <div class="tk-ff__error">
+            Vul een wachtwoord in
+        </div>
+    </div>
+    <a href="{{ page.recover.url }}" class="unlink tk-link-blue f14">{{ page.recover.text }}</a>
+</form>

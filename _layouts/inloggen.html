@@ -5,46 +5,16 @@ layout: default
 <section class="mz gd-r-yellow-subtle">
     <div class="mz-container">
         <h1 class="mz-title">{{ page.title }}</h1>
+
         <div class="is-hidden f14 lh-copy f-red mb-4 js-form-error">
             <p class="fw-b">Oeps! De combinatie van het e-mailadres en wachtwoord is onjuist. Probeer het nog eens.</p>
         </div>
 
-        <form class="mb-4" id="mz-login-form">
-            <div class="tk-ff mxw-init js-ff-email">
-                <label for="email" class="is-hidden">E-mailadres</label>
-                <div class="tk-ff__input-container">
-                    <input class="textInput tk-ff__input tk-ff__input--coloured" type="email" id="email"
-                        placeholder="E-mailadres" required />
-                </div>
-                <div class="tk-ff__error">
-                    Vul een geldig e-mailadres in
-                </div>
-            </div>
+        {% include mz/login-form.html %}
+        {% include mz/cta.html %}
 
-            <div class="tk-ff mxw-init js-ff-default mb-1">
-                <label for="password" class="is-hidden">Wachtwoord</label>
-                <div class="tk-ff__input-container">
-                    <input class="textInput tk-ff__input tk-ff__input--coloured" type="password" id="password"
-                        placeholder="Wachtwoord" required />
-                </div>
-                <div class="tk-ff__error">
-                    Vul een wachtwoord in
-                </div>
-            </div>
-            <a href="{{ page.recover.url }}" class="unlink tk-link-blue f14">{{ page.recover.text }}</a>
-        </form>
-
-        <div class="mz-cta mb-3">
-            <a href="{{ page.switch.url }}" class="unlink f-light-blue fw-b">{{ page.switch.text }}</a>
-            <button class="button btn btn--pill btn--login js-submit">
-                <span class="btn__content">Inloggen</span>
-                <div class="btn__loader-icon js-submit-loader-icon">
-                    {% include /icons/loader--small.svg %}
-                </div>
-            </button>
-        </div>
-
-        {% include mz-footer.html %}
+        {{ content }}        
+        {% include mz/footer.html %}
 
     </div>
 </section>
