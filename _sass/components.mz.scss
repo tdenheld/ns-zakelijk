@@ -2,8 +2,10 @@
     padding: $gutter 0;
     min-height: calc(100vh - 60px);
 
-    @media (min-width: $sm) and (min-height: 600px) {
+    @media (min-width: $sm) and (min-height: 660px) {
         @include full(absolute);
+        padding: 0;
+        top: $navbar-height / 2;
         display: flex;
         align-items: center;
         justify-content: center;
