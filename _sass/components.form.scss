@@ -2,104 +2,22 @@
         Form
 --------------------*/
 
+$bs-focus: 0 0 0 1px $ns-light-blue, 0 2px 28px rgba($ns-black, 0.1);
+$bs-autofill: 0 0 0px 1000px $ns-blue-4 inset;
+$bs-autofill-focus: $bs-focus, $bs-autofill;
 
-// form fieds
-// -------------------------
-.tk-ff {
-    margin-bottom: $half-gutter;
+.tk-formfield {
     position: relative;
-    max-width: 400px;
+    margin-bottom: $half-gutter;
 }
 
-.tk-ff--grid {
-    display: grid;
-    grid-column-gap: $gutter;
-    max-width: 600px;
-
-    @include sm {
-        margin-bottom: $half-gutter;
-        grid-template-columns: 2fr 5fr;
-    }
-
-    .tk-ff__label {
-        @include sm {
-            line-height: $button-height;
-            text-align: right;
-        }
-    }
+.tk-input {
+    position: relative;
 }
 
-.tk-ff__description {
-    margin: 7px 0 0;
-    @include font(14px, normal, 1.5);
-    color: $ns-grey-4;
-}
-
-.tk-ff__error {
-    display: none;
-    margin: 4px 0 0;
-    @include font(14px, normal, 1.5);
-    color: $ns-red-alert;
-}
-
-.tk-ff__message {
-    display: none;
-    margin: 6px 0;
-    @include font(14px, bold, 1.5);
-    color: $ns-green-sexy;
-}
-
-
-// ------------------------------------
-.tk-ff__icon {
-    opacity: 0;
-    transition: $fade-all;
+.tk-input__toggle-password {
     position: absolute;
-    top: 13px;
-    right: 14px;
-
-    &.is-active {
-        opacity: 1;
-    }
-}
-
-.tk-ff__icon--loading {
-    svg {
-        transform-origin: 50% 50%;
-        animation: rotate $loader-speed linear infinite;
-        fill: $ns-blue;
-        transition: $fade-link;
-    }
-}
-
-.tk-ff__icon--left {
-    left: 28px;
-    right: auto;
-
-    @include sm {
-        left: 214px;
-    }
-}
-
-.tk-ff__icon--approved {
-    svg {
-        width: 17px;
-        fill: $ns-green-sexy;
-    }
-}
-
-.tk-ff__icon--known {
-    top: 11px;
-    right: 13px;
-
-    svg {
-        fill: $ns-green-sexy;
-    }
-}
-
-.tk-ff__eye {
-    position: absolute;
-    top: 14px;
+    top: 12px;
     right: 14px;
     cursor: pointer;
 
@@ -128,127 +46,15 @@
     }
 }
 
-
-// ------------------------------------
-.tk-ff__filled {
-    @include font(18px, bold, ($button-height - 4));
-    color: $ns-blue;
-}
-
-.tk-ff__filled-icon {
-    position: relative;
-    top: 1px;
-    margin-left: 7px;
-
-    svg {
-        transition: $fade-link;
-        fill: $ns-light-blue;
-    }
-
-    &:hover {
-        svg {
-            fill: $ns-blue;
-        }
-    }
-}
-
-
-// ------------------------------------
-.tk-ff__label {
-    display: block;
-    margin-bottom: 7px;
-    transition: $fade-link;
-    @include font(16px, normal, 1.25);
-    color: $ns-blue;
-}
-
-
-// ------------------------------------
-.tk-ff__address {
-    display: none;
-    margin-top: 20px;
-}
-
-.tk-ff__address-container {
-    opacity: 0;
-    @include font(16px, bold, 1.5);
-    color: $ns-blue;
-    transition: $fade-all;
-
-    &.is-active {
-        opacity: 1;
-    }
-}
-
-.tk-ff__address-icon {
-    position: relative;
-    top: 1px;
-    margin-left: 5px;
-}
-
-
-// ------------------------------------
-.tk-ff__radio {
-    margin-bottom: 10px;
-
-    &:last-child {
-        margin-bottom: 0;
-    }
-
-    .radioButton__input+.radioButton__label:before {
-        outline: none;
-    }
-}
-
-.tk-ff__checkbox {
-    padding: 0 0 20px;
-
-    &:last-child {
-        padding: 0;
-    }
-
-    .checkbox__label:after {
-        border: none;
-        transform: none;
-        width: 14px;
-        height: 14px;
-        top: 5px;
-        left: 3px;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9.25 7.626'%3E%3Cpath fill='%2300AA89' d='M3.25,7.626a.747.747,0,0,1-.53-.22l-2.5-2.5A.75.75,0,1,1,1.28,3.845L3.208,5.773,7.931.262a.75.75,0,1,1,1.138.977L3.819,7.364a.75.75,0,0,1-.54.261Z'/%3E%3C/svg%3E");
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        transition: $fade-link;
-    }
-
-    .checkbox__input:checked+.checkbox__label:after {
-        opacity: 1;
-    }
-
-    // remove focus outline
-    .checkbox__label,
-    .checkbox__label:before,
-    .checkbox__input:checked+.checkbox__label:before {
-        outline: none;
-    }
-}
-
-
-// input field
-// ------------------------------------
-$bs-focus: 0 0 0 1px $ns-light-blue,
-0 2px 28px rgba($ns-black, 0.1);
-$bs-autofill: 0 0 0px 1000px $ns-blue-4 inset;
-$bs-autofill-focus: $bs-focus,
-$bs-autofill;
-
-.tk-ff__input {
+.tk-input__text {
     // lay-out
     width: 100%;
-    padding-top: 7px;
+    padding: 10px 14px;
     height: $button-height;
 
     // styling
     -webkit-appearance: none;
+    background-color: $ns-white;
     border: 1px solid $ns-grey-6b;
     @include font(18px, bold, 1.25);
     color: $ns-blue;
@@ -259,11 +65,13 @@ $bs-autofill;
     }
 
     &::placeholder {
-        @include font(16px, normal, 1.5);
+        opacity: 1;
+        @include font(16px, normal, 1.25);
         color: $ns-grey-6;
     }
 
     &:focus {
+        outline: none;
         border: 1px solid $ns-light-blue;
         box-shadow: $bs-focus;
         color: $ns-blue;
@@ -279,7 +87,7 @@ $bs-autofill;
     }
 }
 
-.tk-ff__input--coloured {
+.tk-input__text--no-border {
     border: 1px solid $ns-white;
 
     &:focus {
@@ -299,27 +107,21 @@ $bs-autofill;
     }
 }
 
-.tk-ff__input-container {
-    position: relative;
-}
-
-
-// ------------------------------------
 .no-touch {
-    .tk-ff__input:hover {
+    .tk-input__text:hover {
         border: 1px solid $ns-grey-5;
     }
 
-    .tk-ff__input:focus {
+    .tk-input__text:focus {
         border: 1px solid $ns-light-blue;
         box-shadow: $bs-focus;
     }
 
-    .tk-ff__input:-webkit-autofill:focus {
+    .tk-input__text:-webkit-autofill:focus {
         box-shadow: $bs-autofill-focus;
     }
 
-    .tk-ff__input--coloured:hover {
+    .tk-input__text--no-border:hover {
         border: 1px solid $ns-white;
 
         &.is-error {
@@ -331,16 +133,16 @@ $bs-autofill;
         }
     }
 
-    .tk-ff__input--coloured:hover:focus {
+    .tk-input__text--no-border:hover:focus {
         border: 1px solid $ns-light-blue;
     }
 
-    .tk-ff__input--coloured:-webkit-autofill:hover {
+    .tk-input__text--no-border:-webkit-autofill:hover {
         border: 1px solid $ns-blue-4;
         box-shadow: $bs-autofill;
     }
 
-    .tk-ff__input--coloured:-webkit-autofill:hover:focus {
+    .tk-input__text--no-border:-webkit-autofill:hover:focus {
         border: 1px solid $ns-light-blue;
         box-shadow: $bs-autofill-focus;
     }

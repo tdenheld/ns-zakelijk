@@ -1,27 +1,21 @@
 <form class="mb-4" id="mz-login-form">
-    <div class="tk-ff mxw-init js-ff-email">
+    <div class="tk-formfield">
         <label for="email" class="is-hidden">E-mailadres</label>
-        <div class="tk-ff__input-container">
-            <input class="textInput tk-ff__input tk-ff__input--coloured" type="email" id="email"
+        <div class="tk-input">
+            <input class="tk-input__text tk-input__text--no-border" type="email" id="email"
                 placeholder="E-mailadres" required />
-        </div>
-        <div class="tk-ff__error">
-            Vul een geldig e-mailadres in
         </div>
     </div>
 
-    <div class="tk-ff mxw-init js-ff-default mb-1">
+    <div class="tk-formfield mb-1">
         <label for="password" class="is-hidden">Wachtwoord</label>
-        <div class="tk-ff__input-container">
-            <input class="textInput tk-ff__input tk-ff__input--coloured" type="password" id="password"
+        <div class="tk-input">
+            <input class="tk-input__text tk-input__text--no-border" type="password" id="password"
                 placeholder="Wachtwoord" required />
-            <div class="tk-ff__eye js-toggle">
+            <div class="tk-input__toggle-password js-toggle">
                 <span>{% include icons/eye-crossed--small.svg %}</span>
                 <span>{% include icons/eye--small.svg %}</span>
             </div>
-        </div>
-        <div class="tk-ff__error">
-            Vul een wachtwoord in
         </div>
     </div>
     <a href="{{ page.recover.url }}" class="unlink tk-link-blue f14">{{ page.recover.text }}</a>
