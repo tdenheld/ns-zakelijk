@@ -36,6 +36,11 @@ $(".js-toggle").click(function () {
     $(this).toggleClass("is-active");
 });
 
+$(".js-radio").click(function () {
+    $(".js-radio").removeClass("is-active");
+    $(this).toggleClass("is-active");
+});
+
 
 
 // functionality that"s on linked on scroll

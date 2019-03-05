@@ -97,6 +97,37 @@
     }
 }
 
+.tk-ff__eye {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    cursor: pointer;
+
+    svg {
+        fill: $ns-grey-5;
+        transition: $fade-all;
+    }
+
+    &:hover {
+        svg {
+            fill: $ns-grey-4;
+        }
+    }
+
+    span:last-child {
+        display: none;
+    }
+
+    &.is-active {
+        span:first-child {
+            display: none;
+        }
+        span:last-child {
+            display: block;
+        }
+    }
+}
+
 
 // ------------------------------------
 .tk-ff__filled {

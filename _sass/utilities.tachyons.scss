@@ -24,7 +24,7 @@
 .pos-i { position: inherit; }
 
 // nudge elements a tiny bit
-@for $i from 0 through 14 {
+@for $i from 0 through 20 {
     $y: $i * 1px;
     .top-#{$i}px {top: $y;}
     .top-min-#{$i}px {top: -$y;}
