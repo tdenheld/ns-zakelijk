@@ -1,6 +1,6 @@
 <div class="mz-cta mb-3">
     <a href="{{ include.url }}" class="unlink f-light-blue fw-b">{{ include.2nd }}</a>
-    <button class="button btn btn--pill btn--login js-submit" type="submit">
+    <button class="button btn btn--pill btn--login {{ include.buttonClass }}" type="submit">
         <span class="btn__content">{{ include.1st }}</span>
         <div class="btn__loader-icon js-submit-loader-icon">
             {% include /icons/loader--small.svg %}
