@@ -2,9 +2,11 @@
         Form
 --------------------*/
 
-$bs-focus: 0 0 0 1px $ns-light-blue, 0 2px 28px rgba($ns-black, 0.1);
+$bs-focus: 0 0 0 1px $ns-light-blue,
+0 2px 28px rgba($ns-black, 0.1);
 $bs-autofill: 0 0 0px 1000px $ns-blue-4 inset;
-$bs-autofill-focus: $bs-focus, $bs-autofill;
+$bs-autofill-focus: $bs-focus,
+$bs-autofill;
 
 .tk-formfield {
     position: relative;
@@ -40,8 +42,19 @@ $bs-autofill-focus: $bs-focus, $bs-autofill;
         span:first-child {
             display: none;
         }
+
         span:last-child {
             display: block;
+        }
+    }
+}
+
+.no-touch {
+    .tk-input__toggle-password {
+        &:hover {
+            svg {
+                fill: $ns-grey-4;
+            }
         }
     }
 }
