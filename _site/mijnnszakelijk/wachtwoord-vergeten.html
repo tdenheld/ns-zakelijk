@@ -20,7 +20,7 @@
     <script src="/assets/js/modernizr.js"></script>
 
     <!-- TITLE -->
-    <title>NS Zakelijk | NS</title>
+    <title>Wachtwoord vergeten</title>
 
 </head>
 
@@ -1532,176 +1532,45 @@
     </div>
 </header>
     <div class="content">
-        <div class="container">
-    <section class="mv-4 mv-8-sm pa-2r">
-        <h1 class="headingXXL mb-4">NS Zakelijk Prototypes</h1>
-        <a href="/mijnnszakelijk" class="arrowLink">Mijn NS Zakelijk</a>
-    </section>
+        <section class="mz gd-r-yellow-subtle">
+    <div class="mz-container">
+        <h1 class="mz-title mb-2">Wachtwoord vergeten</h1>
+        <p class="f-blue mb-4">
+            Vul je e-mailadres in en wij sturen je een mail waarmee je een nieuw wachtwoord aan kunt maken. Kun je nog
+            steeds niet inloggen? Neem dan contact op met de klantenservice.
+        </p>
+
+        <form action="/mijnnszakelijk/inloggen-kaarthouder" id="mz-recover-password">
+            <div class="tk-formfield">
+                <label for="email" class="is-hidden">E-mailadres</label>
+                <div class="tk-input">
+                    <input class="tk-input__text tk-input__text--no-border" type="email" id="email" name="email"
+                        placeholder="E-mailadres" required />
+                </div>
+                <div class="f14 f-red mt-1 lh-copy is-hidden js-formfield-error"></div>
+            </div>
+
+            <div class="mz-cta mb-3">
+    <a href="/mijnnszakelijk/inloggen-kaarthouder" class="unlink f-light-blue fw-b">Terug naar inloggen</a>
+    <button class="button btn btn--pill btn--login js-submit" type="submit">
+        <span class="btn__content">Versturen</span>
+        <div class="btn__loader-icon js-submit-loader-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"><title>loader--small</title><path d="M1.132,8A8.5,8.5,0,0,1,17.868,8h1.014A9.5,9.5,0,0,0,.118,8Z"/><path d="M17.868,11A8.5,8.5,0,0,1,1.132,11H.118a9.5,9.5,0,0,0,18.764,0Z"/></svg>
+        </div>
+    </button>
 </div>
+        </form>
+
+        <div class="bo-b-a15 mt-6 mb-1"></div>
+<div class="f-a60 f12">
+    <a class="unlink">Voorwaarden</a>
+    <a class="unlink ml-2">Privacy</a>
+    <a class="unlink ml-2">Klantenservice</a>
+</div>
+
     </div>
-    
-    <footer class="footer">
-    <div class="container">
-        <div class="grid grid--footer" data-controller="generic/ui/ResponsiveGrid" data-type="footermenu">
-            <div class="grid__unit m-6-12 l-3-12" data-type="topfootermenuitem">
-                <div class="tile tile--fullyTransparent">
-                    <div class="tile__title">
-                        <h3 class="headingXXS footer__heading">Direct naar...</h3>
-                    </div>
-                    <div class="tile__content">
-                        <ul class="list">
-                            <li class="list__item">
-                                <a href="/reisinformatie" class="arrowLink">
-                                    Reisinformatie</a>
-                            </li>
-                            <li class="list__item">
-                                <a href="/uitgelicht" class="arrowLink">
-                                    Uitgelicht</a>
-                            </li>
-                            <li class="list__item">
-                                <a href="/zakelijk" class="arrowLink">
-                                    Zakelijk</a>
-                            </li>
-                            <li class="list__item">
-                                <a href="/klantenservice" class="arrowLink">
-                                    Klantenservice</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__unit m-6-12 l-3-12" data-type="topfootermenuitem">
-                <div class="tile tile--fullyTransparent">
-                    <div class="tile__title">
-                        <h3 class="headingXXS footer__heading">Onze producten</h3>
-                    </div>
-                    <div class="tile__content">
-                        <ul class="list">
-                            <li class="list__item">
-                                <a href="/producten/losse-kaartjes-toeslagen" class="arrowLink">
-                                    Kaartjes &amp; Toeslagen</a>
-                            </li>
-                            <li class="list__item">
-                                <a href="/producten/abonnementen" class="arrowLink">
-                                    Abonnementen</a>
-                            </li>
-                            <li class="list__item">
-                                <a href="/deur-tot-deur" class="arrowLink">
-                                    Deur tot deur</a>
-                            </li>
-                            <li class="list__item">
-                                <a href="/dagje-uit" class="arrowLink">
-                                    Dagje uit</a>
-                            </li>
-                            <li class="list__item">
-                                <a href="https://www.nsinternational.nl" class="arrowLink" target="_blank" rel="external noopener">
-                                    Internationale treinkaartjes</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__unit m-6-12 l-3-12" data-type="topfootermenuitem">
-                <div class="tile tile--fullyTransparent">
-                    <div class="tile__title">
-                        <h3 class="headingXXS footer__heading">Meer NS</h3>
-                    </div>
-                    <div class="tile__content">
-                        <ul class="list">
-                            <li class="list__item">
-                                <a href="/over-ns" class="arrowLink">
-                                    Over NS</a>
-                            </li>
-                            <li class="list__item">
-                                <a href="https://werkenbijns.nl/" class="arrowLink" target="_blank" rel="external noopener">
-                                    Werken bij NS</a>
-                            </li>
-                            <li class="list__item">
-                                <a href="/zakelijk/partners-in-mobiliteit.html" class="arrowLink">
-                                    Partners in mobiliteit</a>
-                            </li>
-                            <li class="list__item">
-                                <a href="http://nieuws.ns.nl" class="arrowLink" target="_blank" rel="external noopener">
-                                    Nieuws</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__unit m-6-12 l-3-12" data-type="socialfootermenuitem">
-                <div class="tile tile--fullyTransparent">
-                    <div class="tile__title">
-                        <h3 class="headingXXS footer__heading">
-                            Sociale media
-                        </h3>
-                    </div>
-                    <div class="tile__content">
-                        <ul class="list">
-                            <li class="list__item">
-                                <a href="https://www.facebook.com/nederlandsespoorwegen" class="iconLink iconLink--facebook"
-                                    target="_blank" rel="external noopener">
-                                    Facebook</a>
-                            </li>
-                            <li class="list__item">
-                                <a href="https://twitter.com/ns_online" class="iconLink iconLink--twitter" target="_blank"
-                                    rel="external noopener">
-                                    Twitter</a>
-                            </li>
-                            <li class="list__item">
-                                <a href="https://www.instagram.com/ns_online/?hl=nl" class="iconLink iconLink--instagram"
-                                    target="_blank" rel="external noopener">
-                                    Instagram</a>
-                            </li>
-                            <li class="list__item">
-                                <a href="https://www.youtube.com/user/NS" class="iconLink iconLink--youtube" target="_blank"
-                                    rel="external noopener">
-                                    YouTube</a>
-                            </li>
-                            <li class="list__item">
-                                <a href="https://www.linkedin.com/company/nederlandsespoorwegen" class="iconLink iconLink--linkedin"
-                                    target="_blank" rel="external noopener">
-                                    LinkedIn</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="grid grid--footer" data-type="bottomfootermenu">
-            <div class="grid__unit">
-                <div class="footer__menuContainer separator--largeTop">
-                    <ul class="footer__menu list list--horizontal" data-controller="generic/ui/EqualWidth">
-                        <li class="list__item">
-                            <a href="/disclaimer.html" class="arrowLink arrowLink--grey">
-                                Disclaimer</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="/privacy" class="arrowLink arrowLink--grey">
-                                Privacy</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="/privacy/cookiebeleid.html" class="arrowLink arrowLink--grey">
-                                Cookies</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="/bedrijfsinformatie.html" class="arrowLink arrowLink--grey">
-                                Bedrijfsinformatie</a>
-                        </li>
-                        <li class="list__item">
-                            <a href="/voorwaarden.html" class="arrowLink arrowLink--grey">
-                                Voorwaarden en folders</a>
-                        </li>
-                    </ul>
-                    <div class="nslogo nslogo--footer">
-                        <a class="nslogo__link" href="/" title="Ga naar de homepagina">
-                            <img class="nslogo__image" src="/assets/img/NS_logo.svg" height="20" width="52" alt="Logo Nederlandse Spoorwegen" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+</section>
     </div>
-</footer>
     
 
 

@@ -1,8 +1,8 @@
-<form class="mb-4" id="mz-login-form">
+<form class="mb-4">
     <div class="tk-formfield">
         <label for="email" class="is-hidden">E-mailadres</label>
         <div class="tk-input">
-            <input class="tk-input__text tk-input__text--no-border" type="email" id="email"
+            <input class="tk-input__text tk-input__text--no-border" type="email" id="email" name="email"
                 placeholder="E-mailadres" required />
         </div>
     </div>
@@ -10,7 +10,7 @@
     <div class="tk-formfield mb-1">
         <label for="password" class="is-hidden">Wachtwoord</label>
         <div class="tk-input">
-            <input class="tk-input__text tk-input__text--no-border" type="password" id="password"
+            <input class="tk-input__text tk-input__text--no-border" type="password" id="password" name="password"
                 placeholder="Wachtwoord" required />
             <div class="tk-input__toggle-password" id="js-toggle-password">
                 <span>{% include icons/eye-crossed--small.svg %}</span>

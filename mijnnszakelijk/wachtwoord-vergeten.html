@@ -1,0 +1,35 @@
+---
+layout: default
+no-footer: true
+title: Wachtwoord vergeten
+---
+
+<section class="mz gd-r-yellow-subtle">
+    <div class="mz-container">
+        <h1 class="mz-title mb-2">{{ page.title }}</h1>
+        <p class="f-blue mb-4">
+            Vul je e-mailadres in en wij sturen je een mail waarmee je een nieuw wachtwoord aan kunt maken. Kun je nog
+            steeds niet inloggen? Neem dan contact op met de klantenservice.
+        </p>
+
+        <form action="/mijnnszakelijk/inloggen-kaarthouder" id="mz-recover-password">
+            <div class="tk-formfield">
+                <label for="email" class="is-hidden">E-mailadres</label>
+                <div class="tk-input">
+                    <input class="tk-input__text tk-input__text--no-border" type="email" id="email" name="email"
+                        placeholder="E-mailadres" required />
+                </div>
+                <div class="f14 f-red mt-1 lh-copy is-hidden js-formfield-error"></div>
+            </div>
+
+            {% include mz/cta.html 
+                1st="Versturen" 
+                2nd="Terug naar inloggen" 
+                url="/mijnnszakelijk/inloggen-kaarthouder" 
+            %}
+        </form>
+
+        {% include mz/footer.html %}
+
+    </div>
+</section>

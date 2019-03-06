@@ -118,6 +118,10 @@ $bs-autofill;
     &:-webkit-autofill:focus {
         box-shadow: $bs-autofill-focus;
     }
+
+    &.is-error {
+        border: 1px solid $ns-red-alert;
+    }
 }
 
 .no-touch {
