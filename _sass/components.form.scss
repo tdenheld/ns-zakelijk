@@ -28,12 +28,6 @@ $bs-autofill;
         transition: $fade-all;
     }
 
-    &:hover {
-        svg {
-            fill: $ns-grey-4;
-        }
-    }
-
     span:last-child {
         display: none;
     }
