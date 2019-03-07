@@ -122,6 +122,10 @@ $bs-autofill;
     &.is-error {
         border: 1px solid $ns-red-alert;
     }
+
+    &.is-error:focus {
+        border: 1px solid $ns-light-blue;
+    }
 }
 
 .no-touch {
