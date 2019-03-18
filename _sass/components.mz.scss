@@ -2,7 +2,7 @@
     padding: $gutter 0;
     min-height: calc(100vh - 60px);
 
-    @media (min-width: $sm) and (min-height: 660px) {
+    @media (min-width: $sm) and (min-height: 700px) {
         @include full(fixed);
         top: $navbar-height / 2;
         display: flex;

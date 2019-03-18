@@ -57,18 +57,17 @@ function recoveryMessage() {
     var emailRecovery = $("#email-recovery");
     var label = $(".js-recovery-message span");
 
-    if (email[0]) {
-        email.val(sessionStorage.getItem("email"));
-        email.focusout(() => {
-            sessionStorage.setItem("email", email.val());
-        });
+    function setGetEmail(obj) {
+        if (obj[0]) {
+            obj.val(sessionStorage.getItem("email"));
+            obj.focusout(() => {
+                sessionStorage.setItem("email", obj.val());
+            });
+        };
     };
-    if (emailRecovery[0]) {
-        emailRecovery.val(sessionStorage.getItem("email"));
-        emailRecovery.focusout(() => {
-            sessionStorage.setItem("email", emailRecovery.val());
-        });
-    };
+    setGetEmail(email);
+    setGetEmail(emailRecovery);
+
     if (label[0]) {
         label.text(sessionStorage.getItem("email"));
     };
