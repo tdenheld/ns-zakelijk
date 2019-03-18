@@ -8,4 +8,11 @@ defaults:
       path: ""
     values:
       layout: "default"
-      title: "NS Zakelijk | NS"
+      title: "NS Zakelijk"
+  - scope:
+      path: "mijnnszakelijk"
+      type: pages
+    values:
+      layout: "default"
+      title: "Mijn NS Zakelijk"
+      no-footer: true
