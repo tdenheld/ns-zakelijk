@@ -1,16 +1,13 @@
-// form
-// ------------------------------------------------------------
-// ------------------------------------------------------------
-
-function form() {
+function login() {
     var submitLogin = $(".js-submit-login");
     var password = $("#js-toggle-password");
-    var recoverPassword = $("#mz-recover-password");
+    var recoveryForm = $("#mz-recovery-form");
 
     if (submitLogin[0]) {
         submitLogin.click(function () {
             $(this).addClass("is-loading");
             $(".js-submit-loader-icon").addClass("is-active");
+            $(".js-recovery-message").slideUp(200);
             setTimeout(() => {
                 $(".js-form-error").slideDown(200);
                 $(this).removeClass("is-loading");
@@ -35,10 +32,10 @@ function form() {
         });
     };
 
-    if (recoverPassword[0]) {
+    if (recoveryForm[0]) {
         var errorSelector = ".js-formfield-error";
 
-        recoverPassword.validate({
+        recoveryForm.validate({
             onkeyup: false,
             errorClass: "is-error",
             errorLabelContainer: errorSelector,
@@ -52,6 +49,46 @@ function form() {
     };
 };
 
+function recoveryMessage() {
+    var button = $(".js-recovery-button");
+    var message = $(".js-recovery-message");
+    var data = sessionStorage.getItem("recoveryMessage");
+    var email = $("#email");
+    var emailRecovery = $("#email-recovery");
+    var label = $(".js-recovery-message span");
+
+    if (email[0]) {
+        email.val(sessionStorage.getItem("email"));
+        email.focusout(() => {
+            sessionStorage.setItem("email", email.val());
+        });
+    };
+    if (emailRecovery[0]) {
+        emailRecovery.val(sessionStorage.getItem("email"));
+        emailRecovery.focusout(() => {
+            sessionStorage.setItem("email", emailRecovery.val());
+        });
+    };
+    if (label[0]) {
+        label.text(sessionStorage.getItem("email"));
+    };
+    if (button[0]) {
+        button.click(() => {
+            if (emailRecovery.val() !== "") {
+                sessionStorage.setItem("recoveryMessage", true);
+            };
+        });
+    };
+    if (message[0]) {
+        if (data !== null) {
+            message.show();
+        } else {
+            message.hide();
+        };
+    };
+};
+
 $(function () {
-    form();
+    login();
+    recoveryMessage();
 });

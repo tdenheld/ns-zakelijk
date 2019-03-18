@@ -31,7 +31,7 @@
         <a href="#mainContent" class="button header__skiplink" data-controller="generic/ui/SmoothScroll">
         Naar content</a>
         <h2 class="alt">Hoofdnavigatie</h2>
-        <div class="nslogo nslogo--header header__logo">
+        <div class="nslogo nslogo--header header__logo js-clear-session">
             <a class="nslogo__link" href="/" title="Ga naar de homepagina">
             <img class="nslogo__image" src="/assets/img/NS_logo.svg" height="20" width="52" alt="Logo Nederlandse Spoorwegen">
             </a>
@@ -1542,6 +1542,12 @@
             wachtwoord is onjuist. Probeer het nog eens.
     </p>
 </div>
+
+        <div class="mz-recovery-message is-hidden js-recovery-message">
+    We hebben een e-mail gestuurd naar <span class="fw-b">jan.janssen@ns.nl</span> met je gebruikersnaam
+    en een link om een nieuw wachtwoord aan te maken.
+</div>
+
         <form class="mb-4">
     <div class="tk-formfield">
         <label for="email" class="is-hidden">E-mailadres</label>
@@ -1592,8 +1598,8 @@
     <!-- JAVASCRIPT -->
     <script src="/assets/js/ns.generic.min.js"></script>
     <script src="/assets/js/plugins.bundle.min.js"></script>
-    <script src="/assets/js/tk.generic.js"></script>
-    <script src="/assets/js/tk.form.js"></script>
+    <script src="/assets/js/generic.js"></script>
+    <script src="/assets/js/login.js"></script>
 
 </body>
 

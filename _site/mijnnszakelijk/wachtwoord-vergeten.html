@@ -20,7 +20,7 @@
     <script src="/assets/js/modernizr.js"></script>
 
     <!-- TITLE -->
-    <title>Mijn NS Zakelijk | NS</title>
+    <title>Met welk e-mailadres heb je je aangemeld? | NS</title>
 
 </head>
 
@@ -31,7 +31,7 @@
         <a href="#mainContent" class="button header__skiplink" data-controller="generic/ui/SmoothScroll">
         Naar content</a>
         <h2 class="alt">Hoofdnavigatie</h2>
-        <div class="nslogo nslogo--header header__logo">
+        <div class="nslogo nslogo--header header__logo js-clear-session">
             <a class="nslogo__link" href="/" title="Ga naar de homepagina">
             <img class="nslogo__image" src="/assets/img/NS_logo.svg" height="20" width="52" alt="Logo Nederlandse Spoorwegen">
             </a>
@@ -1533,15 +1533,16 @@
 </header>
     <div class="content">
         
+
 <section class="mz gd-r-yellow-subtle">
     <div class="mz-container">
-        <h1 class="mz-title">Mijn NS Zakelijk</h1>
+        <h1 class="mz-title">Met welk e-mailadres heb je je aangemeld?</h1>
 
-        <form action="/mijnnszakelijk/inloggen-kaarthouder" id="mz-recover-password">
+        <form action="/mijnnszakelijk/inloggen-kaarthouder" id="mz-recovery-form">
             <div class="tk-formfield">
     <label for="email" class="is-hidden">E-mailadres</label>
     <div class="tk-input">
-        <input class="tk-input__text tk-input__text--no-border" type="email" id="email" name="email"
+        <input class="tk-input__text tk-input__text--no-border" type="email" id="email-recovery" name="email"
             placeholder="E-mailadres" required />
     </div>
     <div class="f14 f-red mt-1 lh-copy is-hidden js-formfield-error"></div>
@@ -1549,7 +1550,7 @@
 
             <div class="mz-cta mb-3">
     <a href="/mijnnszakelijk/inloggen-kaarthouder" class="unlink f-light-blue fw-b">Terug naar inloggen</a>
-    <button class="button btn btn--pill btn--login " type="submit">
+    <button class="button btn btn--pill btn--login js-recovery-button" type="submit">
         <span class="btn__content"> Verstuur resetlink </span>
         <div class="btn__loader-icon js-submit-loader-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"><title>loader--small</title><path d="M1.132,8A8.5,8.5,0,0,1,17.868,8h1.014A9.5,9.5,0,0,0,.118,8Z"/><path d="M17.868,11A8.5,8.5,0,0,1,1.132,11H.118a9.5,9.5,0,0,0,18.764,0Z"/></svg>
@@ -1574,8 +1575,8 @@
     <!-- JAVASCRIPT -->
     <script src="/assets/js/ns.generic.min.js"></script>
     <script src="/assets/js/plugins.bundle.min.js"></script>
-    <script src="/assets/js/tk.generic.js"></script>
-    <script src="/assets/js/tk.form.js"></script>
+    <script src="/assets/js/generic.js"></script>
+    <script src="/assets/js/login.js"></script>
 
 </body>
 

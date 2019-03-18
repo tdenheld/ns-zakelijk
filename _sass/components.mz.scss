@@ -17,6 +17,7 @@
     max-width: 500px;
     margin: 0 auto;
     padding: 0 calculate-rem(21px);
+    @extend .a, .a-fi, .a-dur-400;
 
     @include sm {
         padding: 0 2rem;
@@ -102,4 +103,14 @@
     svg {
         fill: $ns-blue;
     }
+}
+
+// recovery message
+// ----------------------------------
+.mz-recovery-message {
+    margin-bottom: $gutter;
+    padding: 21px;
+    @include font(16px, normal, $lh-copy);
+    color: $ns-blue;
+    border: 1px solid $ns-grey-alpha-15;
 }
