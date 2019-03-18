@@ -80,7 +80,7 @@ function recoveryMessage() {
         });
     };
     if (message[0]) {
-        if (data !== null) {
+        if (data !== null && email.val() !== "") {
             message.show();
         } else {
             message.hide();
