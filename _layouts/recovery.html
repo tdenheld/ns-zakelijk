@@ -2,20 +2,21 @@
 layout: default
 ---
 
-{% capture cta %} {{ page.cta }} {% endcapture %}
+{% capture cta-text %} {{ page.cta.text }} {% endcapture %}
+{% capture cta-url %} {{ page.cta.url }} {% endcapture %}
 
-<section class="mz gd-r-yellow-subtle">
-    <div class="mz-container">
+<section class="mz gd-r-yellow-subtle js-vce">
+    <div class="mz-container js-vci">
         <h1 class="mz-title">{{ page.title }}</h1>
 
-        <form action="/mijnnszakelijk/inloggen-kaarthouder" id="mz-recovery-form">
+        <form action="{{ page.cta.url }}" id="mz-recovery-form">
             {% include mz/email-recovery.html %}
 
-            {% include mz/cta.html 
-                1st=cta 
+            {% include mz/cta.html
+                1st=cta-text 
                 2nd="Terug naar inloggen"
                 buttonClass="js-recovery-button"
-                url="/mijnnszakelijk/inloggen-kaarthouder" 
+                url=cta-url
             %}
         </form>
 

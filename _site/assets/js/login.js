@@ -34,7 +34,6 @@ function login() {
 
     if (recoveryForm[0]) {
         var errorSelector = ".js-formfield-error";
-
         recoveryForm.validate({
             onkeyup: false,
             errorClass: "is-error",

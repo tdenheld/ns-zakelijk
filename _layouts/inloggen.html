@@ -2,13 +2,14 @@
 layout: default
 ---
 
-<section class="mz gd-r-yellow-subtle">
-    <div class="mz-container">
+{% capture error %} {{ page.error }} {% endcapture %}
+
+<section class="mz gd-r-yellow-subtle js-vce">
+    <div class="mz-container js-vci">
         <h1 class="mz-title">{{ page.title }}</h1>
 
         {% include mz/error.html 
-            text="Oeps! De combinatie van het e-mailadres en 
-            wachtwoord is onjuist. Probeer het nog eens." 
+            text=error 
         %}
 
         {% include mz/recovery-message.html %}
@@ -21,8 +22,9 @@ layout: default
             2nd="Terug naar overzicht"
             url="/mijnnszakelijk"
         %}
-
+        
         {{ content }}
+
         {% include mz/footer.html %}
 
     </div>

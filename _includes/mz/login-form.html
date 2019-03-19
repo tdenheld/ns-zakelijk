@@ -1,9 +1,10 @@
 <form class="mb-4">
     <div class="tk-formfield">
-        <label for="email" class="is-hidden">E-mailadres</label>
+        <label for="{{ page.input.id }}" class="is-hidden">E-mailadres</label>
         <div class="tk-input">
-            <input class="tk-input__text tk-input__text--no-border" type="email" id="email" name="email"
-                placeholder="E-mailadres" required />
+            <input class="tk-input__text tk-input__text--no-border" type="{{ page.input.type }}"
+                id="{{ page.input.id }}" name="{{ page.input.id }}" placeholder="{{ page.input.placeholder }}"
+                required />
         </div>
     </div>
 

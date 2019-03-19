@@ -2,7 +2,7 @@
     padding: $gutter 0;
     min-height: calc(100vh - 60px);
 
-    @media (min-width: $sm) and (min-height: 700px) {
+    &.is-centered {
         @include full(fixed);
         top: $navbar-height / 2;
         display: flex;
@@ -17,7 +17,9 @@
     max-width: 500px;
     margin: 0 auto;
     padding: 0 calculate-rem(21px);
-    @extend .a, .a-fi, .a-dur-400;
+    @extend .a;
+    @extend .a-fi;
+    @extend .a-dur-400;
 
     @include sm {
         padding: 0 2rem;
