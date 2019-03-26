@@ -1,12 +1,11 @@
 <form id="mz-login-form">
-    <div class="tk-formfield" id="js-formfield-{{ page.input.id }}">
+    <div class="tk-formfield">
         <label for="{{ page.input.id }}" class="is-hidden">E-mailadres</label>
         <div class="tk-input">
             <input class="tk-input__text tk-input__text--no-border" type="{{ page.input.type }}"
                 id="{{ page.input.id }}" name="{{ page.input.id }}" placeholder="{{ page.input.placeholder }}"
                 required />
         </div>
-        <label class="f14 f-red mt-1 lh-copy is-hidden js-formfield-error" for="{{ page.input.id }}"></label>
     </div>
 
     <div class="tk-formfield mb-1" id="js-formfield-password">
@@ -26,7 +25,7 @@
     </div>
 
     {% include mz/cta.html
-        buttonClass="js-submit-login"
+        buttonClass="js-login-submit"
         1st="Inloggen"
         2nd="Terug naar overzicht"
         url="/mijnnszakelijk"

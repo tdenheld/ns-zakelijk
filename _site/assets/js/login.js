@@ -1,12 +1,12 @@
 function login() {
-    var submitLogin = $(".js-submit-login");
+    var loginSubmit = $(".js-login-submit");
     var loginForm = $("#mz-login-form");
 
     if (loginForm[0]) {
         loginForm.validate({
             onkeyup: false,
             errorClass: "is-error",
-            errorPlacement: function(label, element) {
+            errorPlacement: function (label, element) {
                 label.addClass("f14 f-red mt-1 lh-copy is-hidden js-formfield-error");
                 label.insertAfter(element);
             },
@@ -20,15 +20,17 @@ function login() {
                 password: "Vul een wachtwoord in.",
             },
             submitHandler: function (form) {
-                submitLogin.addClass("is-loading");
-                $(".js-submit-loader-icon").addClass("is-active");
-                $(".js-recovery-message").slideUp(200);
-                setTimeout(() => {
-                    $(".js-form-error").slideDown(200);
-                    submitLogin.removeClass("is-loading");
-                    $(".js-submit-loader-icon").removeClass("is-active");
-                    submitLogin.blur();
-                }, 1000);
+                if (loginSubmit[0]) {
+                    loginSubmit.addClass("is-loading");
+                    $(".js-submit-loader-icon").addClass("is-active");
+                    $(".js-recovery-message").slideUp(200);
+                    setTimeout(() => {
+                        $(".js-form-error").slideDown(200);
+                        loginSubmit.removeClass("is-loading");
+                        $(".js-submit-loader-icon").removeClass("is-active");
+                        loginSubmit.blur();
+                    }, 1000)
+                };
             },
         });
     };
@@ -58,7 +60,7 @@ function recovery() {
         recoveryForm.validate({
             onkeyup: false,
             errorClass: "is-error",
-            errorPlacement: function(label, element) {
+            errorPlacement: function (label, element) {
                 label.addClass("f14 f-red mt-1 lh-copy is-hidden js-formfield-error");
                 label.insertAfter(element);
             },
@@ -74,7 +76,7 @@ function recovery() {
 };
 
 function recoveryMessage() {
-    var button = $(".js-recovery-button");
+    var button = $(".js-recovery-submit");
     var message = $(".js-recovery-message");
     var data = sessionStorage.getItem("recoveryMessage");
     var email = $("#email");
