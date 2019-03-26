@@ -192,8 +192,8 @@
 		transform: scaleY(1);
 	}
 }
-.a-si-down {animation-name: scale-in-down; transform-origin: 0 0;}
-.a-si-up {animation-name: scale-in-up; transform-origin: 100% 100%;}
+.a-si-down {animation-name: scale-in; transform-origin: 0 0;}
+.a-si-up {animation-name: scale-in; transform-origin: 100% 100%;}
 
 // out
 @keyframes fade-out {
