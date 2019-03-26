@@ -20,6 +20,7 @@
     @extend .a;
     @extend .a-fi;
     @extend .a-dur-400;
+    @extend .a-del-100;
 
     @include sm {
         padding: 0 2rem;
@@ -88,7 +89,7 @@
 .mz-tile__icon {
     display: flex;
     justify-content: center;
-    width: 48px;
+    width: 64px;
     margin-right: $half-gutter;
     line-height: 0;
 

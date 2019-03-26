@@ -1,22 +1,41 @@
 function login() {
     var submitLogin = $(".js-submit-login");
-    var password = $("#js-toggle-password");
-    var recoveryForm = $("#mz-recovery-form");
+    var loginForm = $("#mz-login-form");
 
-    if (submitLogin[0]) {
-        submitLogin.click(function () {
-            $(this).addClass("is-loading");
-            $(".js-submit-loader-icon").addClass("is-active");
-            $(".js-recovery-message").slideUp(200);
-            setTimeout(() => {
-                $(".js-form-error").slideDown(200);
-                $(this).removeClass("is-loading");
-                $(".js-submit-loader-icon").removeClass("is-active");
-                $(this).blur();
-            }, 1000);
+    if (loginForm[0]) {
+        loginForm.validate({
+            onkeyup: false,
+            errorClass: "is-error",
+            errorPlacement: function(label, element) {
+                label.addClass("f14 f-red mt-1 lh-copy is-hidden js-formfield-error");
+                label.insertAfter(element);
+            },
+            wrapper: "div",
+            messages: {
+                email: {
+                    required: "Vul een geldig e-mailadres in.",
+                    email: "Kijk nog even. Dit e-mailadres lijkt niet correct.",
+                },
+                username: "Vul een gebruikersnaam in.",
+                password: "Vul een wachtwoord in.",
+            },
+            submitHandler: function (form) {
+                submitLogin.addClass("is-loading");
+                $(".js-submit-loader-icon").addClass("is-active");
+                $(".js-recovery-message").slideUp(200);
+                setTimeout(() => {
+                    $(".js-form-error").slideDown(200);
+                    submitLogin.removeClass("is-loading");
+                    $(".js-submit-loader-icon").removeClass("is-active");
+                    submitLogin.blur();
+                }, 1000);
+            },
         });
     };
+};
 
+function password() {
+    var password = $("#js-toggle-password");
     if (password[0]) {
         password.click(() => {
             password.toggleClass("is-active");
@@ -31,19 +50,25 @@ function login() {
             };
         });
     };
+};
 
+function recovery() {
+    var recoveryForm = $("#mz-recovery-form");
     if (recoveryForm[0]) {
-        var errorSelector = ".js-formfield-error";
         recoveryForm.validate({
             onkeyup: false,
             errorClass: "is-error",
-            errorLabelContainer: errorSelector,
+            errorPlacement: function(label, element) {
+                label.addClass("f14 f-red mt-1 lh-copy is-hidden js-formfield-error");
+                label.insertAfter(element);
+            },
+            wrapper: "div",
             messages: {
                 email: {
-                    required: "Sorry, we hebben echt een e-mailadres van je nodig.",
-                    email: "Kijk nog even. Dit e-mailadres lijkt niet correct."
-                }
-            }
+                    required: "Vul een geldig e-mailadres in.",
+                    email: "Kijk nog even. Dit e-mailadres lijkt niet correct.",
+                },
+            },
         });
     };
 };
@@ -88,5 +113,7 @@ function recoveryMessage() {
 
 $(function () {
     login();
+    password();
+    recovery();
     recoveryMessage();
 });

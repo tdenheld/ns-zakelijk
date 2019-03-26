@@ -1543,23 +1543,22 @@
          Oeps! De combinatie van je gebruikersnaam en wachtwoord is onjuist. Probeer het nog eens. 
     </p>
 </div>
-
         <div class="mz-recovery-message is-hidden js-recovery-message">
     We hebben een e-mail gestuurd naar <span class="fw-b">jan.janssen@ns.nl</span> met je gebruikersnaam
     en een link om een nieuw wachtwoord aan te maken.
 </div>
-
-        <form class="mb-4">
-    <div class="tk-formfield">
+        <form id="mz-login-form">
+    <div class="tk-formfield" id="js-formfield-username">
         <label for="username" class="is-hidden">E-mailadres</label>
         <div class="tk-input">
             <input class="tk-input__text tk-input__text--no-border" type="text"
                 id="username" name="username" placeholder="Gebruikersnaam"
                 required />
         </div>
+        <label class="f14 f-red mt-1 lh-copy is-hidden js-formfield-error" for="username"></label>
     </div>
 
-    <div class="tk-formfield mb-1">
+    <div class="tk-formfield mb-1" id="js-formfield-password">
         <label for="password" class="is-hidden">Wachtwoord</label>
         <div class="tk-input">
             <input class="tk-input__text tk-input__text--no-border" type="password" id="password" name="password"
@@ -1570,10 +1569,12 @@
             </label>
         </div>
     </div>
-    <a href="/mijnnszakelijk/gegevens-vergeten" class="unlink tk-link-blue f14">Inloggegevens vergeten?</a>
-</form>
 
-        <div class="mz-cta mb-3">
+    <div class="mb-4">
+        <a href="/mijnnszakelijk/gegevens-vergeten" class="unlink tk-link-blue f14">Inloggegevens vergeten?</a>
+    </div>
+
+    <div class="mz-cta mb-3">
     <a href="/mijnnszakelijk" class="unlink f-light-blue fw-b">Terug naar overzicht</a>
     <button class="button btn btn--pill btn--login js-submit-login" type="submit">
         <span class="btn__content">Inloggen</span>
@@ -1582,9 +1583,8 @@
         </div>
     </button>
 </div>
+</form>
         
-        
-
         <div class="bo-b-a15 mt-6 mb-1"></div>
 <div class="f-a60 f12">
     <a class="unlink">Voorwaarden</a>
