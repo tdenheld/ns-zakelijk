@@ -9,7 +9,12 @@ layout: default
         <h1 class="mz-title">{{ page.title }}</h1>
 
         {% include mz/error.html text=error %}
-        {% include mz/recovery-message.html %}
+
+        <div class="mz-recovery-message is-hidden js-recovery-message">
+            We hebben een e-mail gestuurd naar <span class="fw-b">jan.janssen@ns.nl</span> met je gebruikersnaam
+            en een link om een nieuw wachtwoord aan te maken.
+        </div>
+        
         {% include mz/login-form.html %}
         {{ content }}
         {% include mz/footer.html %}

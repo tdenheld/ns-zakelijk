@@ -5,6 +5,11 @@
     <div class="mz-container js-vci">
         <h1 class="mz-title">Hoe wil je inloggen op <span class="no-wrap">Mijn NS Zakelijk?</span></h1>
 
+        <div class="mz-recovery-message is-hidden js-recovery-message">
+            Indien uw e-mailadres bij ons bekend is, hebben we een link om uw account te activeren verstuurd naar 
+            <span class="fw-b">jan.janssen@ns.nl</span>.
+        </div>
+
         <div class="mb-3">
             {% include mz/tile.html
             url='/mijnnszakelijk/inloggen-contactpersoon'
@@ -21,10 +26,10 @@
             %}
         </div>
 
-        <a href="/mijnnszakelijk/aanmelden" class="unlink tk-link-blue">
+        <a href="/mijnnszakelijk/aanvragen" class="unlink tk-link-blue js-clear-session">
             Ik heb geen account
         </a>
-        
+
         {% include mz/footer.html %}
 
     </div>
