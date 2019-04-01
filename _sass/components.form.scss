@@ -13,6 +13,12 @@ $bs-autofill;
     margin-bottom: $half-gutter;
 }
 
+.tk-formfield__error {
+    margin: 4px 0 0;
+    @include font(14px, normal, $lh-copy);
+    color: $ns-red-alert;
+}
+
 .tk-input {
     position: relative;
 }

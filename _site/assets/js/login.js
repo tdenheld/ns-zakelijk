@@ -1,20 +1,26 @@
 function login() {
-    var loginSubmit = $(".js-login-submit");
-    var loginForm = $("#mz-login-form");
+    const loginSubmit = $(".js-login-submit");
+    const loginForm = $("#js-login-form");
+    const recoveryForm = $("#js-recovery-form");
+    const formField = $(".js-formfield");
+
+    const errorLabelClass = "tk-formfield__error is-hidden js-formfield-error";
+    const emailRequiredMessage = "Vul een geldig e-mailadres in.";
+    const emailNotValidMessage = "Kijk nog even. Dit e-mailadres lijkt niet correct.";
 
     if (loginForm[0]) {
         loginForm.validate({
             onkeyup: false,
             errorClass: "is-error",
             errorPlacement: function (label, element) {
-                label.addClass("f14 f-red mt-1 lh-copy is-hidden js-formfield-error");
+                label.addClass(errorLabelClass);
                 label.insertAfter(element);
             },
             wrapper: "div",
             messages: {
                 email: {
-                    required: "Vul een geldig e-mailadres in.",
-                    email: "Kijk nog even. Dit e-mailadres lijkt niet correct.",
+                    required: emailRequiredMessage,
+                    email: emailNotValidMessage,
                 },
                 username: "Vul een gebruikersnaam in.",
                 password: "Vul een wachtwoord in.",
@@ -34,10 +40,37 @@ function login() {
             },
         });
     };
+
+    if (recoveryForm[0]) {
+        recoveryForm.validate({
+            onkeyup: false,
+            errorClass: "is-error",
+            errorPlacement: function (label, element) {
+                label.addClass(errorLabelClass);
+                label.insertAfter(element);
+            },
+            wrapper: "div",
+            messages: {
+                email: {
+                    required: emailRequiredMessage,
+                    email: emailNotValidMessage,
+                },
+            },
+        });
+    };
+
+    // remove error on key up
+    if (formField[0]) {
+        formField.each(function () {
+            $("input", this).keyup(() => {
+                $(".js-formfield-error", this).slideUp(200);
+            });
+        });
+    };
 };
 
-function password() {
-    var password = $("#js-toggle-password");
+function togglePassword() {
+    const password = $("#js-toggle-password");
     if (password[0]) {
         password.click(() => {
             password.toggleClass("is-active");
@@ -54,34 +87,13 @@ function password() {
     };
 };
 
-function recovery() {
-    var recoveryForm = $("#mz-recovery-form");
-    if (recoveryForm[0]) {
-        recoveryForm.validate({
-            onkeyup: false,
-            errorClass: "is-error",
-            errorPlacement: function (label, element) {
-                label.addClass("f14 f-red mt-1 lh-copy is-hidden js-formfield-error");
-                label.insertAfter(element);
-            },
-            wrapper: "div",
-            messages: {
-                email: {
-                    required: "Vul een geldig e-mailadres in.",
-                    email: "Kijk nog even. Dit e-mailadres lijkt niet correct.",
-                },
-            },
-        });
-    };
-};
-
 function recoveryMessage() {
-    var button = $(".js-recovery-submit");
-    var message = $(".js-recovery-message");
-    var data = sessionStorage.getItem("recoveryMessage");
-    var email = $("#email");
-    var emailRecovery = $("#email-recovery");
-    var label = $(".js-recovery-message span");
+    const button = $(".js-recovery-submit");
+    const message = $(".js-recovery-message");
+    const data = sessionStorage.getItem("recoveryMessage");
+    const email = $("#email");
+    const emailRecovery = $("#email-recovery");
+    const label = $(".js-recovery-message span");
 
     function setGetEmail(obj) {
         if (obj[0]) {
@@ -115,7 +127,6 @@ function recoveryMessage() {
 
 $(function () {
     login();
-    password();
-    recovery();
+    togglePassword();
     recoveryMessage();
 });
