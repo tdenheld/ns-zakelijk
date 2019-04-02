@@ -25,7 +25,6 @@ updateWindowSize();
 // update when resizing
 $(window).resize(function () {
     updateWindowSize();
-    verticalCenter();
 });
 
 
@@ -63,22 +62,6 @@ $(function () {
     clearSession();
 });
 
-
-
-// dynamic vertical center element
-// ------------------------------------------------------------
-function verticalCenter() {
-    var exec = $(".js-vce");
-    var indicator = $(".js-vci");
-    if (indicator[0]) {
-        if (vh >= indicator.innerHeight() + 200 && vw >= 640) {
-            exec.addClass("is-centered");
-        } else {
-            exec.removeClass("is-centered");
-        };
-    };
-};
-verticalCenter();
 
 
 

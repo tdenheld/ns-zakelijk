@@ -2,13 +2,15 @@
     padding: $gutter 0;
     min-height: calc(100vh - 60px);
 
-    &.is-centered {
-        @include full(fixed);
-        top: $navbar-height / 2;
+    @media (min-width: $sm) and (min-height: 700px) {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: initial;
+        min-height: auto;
     }
 }
 
