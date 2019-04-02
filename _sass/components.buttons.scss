@@ -73,6 +73,7 @@
     svg {
         fill: $ns-grey-5;
         animation: rotate $loader-speed linear infinite;
+        transition: $fade-link;
     }
 
     &.is-active {
@@ -103,7 +104,6 @@
     .btn__loader-icon {
         svg {
             fill: $ns-white;
-            animation: rotate $loader-speed linear infinite;
         }
     }
 }
