@@ -1,0 +1,15 @@
+// Uitgestelde betaling
+// --------------------------------------
+// --------------------------------------
+
+.ub__container {
+    margin: $gutter auto;
+    padding: 21px;
+    max-width: 772px;
+    background-color: $ns-white;
+    box-shadow: $box-shadow-container;
+
+    @include sm {
+        padding: 2rem;
+    }
+}

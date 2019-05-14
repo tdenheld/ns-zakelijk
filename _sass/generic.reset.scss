@@ -54,6 +54,7 @@ video {
   margin: 0;
   background: transparent;
   font-size: 100%;
+  line-height: 1.5;
   font-weight: inherit;
   color: inherit;
   vertical-align: baseline;
@@ -83,4 +84,5 @@ html {
 img,
 object {
   max-width: 100%;
+  vertical-align: middle;
 }
