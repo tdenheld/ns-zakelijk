@@ -20,6 +20,7 @@ $ns-blue-4: 				mix(#fff, $ns-light-blue, 90%);
 $ns-yellow: 				#ffc917;
 $ns-yellow-2: 				#ffb519;
 $ns-yellow-light:           mix(#fff, $ns-yellow, 85%);
+$ns-yellow-gradient:        radial-gradient(circle at 50% 50%, #FFD342 0%, $ns-yellow 100%);
 
 $ns-orange: 				#ff7700;
 $ns-ovchip: 				#ff0098;
