@@ -1535,7 +1535,136 @@
         <section class="ub">
     <div class="container ub__container">
         <h1 class="headingXL fw-normal mb-2 mb-4-sm">Maak uw overeenkomst aan</h1>
-        <hr>
+        <hr class="mb-3">
+        <fieldset class="formfield">
+            <legend class="formfield__label">Factuurperiode</legend>
+            <div class="formfield__inputContainer">
+                <ul class="list formfield__inputGroup">
+                    <li class="list__item formfield__inputGroupItem">
+                        <div class="radioButton">
+                            <input type="radio" class="radioButton__input" id="input1" name="periode" checked>
+                            <label class="radioButton__label" for="input1" tabindex="-1">Maand</label>
+                        </div>
+                    </li>
+                    <li class="list__item formfield__inputGroupItem">
+                        <div class="radioButton">
+                            <input type="radio" class="radioButton__input" id="input2" name="periode">
+                            <label class="radioButton__label" for="input2" tabindex="-1">Jaar</label>
+                        </div>
+                    </li>
+                </ul>
+                <a href="javascript:void(0)" class="toolTip formfield__toolTip" data-controller="generic/ui/ToolTip">
+                    <span class="toolTip--hidden">
+                        Als u kiest voor [Jaar], blijft u maandelijks een factuur ontvangen voor de reistransacties. U
+                        betaalt dan alleen de abonnementskosten per jaar.
+                    </span>
+                </a>
+                <div class="mt-2 f14 f-grey-4">
+                    <p class="mb-2">
+                        Let op: Uw keuze geldt voor al uw abonnementen. U kunt de betaling van de abonnementskosten
+                        tussentijds in Mijn NS Zakelijk wijzigen via Bedrijfsgegevens.
+                    </p>
+                    <p>
+                        Ongeacht uw keuze ontvangt u maandelijks een factuur voor uw reistransacties.
+                    </p>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="formfield">
+            <legend class="formfield__label">Digitale incassomachtiging</legend>
+            <div class="formfield__inputContainer pt-1">
+                <div class="tk-selector">
+    <!-- option 1 -->
+    <div class="tk-selector__item js-selector-item">
+        <header class="g g-1-m items-center">
+            <div>
+                <h3 class="tk-selector__title">Nu bankrekening bevestingen</h3>
+                <p class="tk-selector__description">Met een iDEAL-betaling van € 0,01</p>
+            </div>
+        </header>
+
+        <div class="is-hidden js-selector-content">
+            <div class="mt-2">
+                <select class="select ub__select">
+                    <option>Kies uw bank</option>
+                    <option>ABN AMRO</option>
+                    <option>ASN Bank</option>
+                    <option>Rabobank</option>
+                    <option>ING</option>
+                    <option>Handelsbanken</option>
+                    <option>Bunq</option>
+                    <option>Van Lanschot</option>
+                    <option>Volksbank</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- option 2 -->
+    <div class="tk-selector__item js-selector-item">
+        <header class="g g-1-m items-center">
+            <div>
+                <h3 class="tk-selector__title">Later bevestigen</h3>
+                <p class="tk-selector__description">
+                    De bestelling voorlopig afronden en later
+                    € 0,01 via iDEAL betalen
+                </p>
+            </div>
+        </header>
+
+        <div class="is-hidden js-selector-content">
+            <hr class="mt-2">
+            <div class="mt-2">
+                U ontvangt een e-mail met link voor de iDEAL-betaling op <b>henk@ns.nl</b>.
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </fieldset>
+
+        <fieldset class="formfield mb-2 js-pay-now">
+            <legend class="formfield__label"></legend>
+            <div class="formfield__inputContainer">
+                <div class="checkbox formfield__checkbox tk-formfield__checkbox">
+                    <input required type="checkbox" class="checkbox__input" id="checkbox1" name="checkbox1">
+                    <label class="checkbox__label" for="checkbox1" tabindex="-1">Ik geef toestemming voor:</label>
+                </div>
+                <p class="pl-4 pt-1 f12">
+                    Het automatisch incasseren van de NS-Business Cardfacturen door NS Groep
+                    N.V. inzake NS Reizigers B.V. en toestemming aan de bank om doorlopend een bedrag van mijn rekening
+                    af te schrijven overeenkomstig met de opdracht van NS Groep N.V. inzake NS Reizigers B.V. De
+                    gegevens van de incassant zijn: Creditor ID: NL03 ZZZ 30124358 0000. Naam: NS Groep iz NS Reizigers.
+                    Adres: Laan van Puntenburg 100 3511 ER Utrecht te Nederland. Als u het niet eens bent met deze
+                    afschrijving kunt u deze laten terugboeken. Neem hiervoor binnen 8 weken na afschrijving contact op
+                    met uw bank. Vraag uw bank naar de voorwaarden.
+                </p>
+            </div>
+        </fieldset>
+
+        <fieldset class="formfield">
+            <legend class="formfield__label"></legend>
+            <div class="formfield__inputContainer">
+                <div class="checkbox formfield__checkbox tk-formfield__checkbox">
+                    <input required type="checkbox" class="checkbox__input" id="checkbox2" name="checkbox2">
+                    <label class="checkbox__label" for="checkbox2" tabindex="-1">Ik ga akkoord met:</label>
+                </div>
+                <ul class="pl-4 pt-1 mb-0 f12 lh-copy">
+                    <li>NS-Business Card <a class="tk-link">overeenkomst</a></li>
+                    <li><a class="tk-link">Productvoorwaarden</a> NS-Business Card</li>
+                    <li><a class="tk-link">Algemene voorwaarden</a> voor het vervoer van Reizigers en Handbagage van de
+                        Nederlandse Spoorwegen (AVR-NS)</li>
+                    <li><a class="tk-link">Productvoorwaarden</a> OV-fiets</li>
+                </ul>
+            </div>
+        </fieldset>
+
+        <hr class="mb-2">
+        <div class="g g-1-m items-center">
+            <a class="arrowLink arrowLink--back">Terug</a>
+            <button class="button button--nsYellow button--arrowRight">Voorlopig afronden</button>
+        </div>
     </div>
 </section>
     </div>
@@ -1722,7 +1851,8 @@
     <script src="/assets/js/ns.generic.min.js"></script>
     <script src="/assets/js/plugins.bundle.min.js"></script>
     <script src="/assets/js/generic.js"></script>
-    <script src="/assets/js/login.js"></script>
+    <script src="/assets/js/mz.js"></script>
+    <script src="/assets/js/ub.js"></script>
 
 </body>
 

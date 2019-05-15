@@ -13,3 +13,14 @@
         padding: 2rem;
     }
 }
+
+.ub__select {
+    position: relative;
+    padding-right: $gutter;
+    width: 100%;
+
+    @include xs {
+        width: auto;
+        min-width: 300px;
+    }
+}
