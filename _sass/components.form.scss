@@ -221,6 +221,48 @@ $bs-autofill;
 
 
 
+// radio button
+// ------------------------------------
+.tk-formfield__radio {
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.tk-ff__radio--card {
+    padding-right: 16px;
+    max-width: 280px;
+}
+
+.radioButton__input+.radioButton__label:before {
+    outline: none !important;
+    border: $input-border;
+    transition: $fade-link;
+}
+
+.radioButton__input:focus+.radioButton__label:before {
+    border: 1px solid $ns-light-blue !important;
+    box-shadow: $bs-focus;
+}
+
+.radioButton__input.is-error+.radioButton__label:before {
+    border: 1px solid $ns-red-alert !important;
+}
+
+.radioButton__input:checked+.radioButton__label:after {
+    background-color: $ns-green-sexy;
+}
+
+.no-touch {
+    .radioButton__input:hover+.radioButton__label:before {
+        border: $input-border-hover;
+    }
+}
+
+
+
 // hide up and down arrows
 // ----------------------------------------
 input[type="number"]::-webkit-outer-spin-button,
