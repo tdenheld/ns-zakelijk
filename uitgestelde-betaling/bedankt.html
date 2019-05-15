@@ -1,0 +1,43 @@
+---
+---
+
+<section>
+    <div class="container ub-container">
+        <h1 class="headingXL fw-normal mb-2 mb-4-sm">Bedankt voor uw bestelling</h1>
+
+        <p class="f-blue f20 mb-2">Het referentienummer van uw bestelling is <b>81554512</b></p>
+        <p class="mb-4">Met dit nummer kunnen wij uw bestelling herkennen als er vragen zijn. U ontvangt dit nummer ook
+            in de bevestigingsmail.</p>
+        <hr class="mb-4 mb-6-sm">
+        <h2 class="headingM fw-normal mb-4">Dit kunt u verwachten</h2>
+        <div class="mb-4 mb-6-sm">
+            <div class="ub-thanks">
+                <div class="hidden-xs">
+                    {% include icons/mail--large.svg %}
+                </div>
+                <div class="visible-xs pos-r top-2px">
+                    {% include icons/mail--small.svg %}
+                </div>
+                <div>
+                    <p class="f-blue fw-b">U ontvangt een bevestiging per e&#8209;mail</p>
+                    <p>mariekevannimwegen@outlook.com</p>
+                </div>
+            </div>
+            <div class="ub-thanks">
+                <div class="hidden-xs pos-r top-2px">
+                    {% include icons/chat--large.svg %}
+                </div>
+                <div class="visible-xs pos-r top-5px">
+                    {% include icons/chat--small.svg %}
+                </div>
+                <div>
+                    <p class="f-blue fw-b">Heeft u nog vragen?</p>
+                    <p>We helpen u graag verder. Bel ons op <b>030 - 300 11 11</b>.</p>
+                </div>
+            </div>
+        </div>
+        {% include ub/cta.html
+        url="/uitgestelde-betaling/bedankt" 
+        button="Startpagina" %}
+    </div>
+</section>

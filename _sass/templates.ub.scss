@@ -2,19 +2,20 @@
 // --------------------------------------
 // --------------------------------------
 
-.ub__container {
-    margin: $gutter auto;
+.ub-container {
+    margin: 10px auto;
     padding: 21px;
     max-width: 772px;
     background-color: $ns-white;
     box-shadow: $box-shadow-container;
 
     @include sm {
+        margin: $gutter auto;
         padding: 2rem;
     }
 }
 
-.ub__select {
+.ub-select {
     position: relative;
     padding-right: $gutter;
     width: 100%;
@@ -22,5 +23,24 @@
     @include xs {
         width: auto;
         min-width: 300px;
+    }
+}
+
+.ub-thanks {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    margin-bottom: $gutter;
+
+    @include sm {
+        align-items: center;
+        grid-template-columns: 64px 1fr;
+    }
+
+    svg  {
+        fill: $ns-blue;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
     }
 }
