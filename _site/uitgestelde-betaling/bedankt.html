@@ -26,7 +26,7 @@
 
 <body>
 
-    <header class="header" data-controller="generic/ui/Header" data-noindex="true">
+    <header class="header js-header" data-controller="generic/ui/Header" data-noindex="true">
     <div class="container header__content">
         <a href="#mainContent" class="button header__skiplink" data-controller="generic/ui/SmoothScroll">
         Naar content</a>
@@ -1531,10 +1531,11 @@
         </ul>
     </div>
 </header>
-    <div class="content">
-        <section>
+    <div class="content js-content">
+        <section class="a a-fi-right-small">
     <div class="container ub-container">
 
+        <h1 class="headingXL mb-2 mb-4-sm">Bedankt voor uw bestelling</h1>
         <div class="tk-notification">
     <p class="fw-b">
         Bestelling is nog niet voltooid.
@@ -1544,7 +1545,6 @@
         0,01 is voldaan, wordt de definitieve overeenkomst per e&#8209;mail naar u toegestuurd.
     </p>
 </div>
-        <h1 class="headingXL fw-normal mb-2 mb-4-sm">Bedankt voor uw bestelling</h1>
 
         <p class="f-blue f20 mb-2">Het referentienummer van uw bestelling is <b>81554512</b></p>
         <p class="mb-4">Met dit nummer kunnen wij uw bestelling herkennen als er vragen zijn. U ontvangt dit nummer ook
@@ -1583,13 +1583,13 @@
     <div>
         
     </div>
-    <a href="https://ns.nl/zakelijk" class="button button--nsYellow ">Startpagina</a>
+    <a href="/uitgestelde-betaling/betalen" class="button button--nsYellow ">Startpagina</a>
 </div>
     </div>
 </section>
     </div>
     
-    <footer class="footer " data-noindex="true">
+    <footer class="footer  js-footer" data-noindex="true">
     <div class="container">
         <div class="grid footer__grid" data-controller="generic/ui/ResponsiveGrid" data-type="footermenu">
             <div class="grid__unit footer__grid-unit m-6-12 l-3-12 is-ready" data-type="topfootermenuitem"
@@ -1764,6 +1764,8 @@
         </div>
     </div>
 </footer>
+    
+
     
 
 

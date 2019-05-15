@@ -1,0 +1,46 @@
+---
+full-screen-loader: true
+---
+
+<section class="a a-fi-right-small">
+    <div class="container ub-container">
+        <h1 class="headingXL mb-2">Digitale incasso machtiging</h1>
+        <p class="mb-6">
+            Boek nu € 0,01 over via iDEAL om uw bankrekening te bevestigen voor automatisch incasso. Scheelt weer
+            papierwerk.
+        </p>
+        <h2 class="headingM">Eerst even akkoord gaan</h2>
+        <fieldset class="mb-6">
+            <div class="checkbox formfield__checkbox tk-formfield__checkbox">
+                <input required type="checkbox" class="checkbox__input" id="checkbox1" name="checkbox1">
+                <label class="checkbox__label" for="checkbox1" tabindex="-1">Ik geef toestemming voor:</label>
+            </div>
+            <p class="pl-4 pt-1 f12">
+                Het automatisch incasseren van de NS-Business Cardfacturen door NS Groep
+                N.V. inzake NS Reizigers B.V. en toestemming aan de bank om doorlopend een bedrag van mijn rekening
+                af te schrijven overeenkomstig met de opdracht van NS Groep N.V. inzake NS Reizigers B.V. De
+                gegevens van de incassant zijn: Creditor ID: NL03 ZZZ 30124358 0000. Naam: NS Groep iz NS Reizigers.
+                Adres: Laan van Puntenburg 100 3511 ER Utrecht te Nederland. Als u het niet eens bent met deze
+                afschrijving kunt u deze laten terugboeken. Neem hiervoor binnen 8 weken na afschrijving contact op
+                met uw bank. Vraag uw bank naar de voorwaarden.
+            </p>
+        </fieldset>
+
+        <h2 class="headingM mb-3">Kies uw bank en betaal</h2>
+        <div class="tk-banks">
+            {% for banks in site.data.app.banks %}
+            <a class="tk-link-reset js-bank">
+                <div class="tk-banks__item">
+                    <img src="/assets/img/payment/{{ banks.icon }}.svg" class="w-100" />
+                    <div class="tk-banks__title js-bank-set">
+                        {{ banks.title }}
+                    </div>
+                    <span class="lh-none">
+                        {% include /icons/chevron-m--small.svg %}
+                    </span>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>

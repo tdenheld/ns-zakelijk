@@ -27,12 +27,16 @@
 <body>
 
     {% include header.html %}
-    <div class="content">
+    <div class="content js-content">
         {{ content }}
     </div>
     {% unless page.no-footer %}
     {% include footer.html %}
     {% endunless %}
+
+    {% if page.full-screen-loader %}
+    {% include ub/full-screen-loader.html class="js-bank-loader" %}
+    {% endif %}
 
 
     <!-- JAVASCRIPT -->

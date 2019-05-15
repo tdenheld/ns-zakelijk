@@ -1,0 +1,25 @@
+banks:
+- title: ABN AMRO
+  icon: abn
+- title: ASN Bank
+  icon: asn
+- title: bunq
+  icon: bunq
+- title: Handelsbanken
+  icon: handelsbanken
+- title: ING
+  icon: ing
+- title: Knab
+  icon: knab
+- title: Moneyou
+  icon: moneyou
+- title: Rabobank
+  icon: rabobank
+- title: RegioBank
+  icon: regiobank
+- title: SNS
+  icon: sns
+- title: Triodos Bank
+  icon: triodos
+- title: van Lanschot
+  icon: lanschot
