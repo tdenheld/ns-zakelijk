@@ -27,7 +27,7 @@
 <body>
 
     {% include header.html %}
-    <div class="content js-content">
+    <div class="content js-content {{ page.bg }}">
         {{ content }}
     </div>
     {% unless page.no-footer %}

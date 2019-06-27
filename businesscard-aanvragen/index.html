@@ -1,0 +1,32 @@
+---
+layout: default
+bg: bg-grey-8
+---
+
+
+<section class="abo-hero a a-fi">
+    <div class="container container--narrow">
+        <div class="mxw-600">
+            <h1 class="f28 f48-sm lh-title f-blue mb-4">Stel uw NS-Business Card samen</h1>
+            <ul class="mb-0">
+                <li>1 kaart voor het zakelijk openbaar vervoer</li>
+                <li>Achteraf betalen voor gemaakte reizen via 1 factuur</li>
+                <li>Toegang tot alle deur-tot-deur diensten</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="pb-4 pb-8-sm">
+    <div class="container container--narrow">
+        <div class="g g-1-m-sm gap-2 mb-3 a a-fi a-del-100">
+            <div class="f-grey-4 f14">Alle genoemde prijzen zijn excl. BTW</div>
+            <div><span class="tk-link-icon">{% include icons/info--small.svg %} Spitstijden</span></div>
+        </div>
+        <div class="abo-grid">
+            {% for entry in site.data.abos %}
+            {% include ba/abo-tile.html %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

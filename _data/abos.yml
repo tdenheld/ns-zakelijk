@@ -1,0 +1,60 @@
+- title: Zonder Abonnement
+  details:
+  - Reizen voor de volle mep
+  price: 0
+  period: mnd
+
+- title: Weekend Voordeel
+  details:
+  - 40% korting in het weekend
+  price: 2
+  period: mnd
+
+- title: Dal Voordeel
+  details:
+  - 40% korting in het weekend
+  - 40% korting buiten de spits
+  price: 5
+  period: mnd
+
+- title: Altijd Voordeel
+  details:
+  - 40% korting in het weekend
+  - 40% korting buiten de spits
+  - 20% korting in de spits
+  price: 24
+  period: mnd
+
+- title: Weekend Vrij
+  details:
+  - Onbeperkt reizen in het weekend
+  price: 32
+  period: mnd
+
+- title: Dal Vrij
+  details:
+  - Onbeperkt reizen in het weekend
+  - Onbeperkt reizen buiten de spits
+  price: 106
+  period: mnd
+
+- title: Altijd Vrij
+  details:
+  - Onbeperkt reizen in het weekend
+  - Onbeperkt reizen buiten de spits
+  - Onbeperkt reizen in de spits
+  price: 347
+  period: mnd
+
+- title: Traject Vrij
+  details:
+  - Onbeperkt reizen op een vast traject
+  - 40% korting op andere trajecten
+  price-message: Prijs trajectafhankelijk
+
+- title: Voordeeluren&shy;abonnement
+  details:
+  - 40% korting na 09.00
+  - 40% korting  in het weekend
+  price: 67
+  period: jaar

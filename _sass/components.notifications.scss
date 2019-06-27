@@ -10,6 +10,6 @@
     color: $ns-blue;
 
     @include sm {
-        font-size: calculate-rem(16px);
+        font-size: toRem(16px);
     }
 }

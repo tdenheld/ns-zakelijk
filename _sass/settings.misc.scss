@@ -4,6 +4,7 @@
 
 $ease:						cubic-bezier(0.700, 0.270, 0.270, 1);
 $easeInOutExpo:				cubic-bezier(1.000, 0.000, 0.000, 1);
+$ease-out:			        cubic-bezier(0.200, 0.900, 0.400, 1);
 $fade-all: 					all 300ms $ease;
 $fade-link:                 all 200ms $ease;
 $loader-speed:              800ms;
@@ -17,6 +18,7 @@ $loader-speed:              800ms;
 $xxs: 359px;
 $xs: 480px;
 $sm: 640px;
+$m: 768px;
 $md: 912px;
 $lg: 1200px;
 
@@ -56,6 +58,7 @@ $lh-solid: 1;
 $navbar-height: 			60px;
 $subnav-breakpoint:			822px;
 $button-height:				45px;
+$border-radius:             4px;
 
 $box-shadow-soft:			0 2px 35px rgba($ns-black, 0.1);
 $box-shadow-medium:			0 5px 35px rgba($ns-black, 0.15);

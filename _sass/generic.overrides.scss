@@ -25,7 +25,7 @@
 
 .notificationBar__text {
     @include sm-max {
-        font-size: calculate-rem(14px);
+        font-size: toRem(14px);
     }
 }
 

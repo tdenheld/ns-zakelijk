@@ -1,0 +1,11 @@
+.container--narrow {
+    padding: 0 14px;
+
+    @include sm {
+        padding: 0 2rem;
+    }
+}
+
+.center {
+    @include center(flex);
+}
