@@ -1,13 +1,16 @@
-<a href="{{ result.url }}" class="unlink abo-tile {% if result.highlight %}abo-tile--hightlight{% endif %} a a-fi a-stag">
-    {% if result.highlight %}
+<a href="{{ entry.url }}" 
+   class="unlink abo-tile {{ entry.modifier }} {% if entry.highlight %}abo-tile--hightlight{% endif %} a a-fi a-stag"
+   style="{{ entry.style }}">
+
+    {% if entry.highlight %}
     <div class="abo-tile__highlight">
-        {{ result.highlight }}
+        {{ entry.highlight }}
     </div>
     {% endif %}
-    <div class="{% unless entry.price-message %}abo-tile__grid{% endunless %}">
+    <div class="pos-r {% unless entry.price-message %}abo-tile__grid{% endunless %}">
         <div>
             <div class="abo-tile__grid">
-                <h2 class="f-blue f18 f20-sm lh-title mb-1">{{ entry.title }}</h2>
+                <h2 class="abo-tile__heading mb-1">{{ entry.title }}</h2>
                 {% if entry.price-message %}
                 <p class="f14 f-blue txt-r ml-2">{{ entry.price-message }}</p>
                 {% endif %}
@@ -20,7 +23,7 @@
         </div>
         {% unless entry.price-message %}
         <div class="txt-r no-wrap ml-2">
-            <h3 class="f-blue fw-b f18 f20-sm lh-title">€ {{ entry.price }}</h3>
+            <h3 class="abo-tile__heading">€ {{ entry.price }}</h3>
             <p class="f14 f-blue">/ {{ entry.period }}</p>
         </div>
         {% endunless %}
