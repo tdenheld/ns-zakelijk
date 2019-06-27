@@ -1,8 +1,8 @@
-- title: Geen abonnement
-  details:
-  - Reizen op rekening zonder abonnement
-  price: 0
-  period: mnd
+# - title: Geen abonnement
+#   details:
+#   - Reizen op rekening zonder abonnement
+#   price: 0
+#   period: mnd
 
 - title: Dal abonnement
   details:
@@ -28,7 +28,7 @@
   - Samenreiskorting
   price: 317
   period: mnd
-  #modifier: abo-tile--dimmed
+  modifier: abo-tile--dimmed
 
 - title: OV Vrij abonnement
   details:
@@ -36,4 +36,4 @@
   - Samenreiskorting
   price: '370,85'
   period: mnd
-  #modifier: abo-tile--dimmed
+  modifier: abo-tile--dimmed

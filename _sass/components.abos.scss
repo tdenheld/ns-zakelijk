@@ -36,7 +36,7 @@
     }
 
     @include lg {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -79,10 +79,6 @@
 }
 
 .abo-tile--dimmed {
-    &:before {
-        background-color: rgba($ns-white, 0.5);
-    }
-
     .abo-tile__heading {
         font-size: toRem(16px);
         font-weight: normal;
