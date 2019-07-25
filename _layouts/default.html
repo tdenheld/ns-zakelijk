@@ -27,11 +27,16 @@
 <body>
 
     {% include header.html %}
-    <div class="content js-content {{ page.bg }}">
+    <div class="content js-content {{ page.bg }} {% if page.footer-light %}content--footer-light{% endif %}">
         {{ content }}
     </div>
+
     {% unless page.no-footer %}
-    {% include footer.html %}
+        {% if page.footer-light %}
+            {% include footer-light.html %}
+        {% else %}
+            {% include footer.html %}
+        {% endif %}
     {% endunless %}
 
     {% if page.full-screen-loader %}

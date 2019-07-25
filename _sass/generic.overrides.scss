@@ -3,8 +3,15 @@
 -------------------*/
 
 .content {
+    background-color: $ns-grey-8;
     margin-top: $navbar-height - 1;
     min-height: calc(100vh - 500px);
+}
+
+.content--footer-light {
+    @include md {
+        min-height: calc(100vh - 140px);
+    }
 }
 
 .list__item {

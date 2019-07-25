@@ -1,18 +1,23 @@
 ---
-bg: bg-grey-8
+title: NS Zakelijk Prototypes
+links:
+ - text: Mijn NS Zakelijk
+   url: /mijnnszakelijk
+ - text: Uitgestelde betaling
+   url: /uitgestelde-betaling
+ - text: Aanvragen NS-Business Card
+   url: /businesscard-aanvragen
+ - text: ZZP Campagne 2019
+   url: /zzp
 ---
 
 <div class="container">
     <section class="mv-4 mv-8-sm pa-2r">
-        <h1 class="headingXXL mb-4">NS Zakelijk Prototypes</h1>
+        <h1 class="tk-heading">{{ page.title }}</h1>
+        {% for link in page.links %}
         <p class="mb-1">
-            <a href="/mijnnszakelijk" class="arrowLink">Mijn NS Zakelijk</a>
+            <a href="{{ link.url }}" class="arrowLink">{{ link.text }}</a>
         </p>
-        <p class="mb-1">
-            <a href="/uitgestelde-betaling" class="arrowLink">Uitgestelde betaling</a>
-        </p>
-        <p class="mb-1">
-            <a href="/businesscard-aanvragen" class="arrowLink">Aanvragen NS-Business Card</a>
-        </p>
+        {% endfor %}
     </section>
 </div>
