@@ -12,16 +12,6 @@
         margin-bottom: $one-half-gutter;
         padding: $double-gutter 0;
     }
-
-    @include md {
-        &:before {
-            content: '';
-            @include full(absolute);
-            background-image: url('/assets/img/illustration.svg');
-            background-repeat: no-repeat;
-            background-position: 60vw -23%;
-        }
-    }
 }
 
 // grid
