@@ -2,37 +2,57 @@
 layout: default
 bg: bg-white
 footer-light: true
-title: NS-Business Card
+title: NS-Business Card voor ZZP'ers
 ---
 
-<section class="zzp-hero mb-6 mb-8-sm a a-fi">
+<section class="zzp-hero a a-fi">
     <figure class="zzp-hero__flow">{% include flows/flow-gradient-white.svg %}</figure>
     <div class="container container--narrow">
         <header class="mxw-600">
             <h1 class="zzp-hero__title a a-fi-right-200px a-stag a-del-350">
-                {{ page.title }}
+                {{ site.data.zzp.title }}
             </h1>
             <p class="zzp-hero__payoff a a-fi-right-200px a-stag a-del-350">
-                Elke dag is anders. Kies de reis die 
-                daarbij past met de NS&#8209;Business Card
+                {{ site.data.zzp.payoff }}
             </p>
             <div class="a a-fi-right-200px a-stag a-del-350">
-                <a href="/businesscard-aanvragen" class="button button--buy">Bestellen</a>
+                <a href="/businesscard-aanvragen" class="button button--buy">{{ site.data.zzp.cta }}</a>
             </div>
         </header>
     </div>
 </section>
 
-<section class="mb-6 mb-8-sm">
-    <div class="container container--narrow">
-        <header class="mxw-600 mh-auto txt-c">
-            <h2 class="f24 f30-sm fw-normal f-blue lh-title mb-3">
-                Drie redenen om voor het gemak van de NS&#8209;Business Card te kiezen
-            </h2>
-            <div class="zzp-divider"></div>
-        </header>
-        <div class="mxw-800 mh-auto">
-
+<div class="zzp-content pv-6 pv-8-sm">
+    <section class="mb-6 mb-8-sm">
+        <div class="container container--narrow">
+            <header class="mxw-600 mh-auto txt-c mb-6 mb-8-sm">
+                <h2 class="f24 f32-sm fw-normal f-blue lh-title mb-3">
+                    {{ site.data.zzp.usps.title }}
+                </h2>
+                <div class="zzp-divider"></div>
+            </header>
+            <div class="mxw-850 mh-auto">
+                {% for entry in site.data.zzp.usps.list %}
+                <div class="zzp-usp">
+                    <div class="zzp-usp__grid zzp-usp__grid--2">
+                        <figure class="zzp-usp__img">
+                            <img src="/assets/img/{{ entry.img }}.svg" />
+                        </figure>
+                    </div>
+                    <div class="zzp-usp__grid-spacer"></div>
+                    <div class="zzp-usp__grid zzp-usp__grid--3">
+                        <div class="txt-c txt-l-sm">
+                            <h3 class="f20 f24-sm f-blue fw-b lh-title mb-2 mb-3-sm">
+                                {{ entry.title }}
+                            </h3>
+                            <p class="f-blue">
+                                {{ entry.description }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>
