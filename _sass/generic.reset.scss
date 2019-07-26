@@ -79,7 +79,12 @@ html {
 }
 
 img,
-object {
+object,
+svg {
   max-width: 100%;
   vertical-align: middle;
+}
+
+svg {
+    line-height: 0;
 }

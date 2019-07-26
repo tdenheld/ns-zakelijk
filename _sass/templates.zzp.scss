@@ -1,0 +1,84 @@
+// ZZP Campagne
+// --------------------------------------
+// --------------------------------------
+
+// hero
+// --------------------------------------
+.zzp-hero {
+    position: relative;
+    height: 340px;
+    padding: $gutter 0;
+    @include bg(cover);
+    background-image: url('/assets/img/heros/hero-zzp.jpg');
+
+    @include sm {
+        padding: $double-gutter 0;
+        height: 480px;
+    }
+
+    &:before {
+        content: '';
+        @include full(absolute);
+        background: linear-gradient(80deg, rgba($ns-black, 1) 20%, rgba($ns-black, 0.5) 100%);
+        opacity: 0.35;
+    
+        @include sm {
+            background: linear-gradient(164deg, rgba($ns-black, 1) 20%, rgba($ns-black, 0) 90%);
+        }
+    }
+}
+
+.zzp-hero__flow {
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    width: 100%;
+
+	@include md {
+        left: calc(50% - 427px); 
+    }
+    
+    @media (min-width: 860px) {
+        width: auto;
+        height: 100%;
+    }
+
+	svg {
+        width: 100%;
+        transform: rotate(180deg);
+
+		@media (min-width: 860px) {
+			width: auto;
+			height: 100%;
+		}
+	}
+}
+
+.zzp-hero__title {
+    @extend .tk-heading;
+    margin-bottom: $half-gutter;
+    color: $ns-white;
+    text-shadow: $text-shadow-2;
+    letter-spacing: -0.8px;
+}
+
+.zzp-hero__payoff {
+    margin-bottom: $gutter;
+    @include font(20px, normal, $lh-title);
+    color: $ns-white;
+    text-shadow: $text-shadow-2;
+    letter-spacing: -0.3px;
+
+    @include sm {
+        font-size: toRem(28px);
+    }
+}
+
+
+// misc
+// -------------------------------------
+.zzp-divider {
+    border-bottom: 1px solid $ns-blue;
+    width: 120px;
+    margin: 0 auto;
+}

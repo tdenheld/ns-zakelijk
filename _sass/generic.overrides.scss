@@ -62,6 +62,11 @@ input,
     border-radius: 4px;
 }
 
+.button--buy:before {
+    left: auto;
+    margin-left: toRem(-35px);
+}
+
 .checkbox__label:before {
     border-radius: 2px;
 }

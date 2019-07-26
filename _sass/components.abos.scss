@@ -4,12 +4,9 @@
     position: relative;
     margin-bottom: $gutter;
     padding: $gutter 0;
-
-    @extend .gd-r-pale-blue;
-    border-bottom: 1px solid rgba($ns-blue, 0.1);
+    background-color: $ns-blue;
 
     @include sm {
-        margin-bottom: $one-half-gutter;
         padding: $double-gutter 0;
     }
 }
@@ -93,22 +90,6 @@
     }
 }
 
-.abo-tile__details {
-    margin: 0;
-    list-style-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='12px' height='9px' viewBox='0 0 15 13' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com --%3E%3Ctitle%3Etick%3C/title%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cg id='Design-sprint-' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='/abonnementen/keuzehulp/overstappen-vergelijk1' transform='translate(-307.000000, -652.000000)' fill='%2300AA89' fill-rule='nonzero'%3E%3Cg id='Voordelen' transform='translate(20.000000, 533.000000)'%3E%3Cg id='check-bitfat--small' transform='translate(287.000000, 119.000000)'%3E%3Cpath d='M5.27613277,13 C4.95413017,13.0002649 4.64532458,12.8654122 4.41815544,12.6253283 L0.371092538,8.36769965 C0.0553339381,8.0471609 -0.071455547,7.57232515 0.0394553634,7.12569453 C0.150366274,6.67906392 0.481717411,6.33014397 0.906154639,6.21304134 C1.33059187,6.09593872 1.78206345,6.22887716 2.08704721,6.56076205 L5.20814211,9.84424526 L12.8538533,0.458728686 C13.1343984,0.105211206 13.5741132,-0.0620564822 14.0046932,0.0209487121 C14.4352731,0.103953906 14.7900421,0.424378465 14.9332094,0.85957724 C15.0763767,1.29477602 14.9857725,1.77735762 14.6960764,2.12260996 L6.19724429,12.5538001 C5.97730239,12.8234239 5.66054911,12.9844868 5.3230787,12.9982966 L5.27613277,13 Z' id='tick'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-
-    li {
-        margin: 0 0 4px 16px;
-        padding-left: 4px;
-        @include font(14px, normal, $lh-copy);
-        color: $ns-grey-4;
-
-        &:last-child {
-            margin: 0 0 0 16px;
-        }
-    }
-}
-
 .abo-tile__highlight {
     position: absolute;
     z-index: 1;
@@ -117,7 +98,7 @@
     display: inline-block;
     padding: 3px 12px;
     border-radius: 100px;
-    background-color: $ns-yellow;
-    color: $ns-blue;
+    background-color: $ns-green-sexy;
+    color: $ns-white;
     font-size: toRem(14px);
 }
