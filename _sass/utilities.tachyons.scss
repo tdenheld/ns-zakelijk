@@ -767,7 +767,7 @@
 // ----------------------------------------------------------------------
 .lh-none  { line-height: 0; }
 .lh-solid { line-height: $lh-solid; }
-.lh-title { line-height: $lh-title; }
+.lh-title, .lh-title div { line-height: $lh-title; }
 .lh-copy  { line-height: $lh-copy; }
 
 @include sm {

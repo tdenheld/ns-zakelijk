@@ -23,29 +23,29 @@ title: NS-Business Card voor ZZP'ers
 </section>
 
 <div class="zzp-content pv-6 pv-8-sm">
-    <section class="mb-6 mb-8-sm">
+    <section class="mb-6 mb-8-sm a a-fi a-del-500">
         <div class="container container--narrow">
-            <header class="mxw-600 mh-auto txt-c mb-6 mb-8-sm">
+            <header class="mxw-600 mh-auto txt-c mb-8 mb-12-sm js-scroll-magic js-tr tr-fi-up tr-1500">
                 <h2 class="f24 f32-sm fw-normal f-blue lh-title mb-3">
                     {{ site.data.zzp.usps.title }}
                 </h2>
-                <div class="zzp-divider"></div>
+                <div class="zzp-divider js-tr tr-stag"></div>
             </header>
             <div class="mxw-850 mh-auto">
                 {% for entry in site.data.zzp.usps.list %}
                 <div class="zzp-usp">
-                    <div class="zzp-usp__grid zzp-usp__grid--2">
-                        <figure class="zzp-usp__img">
-                            <img src="/assets/img/{{ entry.img }}.svg" />
+                    <div class="zzp-usp__grid zzp-usp__grid--2 js-scroll-magic">
+                        <figure class="zzp-usp__img js-tr tr-fi-up tr-1500">
+                            <img src="/assets/img/{{ entry.img }}.svg" class="js-tr tr-si tr-si--large tr-1500" />
                         </figure>
                     </div>
                     <div class="zzp-usp__grid-spacer"></div>
                     <div class="zzp-usp__grid zzp-usp__grid--3">
-                        <div class="txt-c txt-l-sm">
-                            <h3 class="f20 f24-sm f-blue fw-b lh-title mb-2 mb-3-sm">
+                        <div class="txt-c txt-l-sm js-scroll-magic">
+                            <h3 class="f24 f-blue fw-b lh-title mb-3 js-tr tr-stag">
                                 {{ entry.title }}
                             </h3>
-                            <p class="f-blue">
+                            <p class="f-blue js-tr tr-stag">
                                 {{ entry.description }}
                             </p>
                         </div>
@@ -55,4 +55,5 @@ title: NS-Business Card voor ZZP'ers
             </div>
         </div>
     </section>
+    <section class="pv-20 a a-fi a-stag-del"></section>
 </div>
