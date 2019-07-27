@@ -11,7 +11,7 @@
   - Samenreiskorting
   price: 4
   period: mnd
-  highlight: Meest gekozen
+  #highlight: Meest gekozen
   #style: 'grid-column: span 2'
 
 - title: Traject<br>abonnement
