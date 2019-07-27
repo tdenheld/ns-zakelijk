@@ -7,10 +7,10 @@ usps:
   list:
     - img: train-public-transport
       title: Check zorgeloos in en uit zonder dat je saldo nodig hebt
-      description:  Je reiskosten worden aan het eind van de maand automatisch afgeschreven. Bovendien heb je altijd inzicht in je reiskosten via de NS-app.
+      description:  Je reiskosten worden aan het eind van de maand automatisch afgeschreven. Bovendien heb je altijd inzicht in je reiskosten via de NS-app.
     - img: invoice
       title: Eén overzichtelijke maandelijkse BTW&#8209;factuur
-      description: Geen administratief gedoe met bonnetjes, of aparte betalingen. Je factuur is eenvoudig te splitsen in zakelijk en privé.
+      description: Geen administratief gedoe met bonnetjes of aparte betalingen. Je factuur is eenvoudig te splitsen in zakelijk en privé.
     - img: bike-shed-account
-      title: Direct toegang tot extra deur-tot-deurdiensten
-      description: Zoals OV-fiets of Stallen op rekening. Bovendien ontvang je korting op parkeren bij Q-Park P+R, werken/vergaderen bij Regus, of een Greenwheels auto.
+      title: Direct toegang tot al onze deur-tot-deurdiensten
+      description: Zoals OV-fiets of bewaakte fietsenstalling. Ook ontvang je korting op parkeren bij Q-Park P+R, werken / vergaderen bij Regus, of een Greenwheels auto.
