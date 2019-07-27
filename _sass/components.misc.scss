@@ -13,6 +13,16 @@
     }
 }
 
+.tk-heading--small {
+    margin-bottom: 0;
+    font-size: toRem(32px);
+    letter-spacing: -0.5px;
+
+    @include sm {
+        font-size: toRem(48px);
+    }
+}
+
 .tk-safe-pay {
     display: flex;
     align-items: center;

@@ -55,23 +55,20 @@
 }
 
 .zzp-hero__title {
-    @extend .tk-heading;
     margin-bottom: $half-gutter;
-    color: $ns-white;
-    text-shadow: $text-shadow-2;
-    letter-spacing: -0.8px;
-}
-
-.zzp-hero__payoff {
-    margin-bottom: $gutter;
-    @include font(20px, normal, $lh-title);
+    @include font(24px, normal, $lh-title);
     color: $ns-white;
     text-shadow: $text-shadow-2;
     letter-spacing: -0.3px;
 
     @include sm {
-        font-size: toRem(28px);
+        font-size: toRem(32px);
     }
+}
+
+.zzp-hero__payoff {
+    color: $ns-white;
+    text-shadow: $text-shadow-2;
 }
 
 
@@ -138,8 +135,8 @@
     @include center(flex);
     margin: 0 auto;
     background: linear-gradient(110deg, $ns-yellow 0%, #FFE48A 100%);
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
 
     @include sm {
