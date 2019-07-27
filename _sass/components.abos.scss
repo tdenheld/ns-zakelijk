@@ -4,7 +4,7 @@
     position: relative;
     margin-bottom: $gutter;
     padding: $gutter 0;
-    background-color: $ns-blue;
+    background-color: $ns-white;
 
     @include sm {
         padding: $double-gutter 0;
@@ -98,7 +98,7 @@
     display: inline-block;
     padding: 3px 12px;
     border-radius: 100px;
-    background-color: $ns-green-sexy;
-    color: $ns-white;
+    background-color: $ns-yellow;
+    color: $ns-blue;
     font-size: toRem(14px);
 }

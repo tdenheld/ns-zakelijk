@@ -5,8 +5,7 @@
 // hero
 // --------------------------------------
 .zzp-hero {
-    position: fixed;
-    width: 100%;
+    position: relative;
     height: 340px;
     padding: $gutter 0;
     @include bg(cover);
@@ -72,19 +71,6 @@
 
     @include sm {
         font-size: toRem(28px);
-    }
-}
-
-
-// content
-// --------------------------------------
-.zzp-content {
-    position: relative;
-    margin-top: 340px;
-    background-color: $ns-white;
-
-    @include sm {
-        margin-top: 480px;
     }
 }
 
