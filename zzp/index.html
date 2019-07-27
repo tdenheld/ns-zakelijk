@@ -27,26 +27,34 @@ title: NS-Business Card voor ZZP'ers
 <section class="a a-fi a-del-500">
     <div class="container container--narrow">
         <div class="mxw-950 mh-auto">
-            {% for entry in site.data.zzp.usps.list %}
-            <div class="zzp-usp">
-                <div class="zzp-usp__grid zzp-usp__grid--2 js-scroll-magic">
-                    <figure class="zzp-usp__img js-tr tr-fi-up tr-1500">
-                        <img src="/assets/img/{{ entry.img }}.svg" class="js-tr tr-si tr-si--large tr-1500" />
-                    </figure>
-                </div>
-                <div class="zzp-usp__grid-spacer"></div>
-                <div class="zzp-usp__grid zzp-usp__grid--3">
-                    <div class="txt-c txt-l-sm js-scroll-magic">
-                        <h3 class="f24 f32-sm f-blue fw-b lh-title mb-3 js-tr tr-stag">
-                            {{ entry.title }}
-                        </h3>
-                        <p class="f18 f20-sm f-blue js-tr tr-stag">
-                            {{ entry.description }}
-                        </p>
+            <header class="mb-8 mb-12-sm js-scroll-magic js-tr tr-fi-up tr-1500">
+                <h2 class="mxw-400 f24 f32-sm fw-normal f-blue lh-title mb-3">
+                    {{ site.data.zzp.usps.title }}
+                </h2>
+                <div class="zzp-divider js-tr tr-stag"></div>
+            </header>
+            <div>
+                {% for entry in site.data.zzp.usps.list %}
+                <div class="zzp-usp">
+                    <div class="zzp-usp__grid zzp-usp__grid--2 js-scroll-magic">
+                        <figure class="zzp-usp__img js-tr tr-fi-up tr-1500">
+                            <img src="/assets/img/{{ entry.img }}.svg" class="js-tr tr-si tr-si--large tr-1500" />
+                        </figure>
+                    </div>
+                    <div class="zzp-usp__grid-spacer"></div>
+                    <div class="zzp-usp__grid zzp-usp__grid--3">
+                        <div class="txt-c txt-l-sm js-scroll-magic">
+                            <h3 class="f24 f32-sm f-blue fw-b lh-title mb-3 js-tr tr-stag">
+                                {{ entry.title }}
+                            </h3>
+                            <p class="f18 f20-sm f-blue js-tr tr-stag">
+                                {{ entry.description }}
+                            </p>
+                        </div>
                     </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </div>
 </section>
