@@ -114,8 +114,8 @@
     @include center(flex);
     margin: 0 auto;
     background: linear-gradient(110deg, $ns-yellow 0%, #FFE48A 100%);
-    width: 220px;
-    height: 220px;
+    width: 210px;
+    height: 210px;
     border-radius: 50%;
 
     @include sm {
@@ -129,5 +129,4 @@
 .zzp-divider {
     border-bottom: 1px solid $ns-blue;
     width: 120px;
-    // margin: 0 auto;
 }
