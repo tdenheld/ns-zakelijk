@@ -7,7 +7,7 @@
     transition: $fade-link;
 
     &--rounded {
-        border-radius: 4px;
+        border-radius: $border-radius;
     }
 
     &--pill {
@@ -114,16 +114,22 @@
 // --------------------------------------------
 .btn-ghost {
     background: transparent;
-    border: 1px solid $ns-blue;
+    border: 1px solid $ns-light-blue;
     box-shadow: none;
-    background-color: rgba($ns-blue, 0);
-    color: $ns-blue;
+    color: $ns-light-blue;
     transition: $fade-link;
 
+    &:active:hover,
+    &:focus:hover,
+    &:visited:hover,
     &:hover {
+        border: 1px solid $ns-blue;
         box-shadow: none;
-        background-color: rgba($ns-blue, 0.1);
         color: $ns-blue;
+
+        svg {
+            fill: $ns-blue;
+        }
     }
 
     &:active,
@@ -132,11 +138,12 @@
         background: transparent;
         box-shadow: none;
         outline: none;
-        color: $ns-blue;
+        color: $ns-light-blue;
     }
 
     svg {
-        fill: $ns-blue;
+        transition: $fade-link;
+        fill: $ns-light-blue;
     }
 
     &--white {
@@ -164,6 +171,38 @@
         width: auto !important;
         box-shadow: none;
     }
+}
+
+.button-tile {
+    padding: $half-gutter;
+    border: 1px solid $ns-light-blue;
+    border-radius: $border-radius;
+    color: $ns-light-blue;
+    transition: $fade-link;
+
+    &:hover {
+        border-color: $ns-blue;
+        color: $ns-blue;
+
+        svg {
+            fill: $ns-blue;
+        }
+
+        .button-tile__description {
+            color: $ns-blue;
+        }
+    }
+
+    svg {
+        transition: $fade-link;
+        fill: $ns-light-blue;
+    }
+}
+
+.button-tile__description {
+    font-size: toRem(14px);
+    color: $ns-grey-4;
+    transition: $fade-link;
 }
 
 
