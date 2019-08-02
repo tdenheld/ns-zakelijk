@@ -68,6 +68,29 @@
     transform: scale(0.7);
 }
 
+.tr-fi-up-si {
+	opacity: 0;
+    transform: translate3d(0, 60px, 0) scale(0.95);
+    transition-timing-function: $ease-out;
+	
+	&.is-active {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.tr-si-left {
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition-timing-function: $ease-out;
+	
+	&.is-active {
+		opacity: 1;
+		transform: none;
+	}
+}
+
 
 // staggered
 // ------------------------------

@@ -9,7 +9,7 @@
     min-height: 340px;
     padding: $gutter 0;
     @include bg(cover);
-    background-image: url('/assets/img/heros/hero-zzp.jpg');
+    background-image: url('/assets/img/heros/hero-video.jpg');
 
     @include sm {
         padding: $double-gutter 0;
@@ -26,6 +26,12 @@
             background: linear-gradient(164deg, rgba($ns-black, 1) 20%, rgba($ns-black, 0) 90%);
         }
     }
+}
+
+.zzp-hero__gif {
+    @include full(absolute);
+    @include bg(cover);
+    background-image: url('/assets/img/heros/hero-video.gif');
 }
 
 .zzp-hero__flow {
@@ -129,4 +135,18 @@
 .zzp-divider {
     border-bottom: 1px solid $ns-blue;
     width: 120px;
+}
+
+.zzp-bc {
+    position: relative;
+    top: -100px;
+    overflow: hidden;
+}
+
+.zzp-bc__img {
+    position: relative;
+    bottom: -100px;
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
 }
