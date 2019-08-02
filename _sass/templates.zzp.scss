@@ -134,17 +134,17 @@
 // --------------------------------------
 .zzp-bc {
     position: relative;
-    top: -50px;
+    top: -30px;
     overflow: hidden;
 
     @include sm {
-        top: -100px;
+        top: -70px;
     }
 }
 
 .zzp-bc__img {
     position: relative;
-    bottom: -50px;
+    bottom: -30px;
     display: block;
     width: 80%;
     max-width: 500px;
@@ -152,7 +152,7 @@
 
     @include sm {
         width: 100%;
-        bottom: -100px;
+        bottom: -70px;
     }
 }
 
