@@ -67,10 +67,10 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: $double-gutter;
+    margin-bottom: $one-half-gutter;
 
     @include sm {
-        margin-bottom: 160px;
+        margin-bottom: 120px;
     }
 
     &:nth-child(even) {
@@ -130,23 +130,36 @@
 }
 
 
+// business card image
+// --------------------------------------
+.zzp-bc {
+    position: relative;
+    top: -50px;
+    overflow: hidden;
+
+    @include sm {
+        top: -100px;
+    }
+}
+
+.zzp-bc__img {
+    position: relative;
+    bottom: -50px;
+    display: block;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+
+    @include sm {
+        width: 100%;
+        bottom: -100px;
+    }
+}
+
+
 // misc
 // --------------------------------------
 .zzp-divider {
     border-bottom: 1px solid $ns-blue;
     width: 120px;
-}
-
-.zzp-bc {
-    position: relative;
-    top: -100px;
-    overflow: hidden;
-}
-
-.zzp-bc__img {
-    position: relative;
-    bottom: -100px;
-    display: block;
-    max-width: 500px;
-    margin: 0 auto;
 }
