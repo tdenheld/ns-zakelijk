@@ -117,6 +117,7 @@
 }
 
 .zzp-usp__img {
+    position: relative;
     @include center(flex);
     margin: 0 auto;
     background: linear-gradient(110deg, $ns-yellow 0%, #FFE48A 100%);
@@ -126,6 +127,18 @@
 
     @include sm {
         margin-right: 0;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        top: -5px;
+        left: -5px;
+        border: 1px dashed $ns-yellow;
+        border-radius: 50%;
+        animation: rotate 2400ms infinite linear;
     }
 }
 
