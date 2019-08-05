@@ -9,29 +9,22 @@
     min-height: 340px;
     padding: $gutter 0;
     @include bg(cover);
-    background-image: url('/assets/img/heros/hero-video.jpg');
+    background-image: url(/assets/img/heros/hero-zzp-b.jpg);
 
     @include sm {
         padding: $double-gutter 0;
         min-height: 480px;
     }
-
-    &:before {
-        content: '';
-        @include full(absolute);
-        background: linear-gradient(80deg, rgba($ns-black, 1) 20%, rgba($ns-black, 0.5) 100%);
-        opacity: 0.35;
-
-        @include sm {
-            background: linear-gradient(164deg, rgba($ns-black, 1) 20%, rgba($ns-black, 0) 90%);
-        }
-    }
 }
 
-.zzp-hero__gif {
+.zzp-hero__gradient {
     @include full(absolute);
-    @include bg(cover);
-    background-image: url('/assets/img/heros/hero-video.gif');
+    background: linear-gradient(80deg, rgba($ns-black, 1) 20%, rgba($ns-black, 0.5) 100%);
+    opacity: 0.35;
+
+    @include sm {
+        background: linear-gradient(164deg, rgba($ns-black, 1) 20%, rgba($ns-black, 0) 90%);
+    }
 }
 
 .zzp-hero__flow {
@@ -172,6 +165,17 @@
 
 // misc
 // --------------------------------------
+.zzp-video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .zzp-divider {
     border-bottom: 1px solid $ns-blue;
     width: 120px;

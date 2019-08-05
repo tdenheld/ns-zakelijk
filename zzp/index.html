@@ -5,8 +5,14 @@ footer-light: true
 title: NS-Business Card voor ZZP'ers
 ---
 
-<section class="zzp-hero mb-6 mb-8-sm a a-fi">
-    <figure class="zzp-hero__gif"></figure>
+<section class="zzp-hero mb-6 mb-8-sm a a-fi" id="js-zzp-hero">
+    <div class="full-absolute o-hidden hidden-xs hidden-sm">
+        <video class="zzp-video js-video" preload="auto" poster="/assets/img/heros/hero-video.jpg" autoplay muted loop>
+            <source src="/assets/img/heros/hero-zzp.mp4" type="video/mp4">
+            </source>
+        </video>
+    </div>
+    <div class="zzp-hero__gradient"></div>
     <figure class="zzp-hero__flow">{% include flows/flow-gradient-white.svg %}</figure>
     <div class="container container--narrow">
         <header class="mxw-650">
