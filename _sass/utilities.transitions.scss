@@ -23,11 +23,15 @@
 	transition: none;
 }
 // 50ms - 1600ms
-@for $i from 1 through 32 {
+@for $i from 1 through 64 {
 	$x: $i * 50;
-	$d: $x * 1ms;
+    $d: $x * 1ms;
+    
 	.tr-#{$x} {
 		transition: all #{$d} $ease;
+    }
+    .tr-del-#{$x} {
+		transition-delay: #{$d};
 	}
 }
 
@@ -77,6 +81,10 @@
 		opacity: 1;
 		transform: none;
 	}
+}
+
+.tr-fi-up-si--large {
+    transform: translate3d(0, 60px, 0) scale(0.85);
 }
 
 .tr-si-left {

@@ -131,7 +131,7 @@
         left: -5px;
         border: 1px dashed $ns-yellow;
         border-radius: 50%;
-        animation: rotate 2400ms infinite linear;
+        animation: rotate 32s infinite linear;
     }
 }
 
@@ -160,6 +160,97 @@
         width: 100%;
         bottom: -70px;
     }
+}
+
+
+// service
+// --------------------------------------
+.zzp-service {
+    position: relative;
+    top: -132px;
+}
+
+.zzp-service__map {
+    position: relative;
+    max-width: 620px;
+    margin: 0 auto;
+    z-index: -1;
+
+    svg {
+        fill: #EBF6FF;
+    }
+
+    @include md {
+        left: -50px;
+    }
+}
+
+.zzp-service__container {
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
+
+.zzp-service__tile {
+    display: inline-block;
+    position: absolute;
+    max-width: 250px;
+    background-color: $ns-white;
+    box-shadow: 0 5px 20px rgba($ns-blue, 0.18);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: $fade-all;
+
+    &:hover  {
+        box-shadow: 0 8px 30px rgba($ns-blue, 0.3);
+
+        .zzp-service__tile-header {
+            color: $ns-blue;
+
+            svg {
+                fill: $ns-blue;
+            }
+        }
+    }
+
+    &:nth-child(1) {
+        top: 20px;
+        left: 40px;
+    }
+
+    &:nth-child(2) {
+        top: 90px;
+        left: 240px;
+    }
+}
+
+.zzp-service__tile-header {
+    padding: $half-gutter;
+    display: flex;
+    justify-content: space-between;
+    color: $ns-light-blue;
+    @include font(16px, bold, $lh-solid);
+    font-style: italic;
+    transition: $fade-all;
+    cursor: pointer;
+
+    svg {
+        fill: $ns-light-blue;
+        transition: $fade-all;
+    }
+
+    &.is-active {
+        color: $ns-blue;
+
+        svg {
+            fill: $ns-blue;
+        }
+    }
+}
+
+.zzp-service__tile-icon {
+    margin-left: $half-gutter;
+    margin-right: 2px;
 }
 
 
