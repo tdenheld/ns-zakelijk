@@ -14,3 +14,7 @@ usps:
     - img: bike-shed-account
       title: Direct toegang tot al onze deur-tot-deurdiensten
       description: Zoals OV-fiets of bewaakte fietsenstalling. Ook ontvang je korting op parkeren bij Q-Park P+R, werken / vergaderen bij Regus, of een Greenwheels auto.
+
+services:
+  title: Complete mobiliteitskaart voor de meest efficiënte zakelijke reis
+  description: Zo gemakkelijk mogelijk van A naar B. Of dat nu met auto, trein, metro of fiets is. Dat is wat de NS-Business Card biedt. Eenvoudig check in en check uit, of reserveer via de NS app.
