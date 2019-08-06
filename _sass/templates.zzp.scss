@@ -109,22 +109,16 @@
 // --------------------------------------
 .zzp-service {
     position: relative;
-    min-height: 350px;
-
-    @include m {
-        min-height: 600px;
-    }
 }
 
 .zzp-service__map-container {
     @include full(absolute);
     @include center(flex);
     overflow: hidden;
-    margin-top: -100px;
-    z-index: -1;
+    margin-top: 140px;
+    padding: 0 21px;
 
     @include md {
-        margin-top: -132px;
         left: -50px;
     }
 
@@ -134,7 +128,7 @@
         bottom: 0;
         width: 100%;
         height: 50%;
-        background: linear-gradient(to bottom, rgba($ns-white, 0) 20%, rgba($ns-white, 1) 100%);
+        background: linear-gradient(to bottom, rgba($ns-white, 0) 0%, rgba($ns-white, 1) 100%);
     }
 }
 

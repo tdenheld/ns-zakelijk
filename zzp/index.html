@@ -20,7 +20,7 @@ title: NS-Business Card voor ZZP'ers
                 <div class="f24 f32-sm fw-normal f-white ts-2 lh-title mb-2 ls-3 a a-fi-right-200px a-stag a-del-350">
                     {{ site.data.zzp.title }}
                 </div>
-                <div class="f32 f48-sm f60-md lh-title f-white ts-2 a a-fi-right-200px a-stag a-del-350">
+                <div class="f36 f48-sm f60-md lh-title f-white ts-2 a a-fi-right-200px a-stag a-del-350">
                     {{ site.data.zzp.payoff }}
                 </div>
             </h1>
@@ -34,7 +34,7 @@ title: NS-Business Card voor ZZP'ers
 <section class="mb-6 mb-12-sm a a-fi a-del-500">
     <div class="container container--narrow">
         <header class="txt-c mb-6 mb-8-sm mxw-950 mh-auto js-scroll-magic js-tr tr-fi-up tr-1500">
-            <h2 class="f32 f40-sm fw-b f-blue lh-title mb-3">
+            <h2 class="f28 f48-sm fw-b f-blue lh-title mb-3">
                 {{ site.data.zzp.usps.title }}
             </h2>
             <div class="zzp-divider js-tr tr-stag"></div>
@@ -57,9 +57,14 @@ title: NS-Business Card voor ZZP'ers
     </div>
 </section>
 
-<section class="mb-6 mb-8-sm a a-fi a-del-500">
+<section class="mb-6 mb-14-sm">
     <div class="container container--narrow">
-        <header class="mxw-750 mh-auto f-blue txt-c mb-6 mb-8-sm js-scroll-magic">
+        <div class="zzp-service__map-container">
+            <figure class="zzp-service__map js-scroll-magic js-tr tr-fi-up-si tr-fi-up-si--large tr-1500">
+                {% include zzp/railmap.svg %}
+            </figure>
+        </div>
+        <header class="pos-r mxw-750 mh-auto f-blue txt-c mb-6 mb-8-sm js-scroll-magic">
             <h2 class="f28 f48-sm fw-b lh-title mb-3 js-tr tr-stag">
                 {{ site.data.zzp.services.title }}
             </h2>
@@ -68,5 +73,13 @@ title: NS-Business Card voor ZZP'ers
             </p>
         </header>
         {% include zzp/service.html %}
+    </div>
+</section>
+
+<section class="mb-6 mb-8-sm js-scroll-magic js-tr tr-fi-up tr-1500">
+    <div class="container container--narrow">
+        <h2 class="txt-c f28 f48-sm f-normal f-blue lh-title mb-3">
+            Zo flexibel als
+        </h2>
     </div>
 </section>
