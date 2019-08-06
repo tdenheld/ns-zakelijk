@@ -57,81 +57,23 @@
 // usp
 // --------------------------------------
 .zzp-usp {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: $one-half-gutter;
+    position: relative;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto $gutter;
 
-    @include sm {
-        margin-bottom: 120px;
+    @include m {
+        margin: 0 auto;
     }
-
-    &:nth-child(even) {
-        @include sm {
-            .zzp-usp__grid--2 {
-                order: 3;
-            }
-
-            .zzp-usp__grid--3 {
-                order: 1;
-            }
-
-            .zzp-usp__grid-spacer {
-                order: 2
-            }
-
-            .zzp-usp__img {
-                margin-right: auto;
-                margin-left: 0;
-            }
-        }
-    }
-}
-
-.zzp-usp__grid {
-    flex: 1 100%;
-}
-
-.zzp-usp__grid--2 {
-    @include sm {
-        flex: 2;
-    }
-}
-
-.zzp-usp__grid--3 {
-    @include sm {
-        flex: 3;
-    }
-}
-
-.zzp-usp__grid-spacer {
-    width: $double-gutter;
-    height: $gutter;
 }
 
 .zzp-usp__img {
-    position: relative;
     @include center(flex);
-    margin: 0 auto;
-    background: linear-gradient(110deg, $ns-yellow 0%, #FFE48A 100%);
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
+    height: 97px;
+    margin-bottom: $half-gutter;
 
-    @include sm {
-        margin-right: 0;
-    }
-
-    &:before {
-        content: '';
-        position: absolute;
-        width: calc(100% + 10px);
-        height: calc(100% + 10px);
-        top: -5px;
-        left: -5px;
-        border: 1px dashed $ns-yellow;
-        border-radius: 50%;
-        animation: rotate 32s infinite linear;
+    @include m {
+        margin-bottom: $gutter;
     }
 }
 
@@ -268,6 +210,11 @@
 }
 
 .zzp-divider {
+    margin: 0 auto;
     border-bottom: 1px solid $ns-blue;
-    width: 120px;
+    width: 180px;
+
+    @include sm {
+        width: 240px;
+    }
 }

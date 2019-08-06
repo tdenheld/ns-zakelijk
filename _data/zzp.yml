@@ -3,17 +3,17 @@ payoff: Elke dag is anders. Kies de reis die daarbij past
 cta: Bestel gratis
 
 usps:
-  title: 3 redenen om voor de NS&#8209;Business Card te kiezen
+  title: Waarom de NS&#8209;Business Card?
   list:
-    - img: train-public-transport
-      title: Check zorgeloos in en uit zonder dat je saldo nodig hebt
-      description:  Je reiskosten worden aan het eind van de maand automatisch afgeschreven. Bovendien heb je altijd inzicht in je reiskosten via de NS-app.
-    - img: invoice
-      title: Eén overzichtelijke maandelijkse BTW&#8209;factuur
+    - img: train-public-transport--yellow
+      title: Gemakkelijk
+      description: Geen saldo meer nodig. Check in en uit. Gebruikte diensten worden aan het eind van de maand in rekening gebracht.
+    - img: invoice--yellow
+      title: Overzichtelijk
       description: Geen administratief gedoe met bonnetjes of aparte betalingen. Je factuur is eenvoudig te splitsen in zakelijk en privé.
-    - img: bike-shed-account
-      title: Direct toegang tot al onze deur-tot-deurdiensten
-      description: Zoals OV-fiets of bewaakte fietsenstalling. Ook ontvang je korting op parkeren bij Q-Park P+R, werken / vergaderen bij Regus, of een Greenwheels auto.
+    - img: bike-shed-account--yellow
+      title: Compleet
+      description: Combineer je vervoer. Pak een OV-fiets, parkeer je auto met korting bij een station, of huur een Greenwheels.
 
 services:
   title: Complete mobiliteitskaart voor de meest efficiënte zakelijke reis
