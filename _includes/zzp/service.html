@@ -1,28 +1,29 @@
 <div class="zzp-service">
-    <figure class="zzp-service__map js-scroll-magic js-tr tr-fi-up-si tr-fi-up-si--large tr-1500">
-        {% include zzp/railmap.svg %}
-    </figure>
-    <div class="center full-absolute">
-        <div class="zzp-service__container js-scroll-magic">
+    <div class="zzp-service__map-container">
+        <figure class="zzp-service__map js-scroll-magic js-tr tr-fi-up-si tr-fi-up-si--large tr-1500">
+            {% include zzp/railmap.svg %}
+        </figure>
+    </div>
+    <div class="zzp-service__tile-container mb-2 mb-8-sm js-scroll-magic">
+        {% for entry in site.data.zzp.services.tiles %}
+        <div class="zzp-service__tile js-tr tr-stag tr-del-1500 js-zzp-st is-hidden">
+            <h3 class="mh-2 mv-2 fw-b fs-i f-blue f18 lh-solid">{{ entry.title }}</h3>
+            <p class="f14 f-blue ph-2 pb-2">
+                {{ entry.description }}
+            </p>
+            <img src="{{ entry.img }}" alt="{{ entry.title }}" />
+        </div>
+        {% endfor %}
+    </div>
+    <div class="center js-scroll-magic">
+        <nav class="zzp-service__nav js-tr tr-fi tr-500">
             {% for entry in site.data.zzp.services.tiles %}
-            <div class="zzp-service__tile js-zzp-st js-tr tr-stag tr-del-1500">
-                <header class="zzp-service__tile-header js-zzp-st-header">
-                    <span>{{ entry.title }}</span>
-                    <span class="zzp-service__tile-icon js-zzp-st-chevron">
-                                {% include icons/chevron-m--small.svg %}
-                            </span>
-                    <span class="zzp-service__tile-icon js-zzp-st-close is-hidden">
-                        {% include icons/close-s--small.svg %}
-                    </span>
-                </header>
-                <div class="js-zzp-st-content is-hidden">
-                    <p class="f14 f-blue ph-2 pb-2">
-                        {{ entry.description }}
-                    </p>
-                    <img src="{{ entry.img }}" alt="{{ entry.title }}" />
+            <div class="zzp-service__nav-item-container js-tr tr-stag">
+                <div class="zzp-service__nav-item js-zzp-st-nav">
+                    {{ entry.title }}
                 </div>
             </div>
             {% endfor %}
-        </div>
+        </nav>
     </div>
 </div>

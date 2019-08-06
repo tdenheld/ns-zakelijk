@@ -41,27 +41,18 @@ function scrollMagic() {
 
 function zzpService() {
     const obj = $('.js-zzp-st');
+    const nav = $('.js-zzp-st-nav');
 
-    if (obj[0]) {
-        obj.each(function () {
-            const header = $('.js-zzp-st-header', this);
-            const chevron = $('.js-zzp-st-chevron', this);
-            const close = $('.js-zzp-st-close', this);
-            const content = $('.js-zzp-st-content', this);
+    if (obj[0] && nav[0]) {
+        obj.eq(0).show();
+        nav.eq(0).addClass('is-active');
 
-            header.click(() => {
-                if (!header.hasClass('is-active')) {
-                    $('.js-zzp-st-header').removeClass('is-active');
-                    $('.js-zzp-st-chevron').show();
-                    $('.js-zzp-st-close, .js-zzp-st-content').hide();
-                    obj.css('z-index', '0');
-                }
-
-                $(this).css('z-index', '1');
-                content.toggle();
-                chevron.toggle();
-                close.toggle();
-                header.toggleClass('is-active');
+        nav.each(function (i) {
+            $(this).click(() => {
+                obj.hide();
+                nav.removeClass('is-active');
+                $(this).addClass('is-active');
+                obj.eq(i).show();
             });
         });
     }

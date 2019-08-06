@@ -109,90 +109,100 @@
 // --------------------------------------
 .zzp-service {
     position: relative;
-    top: -132px;
+    min-height: 350px;
+
+    @include m {
+        min-height: 600px;
+    }
+}
+
+.zzp-service__map-container {
+    @include full(absolute);
+    @include center(flex);
+    overflow: hidden;
+    margin-top: -100px;
+    z-index: -1;
+
+    @include md {
+        margin-top: -132px;
+        left: -50px;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(to bottom, rgba($ns-white, 0) 20%, rgba($ns-white, 1) 100%);
+    }
 }
 
 .zzp-service__map {
-    position: relative;
+    @include full(relative);
     max-width: 620px;
-    margin: 0 auto;
-    z-index: -1;
 
     svg {
         fill: #EBF6FF;
     }
-
-    @include md {
-        left: -50px;
-    }
 }
 
-.zzp-service__container {
-    position: relative;
-    width: 600px;
-    height: 400px;
+.zzp-service__tile-container {
+    @include center(flex);
+    height: 280px;
 }
 
 .zzp-service__tile {
-    display: inline-block;
-    position: absolute;
-    max-width: 250px;
+    max-width: 360px;
     background-color: $ns-white;
     box-shadow: 0 5px 20px rgba($ns-blue, 0.18);
     border-radius: 8px;
     overflow: hidden;
-    transition: $fade-all;
+}
 
-    &:hover  {
-        box-shadow: 0 8px 30px rgba($ns-blue, 0.3);
+.zzp-service__nav-item-container {
+    margin-right: $gutter;
 
-        .zzp-service__tile-header {
-            color: $ns-blue;
-
-            svg {
-                fill: $ns-blue;
-            }
-        }
-    }
-
-    &:nth-child(1) {
-        top: 20px;
-        left: 40px;
-    }
-
-    &:nth-child(2) {
-        top: 90px;
-        left: 240px;
+    &:last-child {
+        margin: 0;
     }
 }
 
-.zzp-service__tile-header {
-    padding: $half-gutter;
-    display: flex;
-    justify-content: space-between;
-    color: $ns-light-blue;
-    @include font(16px, bold, $lh-solid);
-    font-style: italic;
+.zzp-service__nav {
+    display: inline-flex;
+    white-space: nowrap;
+    overflow-x: scroll;
+    box-shadow: inset 0 -1px 0 $ns-grey-6b;
+    padding-bottom: 10px;
+}
+
+.zzp-service__nav-item {
+    position: relative;
+    color: $ns-grey-4;
     transition: $fade-all;
     cursor: pointer;
 
-    svg {
-        fill: $ns-light-blue;
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        width: 100%;
+        border-bottom: 1px solid $ns-blue;
         transition: $fade-all;
+        opacity: 0;
+        transform: scaleX(0);
+        transform-origin: 0 0;
     }
 
+    &:hover,
     &.is-active {
         color: $ns-blue;
 
-        svg {
-            fill: $ns-blue;
+        &:before {
+            opacity: 1;
+            transform: scaleX(1);
         }
     }
-}
-
-.zzp-service__tile-icon {
-    margin-left: $half-gutter;
-    margin-right: 2px;
 }
 
 

@@ -20,8 +20,8 @@
     display: flex;
     flex-wrap: wrap;
 
-    @include m {
-        .f-grid__unit {
+    .f-grid__unit {
+        @include m {
             flex: 3;
         }
     }
