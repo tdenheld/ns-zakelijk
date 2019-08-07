@@ -39,9 +39,9 @@ title: NS-Business Card voor ZZP'ers
             </h2>
             <div class="zzp-divider js-tr tr-stag"></div>
         </header>
-        <div class="f-grid f-grid--3">
+        <div class="f-grid">
             {% for entry in site.data.zzp.usps.list %}
-            <div class="f-grid__unit">
+            <div class="f-grid__unit f-grid__unit--f1-m">
                 {% include zzp/usp.html %}
             </div>
             {% endfor %}
