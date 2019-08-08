@@ -7,10 +7,10 @@ title: NS-Business Card voor ZZP'ers
 
 <section class="zzp-hero mb-6 mb-8-sm a a-fi" id="js-zzp-hero">
     <div class="full-absolute o-hidden hidden-xs hidden-sm">
-        <video class="zzp-video js-video" preload="auto" poster="/assets/img/heros/hero-video.jpg" autoplay muted loop>
+        <!-- <video class="zzp-video js-video" preload="auto" poster="/assets/img/heros/hero-video.jpg" autoplay muted loop>
             <source src="/assets/img/heros/hero-zzp.mp4" type="video/mp4">
             </source>
-        </video>
+        </video> -->
     </div>
     <div class="zzp-hero__gradient"></div>
     <figure class="zzp-hero__flow">{% include flows/flow-gradient-white.svg %}</figure>
@@ -20,7 +20,7 @@ title: NS-Business Card voor ZZP'ers
                 <div class="f24 f32-sm fw-normal f-white ts-2 lh-title mb-2 ls-3 a a-fi-right-200px a-stag a-del-350">
                     {{ site.data.zzp.title }}
                 </div>
-                <div class="f36 f48-sm f60-md lh-title f-white ts-2 a a-fi-right-200px a-stag a-del-350">
+                <div class="f36 f48-sm f60-md ls-8 lh-title f-white ts-2 a a-fi-right-200px a-stag a-del-350">
                     {{ site.data.zzp.payoff }}
                 </div>
             </h1>
@@ -34,14 +34,14 @@ title: NS-Business Card voor ZZP'ers
 <section class="mb-6 mb-12-sm a a-fi a-del-500">
     <div class="container container--narrow">
         <header class="txt-c mb-6 mb-8-sm mxw-950 mh-auto js-scroll-magic js-tr tr-fi-up tr-1500">
-            <h2 class="f28 f48-sm fw-b f-blue lh-title mb-3">
+            <h2 class="f28 f48-sm ls-8 fw-b f-blue lh-title mb-3">
                 {{ site.data.zzp.usps.title }}
             </h2>
             <div class="zzp-divider js-tr tr-stag"></div>
         </header>
         <div class="f-grid">
             {% for entry in site.data.zzp.usps.list %}
-            <div class="f-grid__unit f-grid__unit--f1-m">
+            <div class="f-grid__unit f-grid__unit--m">
                 {% include zzp/usp.html %}
             </div>
             {% endfor %}
@@ -57,7 +57,7 @@ title: NS-Business Card voor ZZP'ers
     </div>
 </section>
 
-<section class="mb-6 mb-14-sm">
+<section class="mb-8 mb-14-sm">
     <div class="container container--narrow">
         <div class="zzp-service__map-container">
             <figure class="zzp-service__map js-scroll-magic js-tr tr-fi-up-si tr-fi-up-si--large tr-1500">
@@ -65,7 +65,7 @@ title: NS-Business Card voor ZZP'ers
             </figure>
         </div>
         <header class="pos-r mxw-750 mh-auto f-blue txt-c mb-4 mb-8-sm js-scroll-magic">
-            <h2 class="f28 f48-sm fw-b lh-title mb-3 js-tr tr-stag">
+            <h2 class="f28 f48-sm ls-8 fw-b lh-title mb-3 js-tr tr-stag">
                 {{ site.data.zzp.services.title }}
             </h2>
             <p class="f18 f20-sm f-grey-4 mxw-600 mh-auto js-tr tr-stag">
@@ -76,9 +76,31 @@ title: NS-Business Card voor ZZP'ers
     </div>
 </section>
 
+<section class="pos-r pv-4-sm mb-6 mb-8-sm">
+    <div class="container container--narrow">
+        <div class="txt-c txt-l-m">
+            {% for entry in site.data.zzp.agility %}
+            <div class="zzp-agility f-grid f-grid--center">
+                <figure class="zzp-agility__img-container f-grid__unit f-grid__unit--m js-scroll-magic">
+                    <img src="{{ entry.img }}" class="zzp-agility__img js-tr tr-fi-up tr-1500" />
+                </figure>
+                <div class="zzp-agility__text f-grid__unit f-grid__unit--m js-scroll-magic">
+                    <h2 class="f28 f38-sm ls-5 f-blue fw-b lh-title mb-2 js-tr tr-stag">
+                        {{ entry.title }}
+                    </h2>
+                    <p class="f18 f24-sm f-blue js-tr tr-stag">
+                        {{ entry.description }}
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
 <section class="mb-6 mb-8-sm js-scroll-magic js-tr tr-fi-up tr-1500">
     <div class="container container--narrow">
-        <h2 class="txt-c f28 f48-sm f-normal f-blue lh-title mb-3">
+        <h2 class="txt-c f28 f48-sm ls-8 f-blue fw-b lh-title mb-3">
             Zo flexibel als
         </h2>
     </div>

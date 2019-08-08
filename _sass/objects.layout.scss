@@ -16,12 +16,16 @@
     margin: -$half-gutter;
 }
 
+.f-grid--center {
+    align-items: center;
+}
+
 .f-grid__unit {
     flex: 1 100%;
     padding: $half-gutter;
 }
 
-.f-grid__unit--f1-m {
+.f-grid__unit--m {
     @include m {
         flex: 1;
     }

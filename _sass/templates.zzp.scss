@@ -169,8 +169,9 @@
     -webkit-overflow-scrolling: touch;
     box-shadow: inset 0 -1px 0 $ns-grey-6b;
     padding-bottom: 10px;
-    &::-webkit-scrollbar { 
-        display: none; 
+
+    &::-webkit-scrollbar {
+        display: none;
     }
 }
 
@@ -202,6 +203,51 @@
         }
     }
 }
+
+
+// agility
+// --------------------------------------
+.zzp-agility {
+    margin-bottom: 42px;
+
+    @include m {
+        &:nth-child(even) {
+            .zzp-agility__img-container {
+                order: 999;
+            }
+
+            .zzp-agility__text {
+                text-align: right;
+            }
+        }
+    }
+
+    &:last-child {
+        .zzp-agility__img-container {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.zzp-agility__img-container {
+    @include center(flex);
+    padding: 0 $half-gutter;
+
+    @include lg {
+        padding: 0;
+    }
+}
+
+.zzp-agility__img {
+    width: 100%;
+    max-width: 240px;
+    border-radius: 50%;
+
+    @include m {
+        max-width: 350px;
+    }
+}
+
 
 
 // misc
