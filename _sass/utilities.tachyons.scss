@@ -113,6 +113,14 @@
     .mr-auto-sm {margin-right: auto;}
     .pa-2r-sm {padding: 2rem;}    
 }
+@include m-max {
+    .ma-auto-m-max {margin: auto;}
+    .mh-auto-m-max {margin: 0 auto;}
+    .mv-auto-m-max {margin: auto 0;}
+    .ml-auto-m-max {margin-left: auto;}
+    .mr-auto-m-max {margin-right: auto;}
+    .pa-2r-m-max {padding: 2rem;}    
+}
 @include md {
     .ma-auto-md {margin: auto;}
     .mh-auto-md {margin: 0 auto;}
@@ -307,6 +315,12 @@
     $y: $i * 50px;
     .mxw-#{$x} {
         max-width: #{$y};
+    }
+
+    @include sm {
+        .mxw-#{$x}-sm {
+            max-width: #{$y};
+        }
     }
 }
 
