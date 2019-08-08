@@ -41,7 +41,7 @@ title: NS-Business Card voor ZZP'ers
         </header>
         <div class="f-grid">
             {% for entry in site.data.zzp.usps.list %}
-            <div class="f-grid__unit f-grid__unit--m">
+            <div class="f-grid__unit f-grid__unit--m-1">
                 {% include zzp/usp.html %}
             </div>
             {% endfor %}
@@ -81,10 +81,10 @@ title: NS-Business Card voor ZZP'ers
         <div class="txt-c txt-l-m">
             {% for entry in site.data.zzp.agility %}
             <div class="zzp-agility f-grid f-grid--center">
-                <figure class="zzp-agility__img-container f-grid__unit f-grid__unit--m js-scroll-magic">
+                <figure class="zzp-agility__img-container f-grid__unit f-grid__unit--m-1 js-scroll-magic">
                     <img src="{{ entry.img }}" class="zzp-agility__img js-tr tr-fi-up tr-1500" />
                 </figure>
-                <div class="zzp-agility__text f-grid__unit f-grid__unit--m js-scroll-magic">
+                <div class="zzp-agility__text f-grid__unit f-grid__unit--m-1 js-scroll-magic">
                     <h2 class="f28 f38-sm ls-5 f-blue fw-b lh-title mb-2 js-tr tr-stag">
                         {{ entry.title }}
                     </h2>
@@ -98,17 +98,49 @@ title: NS-Business Card voor ZZP'ers
     </div>
 </section>
 
-<section class="gd-r-pale-blue pv-6 pv-12-sm mb-6 mb-8-sm js-scroll-magic js-tr tr-fi-up tr-1500">
+<section class="gd-r-pale-blue pv-6 pv-12-sm js-scroll-magic js-tr tr-fi-up tr-1500">
     <div class="container container--narrow">
         <div class="mxw-750 mh-auto txt-c">
-            <h2 class="txt-c f28 f48-sm ls-5 f-blue fw-b lh-title mb-3 js-tr tr-stag">
+            <h2 class="f28 f48-sm ls-5 f-blue fw-b lh-title mb-3 js-tr tr-stag">
                 {{ site.data.zzp.sell.title }}
             </h2>
-            <p class="f18 f20-sm f-blue mb-4 js-tr tr-stag">
+            <p class="f18 f24-sm f-blue mb-4 js-tr tr-stag">
                 {{ site.data.zzp.sell.description }}
             </p>
             <div class="js-tr tr-stag">
                 <a href="/businesscard-bestellen" class="button button--nsYellow">{{ site.data.zzp.cta }}</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-grey-8 pv-6 pv-12-sm mb-6 mb-8-sm js-scroll-magic">
+    <div class="container container--narrow">
+        <div class="f-grid f-grid--center">
+            <figure class="f-grid__unit f-grid__unit--m-2">
+                <div class="center">
+                    <div class="svg-yellow w-100 mxw-250 js-tr tr-fi-up tr-1500">
+                        {% include icons/discount--medium-res.svg %}
+                    </div>
+                </div>
+            </figure>
+            <div class="ph-2 hidden-m"></div>
+            <div class="txt-c txt-l-sm f-grid__unit f-grid__unit--m-5">
+                <div class="mxw-600">
+                    <h2 class="f24 f38-sm ls-5 f-blue fw-b lh-title mb-3 js-tr tr-stag">
+                        {{ site.data.zzp.discount.title }}
+                    </h2>
+                    <p class="f18 f20-sm f-blue mb-4 js-tr tr-stag">
+                        {{ site.data.zzp.discount.description }}
+                    </p>
+                    <p class="f14 f-blue mb-2 js-tr tr-stag">
+                        {{ site.data.zzp.discount.aid }}
+                    </p>
+                    <div class="js-tr tr-stag">
+                        <a href="http://abonnementenwijzer.prod.enigmatry.com/#/"
+                            class="button btn-ghost">{{ site.data.zzp.discount.cta }}</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

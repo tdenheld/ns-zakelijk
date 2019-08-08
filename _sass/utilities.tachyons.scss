@@ -109,6 +109,8 @@
     .ma-auto-sm {margin: auto;}
     .mh-auto-sm {margin: 0 auto;}
     .mv-auto-sm {margin: auto 0;}
+    .ml-auto-sm {margin-left: auto;}
+    .mr-auto-sm {margin-right: auto;}
     .pa-2r-sm {padding: 2rem;}    
 }
 @include md {
@@ -899,6 +901,7 @@
 .svg-blue svg {fill: $ns-blue;}
 .svg-light-blue svg {fill: $ns-light-blue;}
 .svg-red svg {fill: $ns-red-alert;}
+.svg-yellow svg {fill: $ns-yellow;}
 .svg-white svg {fill: $ns-white;}
 .svg-green svg {fill: $ns-green;}
 .svg-green-sexy svg {fill: $ns-green-sexy;}

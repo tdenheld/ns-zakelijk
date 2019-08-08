@@ -54,3 +54,9 @@ agility:
 sell:
   title: Bestel gratis de <span class="no-wrap">NS-Business Card</a>
   description: Je kunt er direct mee reizen. Of je nou veel reist, of weinig. Eén keer de diensten instellen en daarna geen omkijken meer naar.
+
+discount:
+  title: Extra voordeel op je treinreizen?
+  description: 'Zet dan een abonnement op je kaart. Reis je af-en-toe en kun je ervoor kiezen buiten de spits te reizen, neem bijvoorbeeld dan een Dal Abonnement: 40% korting op je reizen buiten de spits.'
+  aid: Bekijk welk abonnement het beste bij jou past.
+  cta: Start abonnementenwijzer
