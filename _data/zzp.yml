@@ -60,3 +60,30 @@ discount:
   description: 'Zet dan een abonnement op je kaart. Reis je af-en-toe en kun je ervoor kiezen buiten de spits te reizen, neem bijvoorbeeld dan een Dal Abonnement: 40% korting op je reizen buiten de spits.'
   aid: Bekijk welk abonnement het beste bij jou past.
   cta: Start abonnementenwijzer
+
+faq:
+  title: Nog niet alles duidelijk?
+  adn:
+    - title: Een gratis NS-Business Card. Hoe werkt dat?
+      content:
+        - <p>NS-Business Card is dé mobiliteitskaart voor ondernemend Nederland. Zo reist u comfortabel met het gehele openbaar vervoer. De ene dag werkt u op kantoor. De andere dag reist u van afspraak naar afspraak. Bepaal met de NS-Business Card per dag flexibel hoe u reist.</p>
+
+    - title: Wat is het verschil met Flex van NS?
+      content:
+        - <p>NS-Business Card is dé mobiliteitskaart voor ondernemend Nederland. Zo reist u comfortabel met het gehele openbaar vervoer. De ene dag werkt u op kantoor. De andere dag reist u van afspraak naar afspraak. Bepaal met de NS-Business Card per dag flexibel hoe u reist.</p>
+
+    - title: Een paar keer per jaar met de trein. Is het dan wel interessant?
+      content:
+        - <p>NS-Business Card is dé mobiliteitskaart voor ondernemend Nederland. Zo reist u comfortabel met het gehele openbaar vervoer. De ene dag werkt u op kantoor. De andere dag reist u van afspraak naar afspraak. Bepaal met de NS-Business Card per dag flexibel hoe u reist.</p>
+
+    - title: Hoe werkt de administratie?
+      content:
+        - <p>NS-Business Card is dé mobiliteitskaart voor ondernemend Nederland. Zo reist u comfortabel met het gehele openbaar vervoer. De ene dag werkt u op kantoor. De andere dag reist u van afspraak naar afspraak. Bepaal met de NS-Business Card per dag flexibel hoe u reist.</p>
+
+    - title: Hoe bereken ik welke combinatie van vervoersmiddelen het meest efficiënt is?
+      content:
+        - <p>NS-Business Card is dé mobiliteitskaart voor ondernemend Nederland. Zo reist u comfortabel met het gehele openbaar vervoer. De ene dag werkt u op kantoor. De andere dag reist u van afspraak naar afspraak. Bepaal met de NS-Business Card per dag flexibel hoe u reist.</p>
+
+    - title: Hoe duurzaam is reizen met de NS-Business Card eigenlijk?
+      content:
+        - <p>NS-Business Card is dé mobiliteitskaart voor ondernemend Nederland. Zo reist u comfortabel met het gehele openbaar vervoer. De ene dag werkt u op kantoor. De andere dag reist u van afspraak naar afspraak. Bepaal met de NS-Business Card per dag flexibel hoe u reist.</p>

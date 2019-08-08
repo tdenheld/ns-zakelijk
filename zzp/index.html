@@ -145,3 +145,20 @@ title: NS-Business Card voor ZZP'ers
         </div>
     </div>
 </section>
+
+<hr class="mb-6 mb-12-sm">
+
+<section class="mb-6 mb-12-sm js-scroll-magic">
+    <div class="container container--narrow">
+        <div class="mxw-800 mh-auto">
+            <h2 class="f28 f38-sm ls-5 f-blue fw-b lh-title mb-4 js-tr tr-stag">
+                {{ site.data.zzp.faq.title }}
+            </h2>
+            <div class="js-tr tr-stag">
+                {% for entry in site.data.zzp.faq.adn %}
+                {% include adn.html %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
