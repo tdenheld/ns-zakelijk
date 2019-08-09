@@ -3,7 +3,7 @@ payoff: Elke dag is anders. Kies de reis die daarbij past
 cta: Bestel gratis
 
 usps:
-  title: Waarom de NS&#8209;Business Card?
+  title: Waarom de <span class="no-wrap">NS-Business Card</span>?
   list:
     - img: train-public-transport--yellow
       title: Gemakkelijk

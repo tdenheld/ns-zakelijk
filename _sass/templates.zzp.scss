@@ -2,6 +2,31 @@
 // --------------------------------------
 // --------------------------------------
 
+// headings
+// --------------------------------------
+.zzp-heading {
+    @include font(28px, bold, $lh-title);
+    letter-spacing: toRem(-0.5px);
+    color: $ns-blue;
+
+    @include sm {
+        font-size: toRem(38px);
+    }
+
+    @include md {
+        font-size: toRem(48px);
+    }
+}
+
+.zzp-description {
+    @include font(18px, normal, $lh-copy);
+    color: $ns-blue;
+
+    @include sm {
+        font-size: toRem(20px);
+    }
+}
+
 // hero
 // --------------------------------------
 .zzp-hero {
