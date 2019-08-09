@@ -8,12 +8,23 @@ usps:
     - img: train-public-transport--yellow
       title: Gemakkelijk
       description: Geen saldo meer nodig. Check in en uit. Gebruikte diensten worden aan het eind van de maand in rekening gebracht.
+      overlay:
+        title: Gemak door reizen op rekening
+        content: Saldo laden is niet nodig, we brengen de kosten pas aan het einde van de maand in rekening en het bedrag wordt automatisch afgeschreven. Geen omkijken naar dus, je hoeft alleen maar in en uit te checken, of te reserveren. Bovendien heb je altijd inzicht in je reistransacties via Mijn NS Zakelijk of de NS-app.
+
     - img: invoice--yellow
       title: Overzichtelijk
       description: Geen administratief gedoe met bonnetjes of aparte betalingen. Je factuur is eenvoudig te splitsen in zakelijk en privé.
+      overlay:
+        title: Geen gedoe met aparte reisdeclaraties
+        content: Met een maandelijkse BTW-factuur ben je af van administratief gedoe met bonnetjes, of aparte betalingen. Via de NS-app heb je altijd inzicht in de gemaakte reizen en kosten. Daarnaast kun je eenvoudig zakelijk en privé splitsen, of kenmerken aan reizen toevoegen. Daarmee wordt jouw administratie nog simpeler.<br><br>De factuur is rechtstreeks in te dienen; hiermee is de BTW teruggave in ieder geval gegarandeerd.
+
     - img: bike-shed-account--yellow
       title: Compleet
       description: Combineer je vervoer. Pak een OV-fiets, parkeer je auto met korting bij een station, of huur een Greenwheels.
+      overlay:
+        title: Efficiënt door direct toegang tot extra deur-tot-deurdiensten
+        content: Maak het jezelf makkelijk door verschillende vervoersmiddelen te combineren. Bovendien ontvang je korting op parkeren bij Q-Park P+R, werken/vergaderen bij Regus, of het huren van een Greenwheels auto. Makkelijk geregeld via de NS-app.
 
 services:
   title: Complete mobiliteitskaart voor de meest efficiënte zakelijke reis

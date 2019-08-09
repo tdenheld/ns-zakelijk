@@ -9,6 +9,13 @@
         {{ entry.description }}
     </p>
     <div class="f18 js-tr tr-stag">
-        <a class="unlink tk-link">Meer informatie</a>
+        <a class="unlink tk-link" data-controller="generic/ui/ContentOpener"
+            data-config="{&quot;type&quot;: &quot;Overlay&quot;, &quot;contentId&quot;: &quot;{{ entry.title | downcase }}&quot;}"
+            title="{{ entry.title }}">Meer informatie</a>
     </div>
 </div>
+
+<article class="is-hidden" data-controller="generic/ui/RichText" id="{{ entry.title | downcase }}">
+    <h2 class="zzp-heading f38-md ls-5 mb-4">{{ entry.overlay.title }}</h2>
+    <p class="zzp-description mb-0">{{ entry.overlay.content }}</p>
+</article>
