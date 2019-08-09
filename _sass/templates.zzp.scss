@@ -27,6 +27,7 @@
     }
 }
 
+
 // hero
 // --------------------------------------
 .zzp-hero {
@@ -76,6 +77,32 @@
             height: 100%;
         }
     }
+}
+
+.zzp-hero__title {
+    @include font(36px, bold, $lh-title);
+    letter-spacing: toRem(-0.8px);
+    color: $ns-white;
+    text-shadow: $text-shadow-2;
+
+    @include sm {
+        font-size: toRem(48px);
+    }
+
+    @include md {
+        font-size: toRem(60px);
+    } 
+}
+
+.zzp-hero__subtitle {
+    @include font(24px, normal, $lh-title);
+    letter-spacing: toRem(-0.3px);
+    color: $ns-white;
+    text-shadow: $text-shadow-2;
+
+    @include sm {
+        font-size: toRem(32px);
+    } 
 }
 
 
