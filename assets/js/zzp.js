@@ -42,6 +42,7 @@ function scrollMagic() {
 function zzpService() {
     const obj = $('.js-zzp-st');
     const nav = $('.js-zzp-st-nav');
+    const navbar = $('.js-zzp-st-navbar');
     const index = 0;
     let current;
 
@@ -66,11 +67,22 @@ function zzpService() {
                 display: 'none'
             }).fromTo(card, 0.4, {
                 x: xStart
-            },{
+            }, {
                 ease: Power4.easeOut,
                 opacity: 1,
                 x: 0,
                 display: 'block',
+            });
+        }
+
+        function scrollNav(i) {
+            let xPos = i * (40 + 15000 / vw);
+            TweenMax.to(navbar, .6, {
+                ease: Power4.easeOut,
+                scrollTo: {
+                    x: xPos,
+                    autoKill: false,
+                }
             });
         }
 
@@ -85,11 +97,20 @@ function zzpService() {
         nav.each(function (i) {
             const card = obj.eq(i);
 
+            // Draggable.create(card, {
+            //     type: "x",
+            //     throwProps:true,
+            //     onRelease() {
+            //         transition(card);
+            //     }
+            // });
+
             $(this).click(() => {
                 checkIndex();
                 nav.removeClass('is-active');
                 $(this).addClass('is-active');
-                
+                scrollNav(i);
+
                 if (i > current) {
                     transition(card);
                 } else if (i < current) {
