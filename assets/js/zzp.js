@@ -43,12 +43,12 @@ function zzpService() {
     const obj = $('.js-zzp-st');
     const nav = $('.js-zzp-st-nav');
     const navbar = $('.js-zzp-st-navbar');
-    const index = 0;
+    const init = 0;
     let currentIndex;
 
     if (obj[0] && nav[0]) {
-        obj.eq(index).show();
-        nav.eq(index).addClass('is-active');
+        obj.eq(init).show();
+        nav.eq(init).addClass('is-active');
 
         function transition(card, xStart, xEnd) {
             const tl = new TimelineMax();
