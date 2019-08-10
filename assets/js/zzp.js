@@ -44,21 +44,13 @@ function zzpService() {
     const nav = $('.js-zzp-st-nav');
     const navbar = $('.js-zzp-st-navbar');
     const index = 0;
-    let current;
+    let currentIndex;
 
     if (obj[0] && nav[0]) {
         obj.eq(index).show();
         nav.eq(index).addClass('is-active');
 
-        function transition(card, pos) {
-            let xEnd = -200;
-            let xStart = 200;
-
-            if (pos === 'prev') {
-                xEnd = 200;
-                xStart = -200;
-            }
-
+        function transition(card, xStart, xEnd) {
             const tl = new TimelineMax();
             tl.to(obj, 0.3, {
                 ease: Power4.easeIn,
@@ -76,11 +68,11 @@ function zzpService() {
         }
 
         function scrollNav(i) {
-            let xPos = i * (40 + 15000 / vw);
+            let xPosition = i * (40 + 15000 / vw);
             TweenMax.to(navbar, .6, {
                 ease: Power4.easeOut,
                 scrollTo: {
-                    x: xPos,
+                    x: xPosition,
                     autoKill: false,
                 }
             });
@@ -89,7 +81,7 @@ function zzpService() {
         function checkIndex() {
             nav.each(function () {
                 if ($(this).hasClass('is-active')) {
-                    current = $(this).parent().index();
+                    currentIndex = $(this).parent().index();
                 }
             });
         }
@@ -100,8 +92,9 @@ function zzpService() {
             // Draggable.create(card, {
             //     type: "x",
             //     throwProps:true,
-            //     onRelease() {
-            //         transition(card);
+            //     lockAxis:true,
+            //     onDragEnd() {
+            //         transition(card, 200, -200);
             //     }
             // });
 
@@ -111,10 +104,10 @@ function zzpService() {
                 $(this).addClass('is-active');
                 scrollNav(i);
 
-                if (i > current) {
-                    transition(card);
-                } else if (i < current) {
-                    transition(card, 'prev');
+                if (i > currentIndex) {
+                    transition(card, 200, -200);
+                } else if (i < currentIndex) {
+                    transition(card, -200, 200);
                 }
             });
         });
