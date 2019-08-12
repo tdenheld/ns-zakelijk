@@ -76,19 +76,19 @@ title: NS-Business Card voor ZZP'ers
     </div>
 </section>
 
-<section class="pos-r pv-4-sm mb-4 mb-8-sm">
+<section class="pos-r mb-4 mb-12-sm">
     <div class="container container--narrow">
-        <div class="txt-c txt-l-m">
+        <div class="txt-c mxw-900 mh-auto f-grid">
             {% for entry in site.data.zzp.agility %}
-            <div class="zzp-agility f-grid f-grid--center">
-                <figure class="zzp-agility__img-container f-grid__unit f-grid__unit--m-1 js-scroll-magic">
-                    <img src="{{ entry.img }}" alt="{{ entry.title }}" class="zzp-agility__img js-tr tr-fi-up tr-1500" />
+            <div class="zzp-agility f-grid__unit f-grid__unit--m-1">
+                <figure class="zzp-agility__img-container js-scroll-magic">
+                    <img src="{{ entry.img }}" alt="{{ entry.title }}" class="zzp-agility__img mb-3 js-tr tr-fi-up tr-1500" />
                 </figure>
-                <div class="zzp-agility__text f-grid__unit f-grid__unit--m-1 js-scroll-magic">
-                    <h2 class="zzp-heading mb-2 js-tr tr-stag">
+                <div class="zzp-agility__text js-scroll-magic">
+                    <h2 class="f24 f28-sm ls-5 f-blue fw-b lh-title mb-2 js-tr tr-stag">
                         {{ entry.title }}
                     </h2>
-                    <p class="zzp-description js-tr tr-stag">
+                    <p class="f18 f-grey-4 js-tr tr-stag">
                         {{ entry.description }}
                     </p>
                 </div>

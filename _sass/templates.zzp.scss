@@ -276,21 +276,13 @@
 // agility
 // --------------------------------------
 .zzp-agility {
-    margin-bottom: 42px;
-
-    @include m {
-        &:nth-child(even) {
-            .zzp-agility__img-container {
-                order: 999;
-            }
-
-            .zzp-agility__text {
-                text-align: right;
-            }
-        }
-    }
+    margin-bottom: $half-gutter;
 
     &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include m {
         margin-bottom: 0;
     }
 }
@@ -307,11 +299,8 @@
 .zzp-agility__img {
     width: 100%;
     max-width: 240px;
+    margin: 0 auto;
     border-radius: 50%;
-
-    @include m {
-        max-width: 350px;
-    }
 }
 
 
