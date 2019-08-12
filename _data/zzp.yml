@@ -10,21 +10,21 @@ usps:
       description: Nooit meer saldo laden. Check zorgeloos in en uit. Alle reizen worden maandelijks achteraf in rekening gebracht.
       overlay:
         title: Gemak door reizen op rekening
-        content: Saldo laden is niet nodig, we brengen de kosten pas aan het einde van de maand in rekening en het bedrag wordt automatisch afgeschreven. Geen omkijken naar dus, je hoeft alleen maar in en uit te checken, of te reserveren. Bovendien heb je altijd inzicht in je reistransacties via Mijn NS Zakelijk of de NS-app.
+        content: Saldo laden is niet nodig, we brengen de kosten pas aan het einde van de maand in rekening en het bedrag wordt automatisch afgeschreven. Geen omkijken naar dus, je hoeft alleen maar in en uit te checken, of te reserveren. Bovendien heb je altijd inzicht in je reistransacties via Mijn NS Zakelijk of de NS&#8209;app.
 
     - img: invoice--yellow
       title: Overzichtelijk
       description: Geen administratief gedoe met bonnetjes. Je BTW-factuur is eenvoudig te splitsen in zakelijk en privé.
       overlay:
         title: Geen gedoe met aparte reisdeclaraties
-        content: Met een maandelijkse BTW-factuur ben je af van administratief gedoe met bonnetjes, of aparte betalingen. Via de NS-app heb je altijd inzicht in de gemaakte reizen en kosten. Daarnaast kun je eenvoudig zakelijk en privé splitsen, of kenmerken aan reizen toevoegen. Daarmee wordt jouw administratie nog simpeler.<br><br>De factuur is rechtstreeks in te dienen; hiermee is de BTW teruggave in ieder geval gegarandeerd.
+        content: Met een maandelijkse BTW-factuur ben je af van administratief gedoe met bonnetjes, of aparte betalingen. Via de NS&#8209;app heb je altijd inzicht in de gemaakte reizen en kosten. Daarnaast kun je eenvoudig zakelijk en privé splitsen, of kenmerken aan reizen toevoegen. Daarmee wordt jouw administratie nog simpeler.<br><br>De factuur is rechtstreeks in te dienen; hiermee is de BTW teruggave in ieder geval gegarandeerd.
 
     - img: bike-shed-account--yellow
       title: Compleet
-      description: Combineer je vervoer. Pak een OV-fiets, parkeer je auto met korting bij een station, of huur een Greenwheels.
+      description: Combineer je vervoer. Pak een OV&#8209;fiets, parkeer je auto met korting bij een station, of huur een Greenwheels.
       overlay:
         title: Efficiënt door direct toegang tot extra deur-tot-deurdiensten
-        content: Maak het jezelf makkelijk door verschillende vervoersmiddelen te combineren. Bovendien ontvang je korting op parkeren bij Q-Park P+R, werken/vergaderen bij Regus, of het huren van een Greenwheels auto. Makkelijk geregeld via de NS-app.
+        content: Maak het jezelf makkelijk door verschillende vervoersmiddelen te combineren. Bovendien ontvang je korting op parkeren bij Q-Park P+R, werken/vergaderen bij Regus, of het huren van een Greenwheels auto. Makkelijk geregeld via de NS&#8209;app.
 
 services:
   title: Onbezorgd zakelijk reizen met dé mobiliteitskaart voor ondernemers
@@ -81,14 +81,14 @@ services:
         - Eenvoudig achteraf betalen via een maandelijkse factuur.
 
     - title: OV-fiets
-      description: Op bijna 300 locaties door heel Nederland huur je een OV-fiets. Extra gezond en ook nog eens goed voor het milieu!
+      description: Op bijna 300 locaties door heel Nederland huur je een OV&#8209;fiets. Extra gezond en ook nog eens goed voor het milieu!
       img: /assets/img/thumbs/ov-fiets.jpg
       list:
-        - Voor € 3,85 huur je een OV-fiets voor 24 uur.
+        - Voor € 3,85 huur je een OV&#8209;fiets voor 24 uur.
         - Samen onderweg? Huur met een NS&#8209;Business Card twee fietsen tegelijkertijd.
-        - Neem de OV-fiets gemakkelijk mee door je NS&#8209;Business Card te laten scannen.
+        - Neem de OV&#8209;fiets gemakkelijk mee door je NS&#8209;Business Card te laten scannen.
         - Alle fietsritten vind je achteraf terug op je factuur.
-        - Ook OV-fietsen uit de fietskluis te huur.
+        - Ook OV&#8209;fietsen uit de fietskluis te huur.
 
     - title: Taxi
       description: Maak het jezelf comfortabel met een taxi via de NS&#8209;Business Card. Bonnetjes declareren is niet meer nodig!
@@ -140,11 +140,11 @@ faq:
 
     - title: Hoe kan ik gebruik maken van de deur-tot-deur diensten?
       content:
-        - <p>Je kunt met de NS&#8209;Business Card gemakkelijk gebruikmaken van al het OV, de OV-fiets, bewaakte fietsenstallingen en Q-park parkeerplaatsen door in- en uit te checken. Een taxi en Greenwheels auto moet je van te voren reserveren.</p>
+        - <p>Je kunt met de NS&#8209;Business Card gemakkelijk gebruikmaken van al het OV, de OV&#8209;fiets, bewaakte fietsenstallingen en Q-park parkeerplaatsen door in- en uit te checken. Een taxi en Greenwheels auto moet je van te voren reserveren.</p>
 
     - title: Hoe duurzaam is reizen met de NS&#8209;Business Card eigenlijk?
       content:
-        - <p>Hoe duurzaam je reist is afhankelijk van de diensten die je met de NS&#8209;Business Card gebruikt. De NS treinen rijden 100% op groene stroom dus zonder CO2-uitstoot, en ook het gebruik van de OV-fiets is natuurlijk een duurzame keuze. Als je kiest voor een taxi of Greenwheels auto dan wordt de uitstoot hoger, hoewel er ook groene/ elektrische Greenwheels te huur zijn!</p>
+        - <p>Hoe duurzaam je reist is afhankelijk van de diensten die je met de NS&#8209;Business Card gebruikt. De NS treinen rijden 100% op groene stroom dus zonder CO2-uitstoot, en ook het gebruik van de OV&#8209;fiets is natuurlijk een duurzame keuze. Als je kiest voor een taxi of Greenwheels auto dan wordt de uitstoot hoger, hoewel er ook groene/ elektrische Greenwheels te huur zijn!</p>
 
     - title: Hoe weet ik of een abonnement op mijn NS&#8209;Business Card voordeliger is?
       content:
