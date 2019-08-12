@@ -89,14 +89,15 @@ function zzpService() {
         nav.each(function (i) {
             const card = obj.eq(i);
 
-            Draggable.create(card, {
-                type: "x",
-                throwProps: true,
-                lockAxis: true,
-                onDragEnd() {
-                    transition(card, 200, -200);
-                }
-            });
+            // Draggable.create(card, {
+            //     type: 'x',
+            //     throwProps: true,
+            //     lockAxis: true,
+            //     zIndexBoost:false,
+            //     onDragEnd() {
+            //         transition(card, 200, -200);
+            //     }
+            // });
 
             $(this).click(() => {
                 checkIndex();

@@ -13,14 +13,16 @@
         {% endfor %}
     </div>
     <div class="center js-scroll-magic">
-        <nav class="zzp-service__nav js-tr tr-fi tr-500 js-zzp-st-navbar">
-            {% for entry in site.data.zzp.services.tiles %}
-            <div class="zzp-service__nav-item-container js-tr tr-stag">
-                <div class="zzp-service__nav-item js-zzp-st-nav">
-                    {{ entry.title }}
+        <div class="zzp-service__nav-wrapper">
+            <nav class="zzp-service__nav js-tr tr-fi tr-500 js-zzp-st-navbar">
+                {% for entry in site.data.zzp.services.tiles %}
+                <div class="zzp-service__nav-item-container js-tr tr-stag">
+                    <div class="zzp-service__nav-item js-zzp-st-nav">
+                        {{ entry.title }}
+                    </div>
                 </div>
-            </div>
-            {% endfor %}
-        </nav>
+                {% endfor %}
+            </nav>
+        </div>
     </div>
 </div>

@@ -214,17 +214,22 @@
     }
 }
 
+.zzp-service__nav-wrapper {
+    // hide x-scroll bar
+    overflow: hidden;
+    height: 34px;
+}
+
 .zzp-service__nav {
+    width: 100%;
+    height: 50px;
     display: inline-flex;
     white-space: nowrap;
-    overflow-x: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
-    box-shadow: inset 0 -1px 0 $ns-grey-6b;
-    padding-bottom: 10px;
-
-    &::-webkit-scrollbar {
-        display: none;
-    }
+    -ms-overflow-style: none;
+    box-shadow: inset 0 -17px 0 $ns-grey-6b;
 }
 
 .zzp-service__nav-item {
