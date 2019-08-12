@@ -1,8 +1,8 @@
 <div class="zzp-service">
-    <div class="zzp-service__tile-container mb-2 mb-8-sm js-scroll-magic">
+    <div class="zzp-service__tile-container mb-2 mb-6-sm js-scroll-magic">
         {% for entry in site.data.zzp.services.tiles %}
         <div class="js-zzp-st is-hidden">
-            <div class="zzp-service__tile js-zzp-st-inner js-tr tr-stag tr-del-1500">
+            <div class="zzp-service__tile js-tr tr-stag tr-del-1500">
 
                 <!-- front of the tile -->
                 <div class="js-zzp-st-front">
@@ -15,7 +15,7 @@
                     <p class="f14 f-blue ph-2 pb-2">
                         {{ entry.description }}
                     </p>
-                    <img src="{{ entry.img }}" alt="{{ entry.title }}" />
+                    <img src="{{ entry.img }}" alt="{{ entry.title }}" class="zzp-service__tile-img" />
                 </div>
 
                 <!-- back of the tile -->
@@ -26,9 +26,11 @@
                             {% include icons/close-s--small.svg %}
                         </span>
                     </header>
-                    <p class="f14 f-blue ph-2 pb-2">
-                        {{ entry.full-description }}
-                    </p>
+                    <ul class="list-tick list-tick--small ph-2 pb-2">
+                        {% for item in entry.list %}
+                        <li>{{ item }}</li>
+                        {% endfor %}
+                    </ul>
                 </div>
 
             </div>

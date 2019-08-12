@@ -195,7 +195,7 @@
 
 .zzp-service__tile-container {
     @include center(flex);
-    height: 280px;
+    min-height: 310px;
 }
 
 .zzp-service__tile {
