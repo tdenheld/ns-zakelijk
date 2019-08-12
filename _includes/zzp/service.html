@@ -2,16 +2,41 @@
     <div class="zzp-service__tile-container mb-2 mb-8-sm js-scroll-magic">
         {% for entry in site.data.zzp.services.tiles %}
         <div class="js-zzp-st is-hidden">
-            <div class="zzp-service__tile js-tr tr-stag tr-del-1500">
-                <h3 class="mh-2 mv-2 fw-b fs-i f-blue f18 lh-solid">{{ entry.title }}</h3>
-                <p class="f14 f-blue ph-2 pb-2">
-                    {{ entry.description }}
-                </p>
-                <img src="{{ entry.img }}" alt="{{ entry.title }}" />
+            <div class="zzp-service__tile js-zzp-st-inner js-tr tr-stag tr-del-1500">
+
+                <!-- front of the tile -->
+                <div class="js-zzp-st-front">
+                    <header class="zzp-service__tile-header">
+                        <h3 class="ma-2 fw-b fs-i f-blue f18 lh-solid">{{ entry.title }}</h3>
+                        <span class="svg-btn mh-1 pos-r left-2px js-zzp-st-info">
+                            {% include icons/info--small.svg %}
+                        </span>
+                    </header>
+                    <p class="f14 f-blue ph-2 pb-2">
+                        {{ entry.description }}
+                    </p>
+                    <img src="{{ entry.img }}" alt="{{ entry.title }}" />
+                </div>
+
+                <!-- back of the tile -->
+                <div class="js-zzp-st-back is-hidden">
+                    <header class="zzp-service__tile-header">
+                        <h3 class="ma-2 fw-b fs-i f-blue f18 lh-solid">{{ entry.title }}</h3>
+                        <span class="svg-btn mh-1 pos-r left-2px js-zzp-st-close">
+                            {% include icons/close-s--small.svg %}
+                        </span>
+                    </header>
+                    <p class="f14 f-blue ph-2 pb-2">
+                        {{ entry.full-description }}
+                    </p>
+                </div>
+
             </div>
         </div>
         {% endfor %}
     </div>
+
+    <!-- navbar -->
     <div class="center js-scroll-magic">
         <div class="zzp-service__nav-wrapper">
             <nav class="zzp-service__nav js-tr tr-fi tr-500 js-zzp-st-navbar">

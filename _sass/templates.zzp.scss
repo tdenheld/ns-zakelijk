@@ -199,11 +199,22 @@
 }
 
 .zzp-service__tile {
+    position: relative;
     max-width: 360px;
     background-color: $ns-white;
     box-shadow: 0 5px 20px rgba($ns-blue, 0.18);
     border-radius: 8px;
     overflow: hidden;
+
+    @include sm {
+        width: 360px;
+    }
+}
+
+.zzp-service__tile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .zzp-service__nav-item-container {

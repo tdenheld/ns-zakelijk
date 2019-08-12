@@ -33,6 +33,7 @@ services:
     - title: Greenwheels
       description: Meer dan 1.800 locaties. Uurtarief <span class="no-wrap">€ 8,40</span> en maximaal <span class="no-wrap">€ 92</span> per dag.
       img: /assets/img/thumbs/greenwheels.jpg
+      full-description: Na uw treinreis uitchecken en direct weer inchecken in uw Greenwheels auto? Er is altijd een auto bij u in de buurt beschikbaar. Handig als uw bestemming buiten het bereik van het openbaar vervoer ligt.<br><br>Na uw treinreis uitchecken en direct weer inchecken in uw Greenwheels auto? Er is altijd een auto bij u in de buurt beschikbaar. Handig als uw bestemming buiten het bereik van het openbaar vervoer ligt. Handig als uw bestemming.
 
     - title: Bus, Tram en Metro
       description: Maak gebruik van de bus, tram, of metro, door heel Nederland. Check in, check uit.

@@ -112,6 +112,50 @@ function zzpService() {
                 }
             });
         });
+
+        obj.each(function () {
+            const innerTile = $('.js-zzp-st-inner', this);
+            const info = $('.js-zzp-st-info', this);
+            const close = $('.js-zzp-st-close', this);
+            const front = $('.js-zzp-st-front', this);
+            const back = $('.js-zzp-st-back', this);
+
+            // match height of inner tile
+            innerTile.css({
+                'height': obj.height()
+            });
+
+            // turn tile transition
+            const turnTile = new TimelineMax({
+                paused: true
+            });
+            turnTile.to(this, 0.3, {
+                ease: Power4.easeIn,
+                opacity: 0,
+                rotationY:'180deg',
+                scaleY: 0.9,
+                display: 'none',
+            }).set(front, {
+                display: 'none'
+            }).set(back, {
+                display: 'block'
+            }).to(this, 0.3, {
+                ease: Power4.easeOut,
+                opacity: 1,
+                rotationY:'0deg',
+                scaleY: 1,
+                display: 'block',
+            });
+
+            // execution
+            info.click(() => {
+                turnTile.play();
+            });
+
+            close.click(() => {
+                turnTile.reverse();
+            });
+        });
     }
 }
 
