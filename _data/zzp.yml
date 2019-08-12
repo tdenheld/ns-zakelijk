@@ -33,27 +33,32 @@ services:
     - title: Greenwheels
       description: Meer dan 1.800 locaties. Uurtarief <span class="no-wrap">€ 8,40</span> en maximaal <span class="no-wrap">€ 92</span> per dag.
       img: /assets/img/thumbs/greenwheels.jpg
-      full-description: Na uw treinreis uitchecken en direct weer inchecken in uw Greenwheels auto? Er is altijd een auto bij u in de buurt beschikbaar. Handig als uw bestemming buiten het bereik van het openbaar vervoer ligt.<br><br>Na uw treinreis uitchecken en direct weer inchecken in uw Greenwheels auto? Er is altijd een auto bij u in de buurt beschikbaar. Handig als uw bestemming buiten het bereik van het openbaar vervoer ligt. Handig als uw bestemming.
+      full-description: Na uw treinreis uitchecken en direct weer inchecken in uw Greenwheels auto? Er is altijd een auto bij u in de buurt beschikbaar. Handig als uw bestemming buiten het bereik van het openbaar vervoer ligt.<br><br>Na uw treinreis uitchecken en direct weer inchecken in uw Greenwheels auto? Er is altijd een auto bij u in de buurt beschikbaar.
 
     - title: Bus, Tram en Metro
       description: Maak gebruik van de bus, tram, of metro, door heel Nederland. Check in, check uit.
       img: /assets/img/thumbs/btm.jpg
+      full-description: Na uw treinreis uitchecken en direct weer inchecken in uw Greenwheels auto? Er is altijd een auto bij u in de buurt beschikbaar. Handig als uw bestemming buiten het bereik van het openbaar vervoer ligt.<br><br>Na uw treinreis uitchecken en direct weer inchecken in uw Greenwheels auto? Er is altijd een auto bij u in de buurt beschikbaar.
 
     - title: Trein
       description: Werk nog even door, of zit ontspannen achterover in de trein op weg naar huis.
       img: /assets/img/thumbs/trein.jpg
+      full-description: Na uw treinreis uitchecken en direct weer inchecken in uw Greenwheels auto? Er is altijd een auto bij u in de buurt beschikbaar. Handig als uw bestemming buiten het bereik van het openbaar vervoer ligt.<br><br>Na uw treinreis uitchecken en direct weer inchecken in uw Greenwheels auto? Er is altijd een auto bij u in de buurt beschikbaar.
 
     - title: Q-Park P+R
       description: Dagtarief is afhankelijk van de locatie, maar ligt altijd tussen de <span class="no-wrap">€ 0</span> en <span class="no-wrap">€ 8</span> per dag.
       img: /assets/img/thumbs/q-park.jpg
+      full-description: Na uw treinreis uitchecken en direct weer inchecken in uw Greenwheels auto? Er is altijd een auto bij u in de buurt beschikbaar. Handig als uw bestemming buiten het bereik van het openbaar vervoer ligt.<br><br>Na uw treinreis uitchecken en direct weer inchecken in uw Greenwheels auto? Er is altijd een auto bij u in de buurt beschikbaar.
 
     - title: Bewaakte stalling
       description: Vaak stal je de eerste 24 uur gratis. Daarna <span class="no-wrap">€ 1,25</span> per dag.
       img: /assets/img/thumbs/stalling.jpg
+      full-description: Na uw treinreis uitchecken en direct weer inchecken in uw Greenwheels auto? Er is altijd een auto bij u in de buurt beschikbaar. Handig als uw bestemming buiten het bereik van het openbaar vervoer ligt.<br><br>Na uw treinreis uitchecken en direct weer inchecken in uw Greenwheels auto? Er is altijd een auto bij u in de buurt beschikbaar.
 
     - title: OV-fiets
       description: De ritprijs van een OV-fiets bedraagt <span class="no-wrap">€ 3,85</span> per 24 uur.
       img: /assets/img/thumbs/ov-fiets.jpg
+      full-description: Na uw treinreis uitchecken en direct weer inchecken in uw Greenwheels auto? Er is altijd een auto bij u in de buurt beschikbaar. Handig als uw bestemming buiten het bereik van het openbaar vervoer ligt.<br><br>Na uw treinreis uitchecken en direct weer inchecken in uw Greenwheels auto? Er is altijd een auto bij u in de buurt beschikbaar.
 
 agility:
   - img: /assets/img/1e-klas.jpg

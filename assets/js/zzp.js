@@ -43,20 +43,76 @@ function zzpService() {
     const obj = $('.js-zzp-st');
     const nav = $('.js-zzp-st-nav');
     const navbar = $('.js-zzp-st-navbar');
+    const front = $('.js-zzp-st-front');
+    const back = $('.js-zzp-st-back');
     const init = 0;
-    let currentIndex;
+    var currentIndex;
 
     if (obj[0] && nav[0]) {
         obj.eq(init).show();
         nav.eq(init).addClass('is-active');
 
+        // turning the tile
+        // ------------------------------
+        obj.each(function () {
+            const innerTile = $('.js-zzp-st-inner', this);
+            const info = $('.js-zzp-st-info', this);
+            const close = $('.js-zzp-st-close', this);
+            const thisFront = $('.js-zzp-st-front', this);
+            const thisBack = $('.js-zzp-st-back', this);
+
+            // match height of inner tile
+            innerTile.css({
+                'height': obj.height()
+            });
+
+            // turn tile transition
+            const turnTile = new TimelineMax({
+                paused: true
+            });
+            turnTile.to(this, 0.3, {
+                ease: Power4.easeIn,
+                opacity: 0,
+                rotationY: '180deg',
+                scaleY: 0.9
+            }).set(thisFront, {
+                display: 'none'
+            }).set(thisBack, {
+                display: 'block'
+            }).to(this, 0.3, {
+                ease: Power4.easeOut,
+                opacity: 1,
+                rotationY: '0deg',
+                scaleY: 1
+            });
+
+            // execution
+            info.click(() => {
+                turnTile.play(0);
+            });
+
+            close.click(() => {
+                turnTile.reverse(0);
+            });
+        });
+
+        function resetTile() {
+            front.show();
+            back.hide();
+        }   
+
+        // navigate through tiles
+        // ------------------------------
         function transition(card, xStart, xEnd) {
             const tl = new TimelineMax();
             tl.to(obj, 0.3, {
                 ease: Power4.easeIn,
                 opacity: 0,
                 x: xEnd,
-                display: 'none'
+                display: 'none',
+                onComplete() {
+                    resetTile();
+                }
             }).fromTo(card, 0.4, {
                 x: xStart
             }, {
@@ -110,50 +166,6 @@ function zzpService() {
                 } else if (i < currentIndex) {
                     transition(card, -200, 200);
                 }
-            });
-        });
-
-        obj.each(function () {
-            const innerTile = $('.js-zzp-st-inner', this);
-            const info = $('.js-zzp-st-info', this);
-            const close = $('.js-zzp-st-close', this);
-            const front = $('.js-zzp-st-front', this);
-            const back = $('.js-zzp-st-back', this);
-
-            // match height of inner tile
-            innerTile.css({
-                'height': obj.height()
-            });
-
-            // turn tile transition
-            const turnTile = new TimelineMax({
-                paused: true
-            });
-            turnTile.to(this, 0.3, {
-                ease: Power4.easeIn,
-                opacity: 0,
-                rotationY:'180deg',
-                scaleY: 0.9,
-                display: 'none',
-            }).set(front, {
-                display: 'none'
-            }).set(back, {
-                display: 'block'
-            }).to(this, 0.3, {
-                ease: Power4.easeOut,
-                opacity: 1,
-                rotationY:'0deg',
-                scaleY: 1,
-                display: 'block',
-            });
-
-            // execution
-            info.click(() => {
-                turnTile.play();
-            });
-
-            close.click(() => {
-                turnTile.reverse();
             });
         });
     }
