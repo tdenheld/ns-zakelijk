@@ -116,7 +116,15 @@ function zzpService() {
         }
 
         function scrollNav(i) {
-            let xPosition = i * (40 + 15000 / vw);
+            let index = i - 1;
+            let xPosition = 0;
+
+            if (index >= 0) {
+                xPosition = index * (40000 / vw) + 30;
+            } else if (index === -1) {
+                xPosition = 0;
+            }
+
             TweenMax.to(navbar, .6, {
                 ease: Power4.easeOut,
                 scrollTo: {
