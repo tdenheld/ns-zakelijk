@@ -18,15 +18,15 @@ function scrollMagic() {
             hook = customHook;
         }
         var scrll = new ScrollMagic.Scene({
-                triggerElement: obj,
-            })
-            .triggerHook(hook)
+            triggerElement: obj,
+        });
+        scrll.triggerHook(hook)
             .offset(0)
             .on('start', function () {
                 $('.js-tr', obj).toggleClass('is-active');
                 if ($(obj).hasClass('js-tr')) {
                     $(obj).toggleClass('is-active');
-                };
+                }
             })
             //.addIndicators()
             .addTo(controller);
