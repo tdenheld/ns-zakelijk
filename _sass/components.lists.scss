@@ -55,6 +55,12 @@
     }
 }
 
+.list-tick--blue {
+    li {
+        color: $ns-blue;
+    }
+}
+
 .list-icon {
     margin: 0;
     list-style-type: none;

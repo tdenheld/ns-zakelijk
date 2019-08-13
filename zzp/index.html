@@ -52,7 +52,8 @@ title: NS-Business Card voor ZZP'ers
 <section class="mb-2 mb-4-sm a a-fi a-del-750">
     <div class="container container--narrow">
         <figure class="zzp-bc bo-b js-scroll-magic js-tr tr-fi tr-800">
-            <img class="zzp-bc__img js-tr tr-fi-up-si tr-1500" src="/assets/img/businesscard-3D.png" alt="NS-Business Card" />
+            <img class="zzp-bc__img js-tr tr-fi-up-si tr-1500" src="/assets/img/businesscard-3D.png"
+                alt="NS-Business Card" />
         </figure>
     </div>
 </section>
@@ -82,7 +83,8 @@ title: NS-Business Card voor ZZP'ers
             {% for entry in site.data.zzp.agility %}
             <div class="zzp-agility f-grid__unit f-grid__unit--m-1">
                 <figure class="zzp-agility__img-container js-scroll-magic">
-                    <img src="{{ entry.img }}" alt="{{ entry.title }}" class="zzp-agility__img mb-3 js-tr tr-fi-up tr-1500" />
+                    <img src="{{ entry.img }}" alt="{{ entry.title }}"
+                        class="zzp-agility__img mb-3 js-tr tr-fi-up tr-1500" />
                 </figure>
                 <div class="zzp-agility__text js-scroll-magic">
                     <h2 class="f24 f28-sm ls-5 f-blue fw-b lh-title mb-2 js-tr tr-stag">
@@ -108,7 +110,9 @@ title: NS-Business Card voor ZZP'ers
                 {{ site.data.zzp.sell.description }}
             </p>
             <div class="js-tr tr-stag">
-                <a href="/businesscard-bestellen" class="button button--nsYellow">{{ site.data.zzp.cta }}</a>
+                <a href="/businesscard-bestellen" class="button button--nsYellow ph-6">
+                    {{ site.data.zzp.sell.cta }}
+                </a>
             </div>
         </div>
     </div>

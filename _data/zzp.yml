@@ -1,6 +1,6 @@
 title: NS&#8209;Business Card
 payoff: Elke dag is anders. Kies de reis die daarbij past
-cta: Bestel direct
+cta: Bestel gratis
 
 usps:
   title: Waarom de <span class="no-wrap">NS&#8209;Business Card</span>?
@@ -112,6 +112,7 @@ agility:
 sell:
   title: Bestel de <span class="no-wrap">NS&#8209;Business Card</span> gratis 
   description: Of je nou veel reist of weinig; altijd handig om in je portemonnee te hebben. Je betaalt namelijk geen vaste kosten. Gebruik je de kaart niet, dan betaal je niet.
+  cta: Bestel direct
 
 discount:
   title: Extra voordeel op je treinreizen?
