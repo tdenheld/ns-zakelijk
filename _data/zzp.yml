@@ -70,15 +70,16 @@ services:
         - Bonnetjes declareren niet meer nodig.
         - Reis je dezelfde dag met de trein? Dan betaal je een speciaal dagtarief.
 
-    - title: Bewaakte fietsenstalling
-      description: Met de fiets naar het station? Stal je fiets op rekening in alle bewaakte en zelfservice fietsenstallingen. Check simpel in en –uit.
-      img: /assets/img/thumbs/stalling.jpg
+    - title: Taxi
+      description: Maak het jezelf comfortabel met een taxi via de NS&#8209;Business Card. Bonnetjes declareren is niet meer nodig!
+      img: /assets/img/thumbs/taxi.jpg
       list:
-        - Je fiets staat er veilig en droog.
-        - Vaak kun je je fiets de eerste 24 uur gratis stallen.
-        - Gemakkelijk met je NS&#8209;Business Card in- en uitchecken.
-        - Bij alle bewaakte en zelfservice fietsenstallingen.
-        - Eenvoudig achteraf betalen via een maandelijkse factuur.
+        - Handig wanneer je bestemming buiten het bereik van het OV ligt.
+        - Beschikbaar door heel Nederland.
+        - Boek je taxi gemakkelijk via Mijn NS Zakelijk.
+        - Of boek telefonisch, wanneer dat beter uitkomt.
+        - Boek tot 30 minuten van tevoren.
+        - Nooit meer voorschieten, want je reist op rekening.
 
     - title: OV-fiets
       description: Op bijna 300 locaties door heel Nederland huur je een OV&#8209;fiets. Extra gezond en ook nog eens goed voor het milieu!
@@ -90,16 +91,15 @@ services:
         - Alle fietsritten vind je achteraf terug op je factuur.
         - Ook OV&#8209;fietsen uit de fietskluis te huur.
 
-    - title: Taxi
-      description: Maak het jezelf comfortabel met een taxi via de NS&#8209;Business Card. Bonnetjes declareren is niet meer nodig!
-      img: /assets/img/thumbs/taxi.jpg
+    - title: Bewaakte fietsenstalling
+      description: Met de fiets naar het station? Stal je fiets op rekening in alle bewaakte en zelfservice fietsenstallingen. Check simpel in en –uit.
+      img: /assets/img/thumbs/stalling.jpg
       list:
-        - Handig wanneer je bestemming buiten het bereik van het OV ligt.
-        - Beschikbaar door heel Nederland.
-        - Boek je taxi gemakkelijk via Mijn NS Zakelijk.
-        - Of boek telefonisch, wanneer dat beter uitkomt.
-        - Boek tot 30 minuten van tevoren.
-        - Nooit meer voorschieten, want je reist op rekening.
+        - Je fiets staat er veilig en droog.
+        - Vaak kun je je fiets de eerste 24 uur gratis stallen.
+        - Gemakkelijk met je NS&#8209;Business Card in- en uitchecken.
+        - Bij alle bewaakte en zelfservice fietsenstallingen.
+        - Eenvoudig achteraf betalen via een maandelijkse factuur.
 
 agility:
   - img: /assets/img/1e-klas.jpg
