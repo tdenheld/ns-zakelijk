@@ -58,7 +58,8 @@
 // tile
 // ----------------------------------
 .mz-tile {
-    display: flex;
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
     align-items: center;
     padding: toRem(21px);
     background-color: $ns-white;
@@ -95,7 +96,7 @@
 .mz-tile__icon {
     display: flex;
     justify-content: center;
-    width: 64px;
+    width: 56px;
     margin-right: $half-gutter;
     line-height: 0;
 

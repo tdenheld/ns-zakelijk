@@ -65,12 +65,13 @@
 
 .btn__loader-icon {
     position: absolute;
-    top: 13px;
+    top: 10px;
     left: calc(50% - 9px);
     opacity: 0;
     transition: $fade-link;
 
     svg {
+        position: relative;
         fill: $ns-grey-5;
         animation: rotate $loader-speed linear infinite;
         transition: $fade-link;
