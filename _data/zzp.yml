@@ -122,7 +122,7 @@ discount:
 
 faq:
   title: Nog niet alles duidelijk?
-  adn:
+  collapsible:
     - title: Een gratis NS&#8209;Business Card. Hoe werkt dat?
       content:
         - <p>Een NS&#8209;Business Card bestellen is gratis. Je hebt geen vaste kosten. Gebruik je de kaart niet, dan betaal je ook niet. Pas als je de kaart gebruikt worden de kosten in rekening gebracht op een maandelijkse factuur.</p>

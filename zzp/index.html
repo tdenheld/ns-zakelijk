@@ -159,8 +159,8 @@ title: NS-Business Card voor ZZP'ers
                 {{ site.data.zzp.faq.title }}
             </h2>
             <div class="js-tr tr-stag">
-                {% for entry in site.data.zzp.faq.adn %}
-                {% include adn.html %}
+                {% for entry in site.data.zzp.faq.collapsible %}
+                {% include collapsible.html %}
                 {% endfor %}
             </div>
         </div>

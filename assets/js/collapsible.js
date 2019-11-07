@@ -1,5 +1,5 @@
-function adn() {
-    const obj = '.js-adn';
+(() => {
+    const obj = '.js-collapsible';
     const header = obj + '-header';
     const content = obj + '-content';
 
@@ -11,5 +11,4 @@ function adn() {
             });
         });
     };
-};
-adn();
+})();
