@@ -59,7 +59,7 @@
 // ----------------------------------
 .mz-tile {
     display: grid;
-    grid-template-columns: max-content 1fr max-content;
+    grid-template-columns: 1fr max-content;
     align-items: center;
     padding: toRem(21px);
     background-color: $ns-white;
@@ -67,10 +67,13 @@
     border-radius: 4px;
     cursor: pointer;
     transition: $fade-all;
-    margin-bottom: $half-gutter;
 
-    &:last-child {
-        margin-bottom: 0;
+    @include xs {
+        grid-template-columns: max-content 1fr max-content;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: $half-gutter;
     }
 
     &:hover {
