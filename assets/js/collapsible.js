@@ -1,3 +1,5 @@
+'use strict';
+
 (() => {
     const obj = '.js-collapsible';
     const header = obj + '-header';
