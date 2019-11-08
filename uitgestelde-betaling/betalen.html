@@ -29,7 +29,7 @@ full-screen-loader: true
         <h2 class="headingM mb-3">Kies uw bank en betaal</h2>
         <div class="tk-banks">
             {% for banks in site.data.app.banks %}
-            <a class="tk-link-reset js-bank">
+            <a class="unlink js-bank">
                 <div class="tk-banks__item">
                     <img src="/assets/img/payment/{{ banks.icon }}.svg" class="w-100" />
                     <div class="tk-banks__title js-bank-set">
