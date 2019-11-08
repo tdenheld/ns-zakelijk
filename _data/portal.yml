@@ -1,0 +1,10 @@
+tiles:
+  - title: ZZP
+    img: zzp.jpg
+    description: Elke dag is anders. Kies met de NS-Business Card de reis die daarbij past.
+  - title: MKB
+    img: mkb.jpg
+    description: Regel efficiënt de mobiliteit van uw medewerkers, ook voor die momenten dat de auto niet uitkomt.
+  - title: Corporate
+    img: corporate.jpg
+    description: Mobiliteit kan een uitdagend vraagstuk zijn. We helpen met het vinden van de juiste oplossingen.
