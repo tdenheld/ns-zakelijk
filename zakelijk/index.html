@@ -10,11 +10,11 @@ title: NS Zakelijk
     </div>
 </section>
 
-<section class="pb-4 pb-8-sm pb-12-md a a-fi a-stag">
+<section class="pb-4 pb-8-sm pb-12-md">
     <div class="container container--narrow">
         <div class="g g-2-sm g-3-md col-gap-4 row-gap-6">
             {% for entry in site.data.portal.tiles %}
-            <a class="unlink portal-tile">
+            <a class="unlink portal-tile a a-fi a-stag a-del-200">
                 <img src="/assets/img/portal/{{ entry.img }}" class="portal-tile__img" />
                 <h2 class="f28 ls-heading mb-1"><span class="portal-tile__heading">{{ entry.title }}</span></h2>
                 <p class="txt-body f-grey-4">{{ entry.description }}</p>
