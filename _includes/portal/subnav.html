@@ -1,20 +1,42 @@
-<header class="flx-subnav js-subnav a a-fi">
-    <div class="container ovr-container">
-        <div class="flx-subnav__content">
-            <div>
-                {% unless page.subnav.no-title %}<h3 class="flx-subnav__heading">NS Zakelijk</h3>{% endunless %}
-            </div>
-            <nav>
-                <ul class="flx-subnav__items js-subnav-items">
-                    <li class="flx-subnav__item a a-fi a-stag-del">
-                        <a href="/" class="link-reset flx-subnav__link">Over NS Flex</a>
+<header class="subnav js-subnav a a-fi">
+    <div class="container container--narrow">
+        <div class="subnav__content">
+            <a href="/zakelijk" class="unlink">
+                <h3 class="subnav__heading">NS Zakelijk</h3>
+            </a>
+            <nav class="subnav__nav">
+                <ul class="subnav__items js-subnav-items">
+                    <li class="subnav__item a a-fi a-stag-del">
+                        <a href="/zzp" class="unlink subnav__link 
+                        {% if page.url=='/zzp/'%}is-active{% endif %}">
+                            ZZP
+                        </a>
                     </li>
-                    <li class="flx-subnav__item a a-fi a-stag-del">
-                        <a href="/abonnementen.html" class="link-reset flx-subnav__link">Flexibele abonnementen</a>
+                    <li class="subnav__item a a-fi a-stag-del">
+                        <a href="/mkb" class="unlink subnav__link 
+                        {% if page.url=='/mkb/'%}is-active{% endif %}">
+                            MKB
+                        </a>
+                    </li>
+                    <li class="subnav__item a a-fi a-stag-del">
+                        <a href="/corporate" class="unlink subnav__link 
+                        {% if page.url=='/corporate/'%}is-active{% endif %}">
+                            Corporate
+                        </a>
+                    </li>
+                    <li class="subnav__item a a-fi a-stag-del">
+                        <a href="/bestaande-klant" class="unlink subnav__link 
+                        {% if page.url=='/bestaande-klant/'%}is-active{% endif %}">
+                            Bestaande klant
+                        </a>
                     </li>
                 </ul>
-                <span class="flx-subnav__icon visible-xs js-subnav-toggle" include="../assets/img/icons/chevron-M-down--small.svg"></span>
-                <span class="flx-subnav__btn button--nsYellow">Bestel</span>
+                <span class="subnav__icon visible-xs js-subnav-toggle a a-fi a-stag-del">
+                    {% include icons/chevron-m-down--small.svg %}
+                </span>
+                {% unless page.subnav.portal %}
+                <span class="subnav__btn button--brand a a-fi a-stag-del">Bestel</span>
+                {% endunless %}
             </nav>
         </div>
     </div>

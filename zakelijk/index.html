@@ -2,8 +2,6 @@
 layout: default
 bg: bg-white
 title: NS Zakelijk
-subnav:
-    no-title: true
 ---
 
 <section class="pv-4 pv-8-sm pv-12-md a a-fi">
@@ -16,7 +14,7 @@ subnav:
     <div class="container container--narrow">
         <div class="portal-entry">
             {% for entry in site.data.portal.tiles %}
-            <a class="unlink portal-tile a a-fi a-stag a-del-200">
+            <a href="{{ entry.url }}" class="unlink portal-tile a a-fi a-stag a-del-200">
                 <img src="/assets/img/portal/{{ entry.img }}" class="portal-tile__img hidden-xs" />
                 <div class="g g-1-m gap-2 items-center">
                     <h2 class="h-xxs ls-heading">

@@ -1,36 +1,24 @@
-    // functionality that"s on linked on scroll
-    // ------------------------------------------------------------
+'use strict';
 
-    $(window).scroll(function () {
-        scrolled = true;
-        if (scrolled) {
-            requestAnimationFrame(scrolling);
-        };
-    });
+(() => {
+    const obj = '.js-subnav';
+    if (!exists(obj)) return;
 
-    function scrolling() {
-        var pos = $(window).scrollTop();
+    const node = document.querySelector(obj);
+    const header = document.querySelector('.js-header');
+    const content = document.querySelector('.js-content');
 
-        // fade arrow scroll down button
-        if (pos > 60) {
-            $(".js-scroll-down").addClass("o-0");
-            $(".js-subnav").addClass("is-sticky");
-        } else {
-            $(".js-scroll-down").removeClass("o-0");
-            $(".js-subnav").removeClass("is-sticky");
-        };
+    header.style.position = 'absolute';
+    content.style.marginTop = '120px';
 
-        scrolled = false;
+    const scrolling = () => {
+        (window.scrollY > 60) ? node.classList.add('is-sticky'): node.classList.remove('is-sticky');
+    }
+    scrolling();
+    window.addEventListener('scroll', () => requestAnimationFrame(scrolling));
 
-        $(".js-subnav-toggle").removeClass("is-active");
-        $(".js-subnav, .js-subnav-items").removeClass("is-active");
-    };
-
-
-
-    // subnav
-    // ------------------------------------------------------------
     $(".js-subnav-toggle").click(function () {
         $(this).toggleClass("is-active");
         $(".js-subnav, .js-subnav-items").toggleClass("is-active");
     });
+})()
