@@ -7,7 +7,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    @include md  {
+    @include md {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -48,7 +48,9 @@
 .no-touch {
     .portal-tile:hover {
         &:before {
-            opacity: 1;
+            @include sm {
+                opacity: 1;
+            }
         }
 
         .portal-tile__heading:after {
