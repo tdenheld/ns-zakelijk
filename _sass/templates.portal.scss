@@ -1,9 +1,60 @@
+.portal-tile {
+    &:hover {
+        .portal-tile__heading:after {
+            transform: scaleX(1);
+        }
+
+        .portal-tile__icon {
+            transform: translateX(5px);
+        }
+    }
+}
+
 .portal-tile__img {
     border-radius: 8px;
     margin-bottom: $half-gutter;
 }
 
 .portal-tile__heading {
+    position: relative;
     color: $ns-light-blue;
-    box-shadow: inset 0 -1px 0 $ns-light-blue;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 2px;
+        left: 0;
+        background-color: $ns-light-blue;
+        transform: scaleX(0);
+        transform-origin: 0 0;
+        transition: $fade-link;
+    }
+}
+
+.portal-tile__icon {
+    display: inline-block;
+    position: relative;
+    top: -1px;
+    margin-left: 2px;
+    transform-origin: 0 0;
+    transition: $fade-link;
+
+    svg {
+        fill: $ns-light-blue;
+    }
+}
+
+
+// ----------------------------------------------------------
+// ----------------------------------------------------------
+.portal-bc {
+    display: grid;
+    align-items: center;
+
+    @include md {
+        grid-template-columns: 2fr 3fr;
+        grid-gap: 70px;
+    }
 }
