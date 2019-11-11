@@ -1,4 +1,27 @@
+.portal-entry {
+    display: grid;
+    grid-column-gap: $gutter;
+
+    @include sm {
+        grid-row-gap: $one-half-gutter;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include md  {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+// ----------------------------------------------------------
+// ----------------------------------------------------------
 .portal-tile {
+    padding: 21px 0;
+    border-bottom: 1px solid $ns-grey-7;
+
+    &:first-child {
+        border-top: 1px solid $ns-grey-7;
+    }
+
     &:hover {
         .portal-tile__heading:after {
             transform: scaleX(1);
@@ -11,8 +34,13 @@
 }
 
 .portal-tile__img {
+    display: none;
     border-radius: 8px;
     margin-bottom: $half-gutter;
+
+    @include sm {
+        display: block;
+    }
 }
 
 .portal-tile__heading {
