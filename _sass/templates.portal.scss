@@ -58,3 +58,37 @@
         grid-gap: 70px;
     }
 }
+
+.portal-bc__img-container {
+    position: relative;
+    top: -30px;
+    overflow: hidden;
+    border-bottom: 1px solid $ns-grey-7;
+
+    @include sm {
+        top: -60px;
+    }
+
+    @include md {
+        top: 0;
+        border: none;
+    }
+}
+
+.portal-bc__img {
+    display: block;
+    position: relative;
+    bottom: -30px;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+
+    @include sm {
+        bottom: -60px;
+    }
+
+    @include md {
+        width: 100%;
+        bottom: 0;
+    }
+}
