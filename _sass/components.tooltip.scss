@@ -1,0 +1,41 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+    svg {
+        fill: $ns-grey-4;
+        transition: $fade-link;
+    }
+
+    &:hover {
+        svg {
+            fill: $ns-blue;
+        }
+    }
+
+    &.is-active .tooltip__arrow {
+        opacity: 1;
+    }
+}
+
+.tooltip__arrow {
+    position: absolute;
+    bottom: -10px;
+    left: 4px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 8px solid $ns-grey-8;
+    opacity: 0;
+    transition: opacity 200ms $ease;
+}
+
+.tooltip__content {
+    position: relative;
+    top: -2px;
+    margin-top: 10px;
+    @include font(14px, normal, $lh-copy);
+    color: $ns-grey-3;
+    padding: $quarter-gutter;
+    background-color: $ns-grey-8;
+}
