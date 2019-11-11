@@ -17,8 +17,8 @@
     scrolling();
     window.addEventListener('scroll', () => requestAnimationFrame(scrolling));
 
-    $(".js-subnav-toggle").click(function () {
-        $(this).toggleClass("is-active");
-        $(".js-subnav, .js-subnav-items").toggleClass("is-active");
+    ß('.js-subnav-toggle').map((el) => el.onclick = () => {
+        el.classList.toggle('is-active');
+        ß('.js-subnav, .js-subnav-items').map((el) => el.classList.toggle('is-active'));
     });
 })()
