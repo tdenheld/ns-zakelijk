@@ -27,6 +27,7 @@
 <body>
 
     {% include header.html %}
+    {% if page.subnav %}{% include portal/subnav.html %}{% endif %}
     <div class="content js-content {{ page.bg }} {% if page.footer-light %}content--footer-light{% endif %}">
         {{ content }}
     </div>
@@ -52,6 +53,7 @@
     <script src="/assets/js/ub.js"></script>
     <script src="/assets/js/zzp.js"></script>
     <script src="/assets/js/collapsible.js"></script>
+    <script src="/assets/js/subnav.js"></script>
 
 </body>
 

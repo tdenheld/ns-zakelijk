@@ -1,0 +1,152 @@
+.flx-subnav {
+    position: absolute;
+    z-index: 500;
+    top: $navbar-height;
+    width: 100vw;
+    height: $navbar-height;
+    border-top: 1px solid $ns-grey-7;
+    background-color: rgba($ns-white, 1);
+    box-shadow: $box-shadow-container;
+    transition: height 300ms $ease;
+
+    &.is-sticky {
+        position: fixed;
+        top: 0;
+    }
+
+    &.is-active {
+        height: 160px;
+    }
+}
+
+.flx-subnav__content {
+    padding: 13px $gutter 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include sm {
+        padding: 1rem $gutter 0;
+    }
+}
+
+.flx-subnav__heading {
+    position: relative;
+    top: -2px;
+    @include font(16px, bold, 1.2);
+    color: $ns-blue;
+    margin: 0;
+    width: 40%;
+
+    @include sm {
+        top: 0;
+        width: 30%;
+    }
+
+    @include md {
+        font-size: toRem(20px);
+    }
+}
+
+.flx-subnav__items {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: $gutter;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &.is-active {
+        display: block;
+    }
+
+    @include sm {
+        position: static;
+        display: inline-block;
+    }
+}
+
+.flx-subnav__item {
+    margin: 0 0 $half-gutter;
+    padding: 0;
+
+    @include sm {
+        display: inline;
+        margin-left: $half-gutter;
+    }
+}
+
+.flx-subnav__link {
+    position: relative;
+    @include font(14px, normal, 1.25);
+    color: $ns-blue;
+    transition: $fade-link;
+    cursor: pointer;
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0;
+        left: 0;
+        right: 0;
+        bottom: -4px;
+        height: 2px;
+        background-color: $ns-blue;
+        transition: $fade-all;
+    }
+
+    &:hover {
+        color: $ns-blue;
+        &:after {
+            width: 100%;
+        }
+    }
+}
+
+.flx-subnav__btn {
+    font-size: toRem(14px);
+    margin-left: 14px;
+    transition: $fade-link;
+    padding: 8px 18px 9px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.flx-subnav__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin-right: -10px;
+    cursor: pointer;
+
+    svg {
+        fill: $ns-blue;
+    }
+
+    &.is-active {
+        transform: rotate(180deg);
+    }
+}
+
+// subnav active states
+.subnav-tell {
+    .flx-subnav__item:first-child > a {
+        &:after {
+            width: 100%;
+        }
+        font-weight: bold;
+    }
+}
+
+.subnav-abos {
+    .flx-subnav__item:last-child > a {
+        &:after {
+            width: 100%;
+        }
+        font-weight: bold;
+    }
+}

@@ -15,8 +15,10 @@
 // ----------------------------------------------------------
 // ----------------------------------------------------------
 .portal-tile {
+    position: relative;
     padding: 21px 0;
     border-bottom: 1px solid $ns-grey-7;
+    transition: $fade-all;
 
     &:first-child {
         border-top: 1px solid $ns-grey-7;
@@ -27,7 +29,28 @@
         border: none;
     }
 
-    &:hover {
+    &:before {
+        content: '';
+        position: absolute;
+        top: -$half-gutter;
+        left: -$half-gutter;
+        width: calc(100% + 28px);
+        height: calc(100% + 28px);
+        border-radius: $border-radius * 3;
+        z-index: -1;
+        background-color: $ns-white;
+        box-shadow: $box-shadow-soft;
+        opacity: 0;
+        transition: $fade-all;
+    }
+}
+
+.no-touch {
+    .portal-tile:hover {
+        &:before {
+            opacity: 1;
+        }
+
         .portal-tile__heading:after {
             transform: scaleX(1);
         }

@@ -80,7 +80,9 @@ $subnav-breakpoint:			822px;
 $button-height:				45px;
 $border-radius:             4px;
 
-$box-shadow-soft:			0 2px 28px rgba($ns-black, 0.1);
+$box-shadow-soft:           0 4px 8px rgba($ns-black, 0.05),
+                            0 8px 16px rgba($ns-black, 0.05), 
+                            0 16px 32px rgba($ns-black, 0.05);
 $box-shadow-soft-contrast:	0 2px 20px rgba($ns-white, 0.2);
 $box-shadow-medium:			0 5px 35px rgba($ns-black, 0.15);
 $box-shadow-hard:			0 5px 35px rgba($ns-black, 0.25);
