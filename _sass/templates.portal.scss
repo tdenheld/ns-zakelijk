@@ -50,7 +50,8 @@
 }
 
 .no-touch {
-    .portal-tile:hover {
+    .portal-tile:hover,
+    .portal-tile:focus {
         &:before {
             @include sm {
                 opacity: 1;
