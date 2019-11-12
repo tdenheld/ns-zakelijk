@@ -68,7 +68,7 @@
 }
 
 .portal-tile__img {
-    border-radius: 8px;
+    border-radius: $border-radius * 2;
     margin-bottom: $half-gutter;
 }
 
