@@ -128,8 +128,7 @@ const tooltip = () => {
 
 const revealOnScroll = () => {
     const section = '.js-scroll';
-    const richTxt = '.js-scroll-rt > *';
-    if (!exists(section) && !exists(richTxt)) return;
+    if (!exists(section)) return;
 
     const init = (node) => {
         const reveal = () => ß(node).map((el) => {
@@ -149,10 +148,20 @@ const revealOnScroll = () => {
         window.addEventListener('scroll', () => requestAnimationFrame(reveal));
         window.addEventListener('resize', () => requestAnimationFrame(reveal));
     }
-
-    ß(richTxt).map((el) => el.classList.add('js-tr', 'tr-fi-up', 'tr-1500'));
-    init(richTxt);
     init(section);
+}
+
+const videoReveal = () => {
+    const reveal = () => ß('[data-type="video-container"]').map(el => {
+        const video = el.querySelector('[data-type="video"]');
+        const nodePosition = el.getBoundingClientRect();
+        const inViewport = !(nodePosition.top > innerHeight || nodePosition.bottom < 0);
+        inViewport ? video.play() : video.pause();
+    });
+    reveal();
+
+    window.addEventListener('scroll', () => requestAnimationFrame(reveal));
+    window.addEventListener('resize', () => requestAnimationFrame(reveal));
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -161,4 +170,5 @@ document.addEventListener('DOMContentLoaded', () => {
     button();
     tooltip();
     revealOnScroll();
+    videoReveal();
 });
