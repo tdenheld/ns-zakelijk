@@ -27,6 +27,10 @@
     @include sm {
         padding: 0;
         border: none;
+
+        &:first-child {
+            border: none;
+        }
     }
 
     &:before {
