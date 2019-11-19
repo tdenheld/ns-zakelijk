@@ -26,43 +26,14 @@ title: NS Zakelijk
                         <p class="f14 f-light-blue">{{ entry.people }}</p>
                     </div>
                 </div>
-                <p class="txt-body f-grey-4 mt-1 mt-2-sm">{{ entry.description }}</p>
+                <p class="f16 f18-sm f-grey-4 mt-1 mt-2-sm">{{ entry.description }}</p>
             </a>
             {% endfor %}
         </div>
     </div>
 </section>
 
-<section class="pb-4 pb-8-sm a a-fi a-del-500 hidden-xs">
-    <div class="container container--narrow">
-        <hr>
-    </div>
-</section>
-
-<section class="pb-4 pb-8-sm a a-fi a-del-600">
-    <div class="container container--narrow">
-        <div class="g g-2-sm col-gap-4 row-gap-8">
-            <div>
-                <h2 class="h-xxs mb-2">Ik ben al een zakelijke klant</h2>
-                <p class="txt-body f-grey-4 mb-4">
-                    Alle informtie voor het reizen met de NS&#8209;Business Card in één overzicht.
-                </p>
-                <a href="#" class="button button--secondary">Meer informatie</a>
-            </div>
-            <div>
-                <h2 class="h-xxs mb-2">Direct naar Mijn NS Zakelijk</h2>
-                <p class="txt-body f-grey-4 mb-4">
-                    Bekijk uw reizen, voeg kenmerken toe en vraag deur-tot-deurdiensten aan. Alles voor uw
-                    administratie.
-                </p>
-                <a href="/mijnnszakelijk" class="button button--secondary">Naar Mijn NS Zakelijk</a>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-
-<section class="pb-4 pb-8-sm a a-fi a-del-500">
+<section class="pb-4 pb-8-sm a a-fi a-del-300">
     <div class="container container--narrow">
         <hr>
     </div>
@@ -80,13 +51,44 @@ title: NS Zakelijk
                     Onbezorgd zakelijk reizen met dé mobiliteitskaart voor ondernemers.
                 </h3>
                 <p class="txt-body f-grey-4 mb-4">
-                    Zo reist u comfortabel met het gehele openbaar vervoer.
-                    De ene dag werkt u op kantoor. De andere dag reist u van afspraak
-                    naar afspraak. Bepaal met de NS&#8209;Business Card per dag flexibel hoe u reist.
+                    Al het vervoer voor u en uw medewerkers compleet geregeld, van A tot Z. Met de NS&#8209;Business Card reist u elke dag met het vervoermiddel van uw keuze. Zo is uw vervoer flexibel, efficiënt en goed geregeld. Hoe klein of groot uw onderneming ook is.
                 </p>
-                <a href="https://ns.nl/zakelijk/ns-business-card" class="button button--brand">Bekijk meer</a>
+                <ul class="list-tick f-blue mb-4">
+                    <li>Overzichtelijke administratie met één maandelijkse factuur en specificatie</li>
+                    <li>Voordeel op treinreizen met aanvullende abonnementen</li>
+                    <li>Eenvoudig inzicht en beheer van gemaakte reizen via online portaal en de NS-app</li>
+                </ul>
+                <a href="https://ns.nl/zakelijk/ns-business-card" class="button button--brand">Ontdek de NS-Business Card</a>
             </div>
         </div>
+    </div>
+</section>
+
+<section class="pb-4 pb-8-sm a a-fi a-del-500 hidden-xs">
+    <div class="container container--narrow">
+        <hr>
+    </div>
+</section>
+
+<section class="pb-4 pb-8-sm a a-fi a-del-600">
+    <div class="container container--narrow">
+        <div class="g g-2-sm col-gap-4 row-gap-8">
+            <div>
+                <h2 class="h-xxs mb-2">Ik heb al een NS&#8209;Business Card</h2>
+                <p class="txt-body f-grey-4 mb-4">
+                    Alle informatie over het reizen met de NS‑Business Card, administratie en veelgestelde vragen in één overzicht.
+                </p>
+                <a href="#" class="button button--secondary">Meer informatie</a>
+            </div>
+            <div>
+                <h2 class="h-xxs mb-2">Mijn NS Zakelijk</h2>
+                <p class="txt-body f-grey-4 mb-4">
+                    Bestel nieuwe kaarten, bekijk gemaakte reizen, voeg kenmerken toe en vraag deur-tot-deurdiensten aan. Alles voor uw administratie.
+                </p>
+                <a href="/mijnnszakelijk" class="button button--secondary">Inloggen Mijn NS Zakelijk</a>
+            </div>
+        </div>
+    </div>
     </div>
 </section>
 
@@ -102,7 +104,7 @@ title: NS Zakelijk
             <h2 class="h-xxs mb-4">
                 Veelgestelde vragen
             </h2>
-            {% for entry in site.data.zzp.faq.collapsible %}
+            {% for entry in site.data.portal.collapsible %}
             {% include collapsible.html %}
             {% endfor %}
         </div>

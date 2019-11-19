@@ -1,16 +1,36 @@
 tiles:
   - title: ZZP
     img: zzp.jpg
-    description: Elke dag is anders. Kies met de NS&#8209;Business Card de reis die daarbij past.
+    description: Voor een ZZP-er kan elke dag anders zijn. Kies met de NS&#8209;Business Card voor de flexibiliteit die daarbij past. 
     people: 1 – 5
     url: /zzp
   - title: MKB
     img: mkb.jpg
-    description: Regel efficiënt de mobiliteit van uw medewerkers, ook voor die momenten dat de auto niet uitkomt.
+    description: Regel efficiënt de mobiliteit van uw medewerkers. Ontdek met de NS&#8209;Business Card de mogelijkheden in combinatie met de auto.
     people: 6 – 250
     url: /mkb
   - title: Corporate
     img: corporate.jpg
-    description: Mobiliteit kan een uitdagend vraagstuk zijn. We helpen met het vinden van de juiste oplossingen.
+    description: Mobiliteit kan een uitdagend vraagstuk zijn. Onze mobiliteitadviseurs helpen corporates, overheden en non-profit met het vinden van de juiste invulling.
     people: 250+
     url: /corporate
+
+
+collapsible:
+  - title: Een gratis NS&#8209;Business Card. Hoe werkt dat?
+    content: '<p>Een NS Business Card zonder abonnement is gratis. Pas als de kaart gebruikt wordt, worden de gemaakte reizen in rekening gebracht via een maandelijkse factuur.<p></p>Op deze manier willen we het OV ook voor ondernemend Nederland makkelijk toegankelijk maken: met een NS-Business Card op zak kan iedereen op elk moment kiezen voor het handigste vervoer, zonder vaste kosten.</p>'
+
+  - title: Een paar keer per jaar met de trein. Is het dan wel interessant?
+    content: De NS-Business Card is ook interessant bij een paar keer reizen per jaar. Er zijn namelijk geen vaste kosten aan de kaart verbonden en facturatie geschiedt alleen op gemaakte reizen.
+
+  - title: Wat is het voordeel van een abonnement op de NS‑Business Card?
+    content: <p>Met de gratis NS-Business Card zonder abonnement worden de treinreizen tegen vol tarief in rekening gebracht. Wordt de NS-Business Card (ook) tijdens daluren gebruikt, of op een vast traject dan is een abonnement al snel voordeliger. Vaak is een Dal abonnement (40% korting buiten de spits) al binnen 4 reizen buiten de spits terugverdiend. Met een Traject Vrij kan men tegen een vast bedrag onbeperkt reizen op een vast traject, plus 40% korting buiten de spits op overige trajecten. Daarnaast bieden we Trein Vrij en OV Vrij op de NS-Business Card aan.</p>Lees meer over <a href="#">abonnementen</a>.
+
+  - title: Hoe flexibel zijn de abonnementen? Is het mogelijk deze tussentijds te wijzigen?
+    content: <p>Elk abonnement is maandelijks op te zeggen, of te wijzigen.</p>
+
+  - title: Hoe werkt het met de deur-tot-deur diensten?
+    content: <p>Elke organisatie bepaalt zelf of en welke medewerkers gebruik mogen maken van de deur-tot-deurdiensten. In Mijn NS Zakelijk is het mogelijk deur-tot-deurdiensten aan en uit te zetten.</p><p>Met een NS-Business Card is het makkelijk gebruikmaken van al het OV, de OV fiets, bewaakte fietsenstallingen en Q-park parkeerplaatsen door in- en uit te checken. Een taxi en Greenwheels auto moet van te voren worden gereserveerd. Dit kan eenvoudig via de NS-app of de <a href="#">website</a>.</p><p>Reizen met de deur-tot-deurdiensten staan ook op de factuur. Lees meer over <a href="#">deur-tot-deurdiensten</a>.</p>
+
+  - title: Moet ik de NS‑Business Card activeren?
+    content: Nee, het is niet nodig de NS-Business Card te activeren, de kaart is direct, of vanaf een afgesproken datum gebruiksklaar. Deze datum is te zien in <a href="#">Mijn NS Zakelijk</a>. Abonnementen hoeven ook niet te worden geactiveerd bij een kaartautomaat.
