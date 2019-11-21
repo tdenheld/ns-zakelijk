@@ -105,6 +105,12 @@
     }
 }
 
+.zzp-hero__img {
+    @include full(absolute);
+    overflow: hidden;
+    object-fit: cover;
+}
+
 
 // usp
 // --------------------------------------
