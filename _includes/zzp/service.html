@@ -1,12 +1,12 @@
-<div class="zzp-service">
-    <div class="zzp-service__tile-container mb-2 mb-6-sm js-scroll">
+<div class="segment-service">
+    <div class="segment-service__tile-container mb-2 mb-6-sm js-scroll">
         {% for entry in site.data.zzp.services.tiles %}
         <div class="js-zzp-st is-hidden">
-            <div class="zzp-service__tile js-tr tr-stag tr-del-1500">
+            <div class="segment-service__tile js-tr tr-stag tr-del-1500">
 
                 <!-- front of the tile -->
                 <div class="js-zzp-st-front">
-                    <header class="zzp-service__tile-header">
+                    <header class="segment-service__tile-header">
                         <h3 class="ma-2 fw-b fs-i f-blue f18 lh-solid">{{ entry.title }}</h3>
                         <span class="svg-btn mh-1 pos-r left-2px js-zzp-st-info">
                             {% include icons/info--small.svg %}
@@ -15,12 +15,12 @@
                     <p class="f14 f-blue ph-2 pb-2">
                         {{ entry.description }}
                     </p>
-                    <img src="{{ entry.img }}" alt="{{ entry.title }}" class="zzp-service__tile-img" />
+                    <img src="{{ entry.img }}" alt="{{ entry.title }}" class="segment-service__tile-img" />
                 </div>
 
                 <!-- back of the tile -->
                 <div class="js-zzp-st-back is-hidden">
-                    <header class="zzp-service__tile-header">
+                    <header class="segment-service__tile-header">
                         <h3 class="ma-2 fw-b fs-i f-blue f18 lh-solid">{{ entry.title }}</h3>
                         <span class="svg-btn mh-1 pos-r left-2px js-zzp-st-close">
                             {% include icons/close-s--small.svg %}
@@ -40,11 +40,11 @@
 
     <!-- navbar -->
     <div class="center js-scroll">
-        <div class="zzp-service__nav-wrapper">
-            <nav class="zzp-service__nav js-tr tr-fi tr-500 js-zzp-st-navbar">
+        <div class="segment-service__nav-wrapper">
+            <nav class="segment-service__nav js-tr tr-fi tr-500 js-zzp-st-navbar">
                 {% for entry in site.data.zzp.services.tiles %}
-                <div class="zzp-service__nav-item-container js-tr tr-stag">
-                    <div class="zzp-service__nav-item js-zzp-st-nav">
+                <div class="segment-service__nav-item-container js-tr tr-stag">
+                    <div class="segment-service__nav-item js-zzp-st-nav">
                         {{ entry.title }}
                     </div>
                 </div>

@@ -4,7 +4,7 @@
 
 // headings
 // --------------------------------------
-.zzp-heading {
+.segment-heading {
     @include font(28px, bold, $lh-title);
     letter-spacing: toRem(-0.5px);
     color: $ns-blue;
@@ -18,7 +18,7 @@
     }
 }
 
-.zzp-description {
+.segment-description {
     @include font(18px, normal, $lh-copy);
     color: $ns-blue;
 
@@ -30,7 +30,7 @@
 
 // hero
 // --------------------------------------
-.zzp-hero {
+.segment-hero {
     position: relative;
     min-height: 340px;
     padding: $gutter 0;
@@ -43,7 +43,7 @@
     }
 }
 
-.zzp-hero__gradient {
+.segment-hero__gradient {
     @include full(absolute);
     background: linear-gradient(80deg, rgba($ns-black, 1) 20%, rgba($ns-black, 0.5) 100%);
     opacity: 0.35;
@@ -53,7 +53,7 @@
     }
 }
 
-.zzp-hero__flow {
+.segment-hero__flow {
     position: absolute;
     right: 0;
     bottom: -1px;
@@ -79,7 +79,7 @@
     }
 }
 
-.zzp-hero__title {
+.segment-hero__title {
     @include font(36px, bold, $lh-title);
     letter-spacing: toRem(-0.8px);
     color: $ns-white;
@@ -94,7 +94,7 @@
     }
 }
 
-.zzp-hero__subtitle {
+.segment-hero__subtitle {
     @include font(24px, normal, $lh-title);
     letter-spacing: toRem(-0.3px);
     color: $ns-white;
@@ -105,7 +105,7 @@
     }
 }
 
-.zzp-hero__img {
+.segment-hero__img {
     @include full(absolute);
     overflow: hidden;
     object-fit: cover;
@@ -114,7 +114,7 @@
 
 // usp
 // --------------------------------------
-.zzp-usp {
+.segment-usp {
     position: relative;
     text-align: center;
     max-width: 400px;
@@ -125,7 +125,7 @@
     }
 }
 
-.zzp-usp__img {
+.segment-usp__img {
     @include center(flex);
     height: 97px;
     margin-bottom: $half-gutter;
@@ -138,7 +138,7 @@
 
 // business card image
 // --------------------------------------
-.zzp-bc {
+.segment-bc {
     position: relative;
     top: -30px;
     overflow: hidden;
@@ -149,7 +149,7 @@
     }
 }
 
-.zzp-bc__img {
+.segment-bc__img {
     position: relative;
     bottom: -30px;
     display: block;
@@ -166,11 +166,11 @@
 
 // service
 // --------------------------------------
-.zzp-service {
+.segment-service {
     position: relative;
 }
 
-.zzp-service__map-container {
+.segment-service__map-container {
     @include full(absolute);
     @include center(flex);
     overflow: hidden;
@@ -191,7 +191,7 @@
     }
 }
 
-.zzp-service__map {
+.segment-service__map {
     @include full(relative);
     max-width: 620px;
 
@@ -200,12 +200,12 @@
     }
 }
 
-.zzp-service__tile-container {
+.segment-service__tile-container {
     @include center(flex);
     min-height: 310px;
 }
 
-.zzp-service__tile {
+.segment-service__tile {
     position: relative;
     max-width: 360px;
     background-color: $ns-white;
@@ -218,13 +218,13 @@
     }
 }
 
-.zzp-service__tile-header {
+.segment-service__tile-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.zzp-service__nav-item-container {
+.segment-service__nav-item-container {
     margin-right: $gutter;
 
     &:last-child {
@@ -232,13 +232,13 @@
     }
 }
 
-.zzp-service__nav-wrapper {
+.segment-service__nav-wrapper {
     // hide x-scroll bar
     overflow: hidden;
     height: 34px;
 }
 
-.zzp-service__nav {
+.segment-service__nav {
     width: 100%;
     height: 50px;
     display: inline-flex;
@@ -250,7 +250,7 @@
     box-shadow: inset 0 -17px 0 $ns-grey-6b;
 }
 
-.zzp-service__nav-item {
+.segment-service__nav-item {
     position: relative;
     color: $ns-grey-4;
     transition: $fade-all;
@@ -279,7 +279,7 @@
 }
 
 .no-touch {
-    .zzp-service__nav-item:hover {
+    .segment-service__nav-item:hover {
         color: $ns-blue;
 
         &:before {
@@ -292,7 +292,7 @@
 
 // agility
 // --------------------------------------
-.zzp-agility {
+.segment-agility {
     margin-bottom: $half-gutter;
 
     &:last-child {
@@ -304,7 +304,7 @@
     }
 }
 
-.zzp-agility__img-container {
+.segment-agility__img-container {
     @include center(flex);
     padding: 0 $half-gutter;
 
@@ -313,7 +313,7 @@
     }
 }
 
-.zzp-agility__img {
+.segment-agility__img {
     width: 100%;
     max-width: 240px;
     margin: 0 auto;
@@ -324,7 +324,7 @@
 
 // misc
 // --------------------------------------
-.zzp-video {
+.segment-video {
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -335,7 +335,7 @@
     transform: translate(-50%, -50%);
 }
 
-.zzp-divider {
+.segment-divider {
     margin: 0 auto;
     border-bottom: 1px solid $ns-blue;
     width: 180px;

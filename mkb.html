@@ -2,38 +2,52 @@
 layout: default
 bg: bg-white
 footer-light: true
-title: Wat als de auto een keer niet uitkomt?
+title: NS-Business Card ― MKB
 subnav: true
 ---
 
-<section class="zzp-hero mb-6 mb-8-sm a a-fi">
-    <img class="zzp-hero__img" src="/assets/img/mkb.jpg" />
-    <div class="zzp-hero__gradient"></div>
-    <figure class="zzp-hero__flow">{% include flows/flow-gradient-white.svg %}</figure>
+<section class="segment-hero mb-6 mb-8-sm a a-fi">
+    <img class="segment-hero__img" src="/assets/img/mkb.jpg" />
+    <div class="segment-hero__gradient"></div>
+    <figure class="segment-hero__flow">{% include flows/flow-gradient-white.svg %}</figure>
     <div class="container container--narrow">
         <header class="mxw-700">
             <h1 class="mb-4">
-                <div class="zzp-hero__subtitle mb-2 a a-fi-right-200px a-stag a-del-350">
-                    {{ site.data.zzp.title }}
+                <div class="segment-hero__subtitle mb-2 a a-fi-right-200px a-stag a-del-350">
+                    NS&#8209;Business Card
                 </div>
-                <div class="zzp-hero__title a a-fi-right-200px a-stag a-del-350">
-                    {{ site.data.zzp.payoff }}
+                <div class="segment-hero__title a a-fi-right-200px a-stag a-del-350">
+                    Wat als de auto een keer niet uitkomt?
                 </div>
             </h1>
             <div class="a a-fi-right-200px a-del-500">
-                <a href="/businesscard-bestellen" class="button button--brand">{{ site.data.zzp.cta }}</a>
+                <a href="/businesscard-bestellen" class="button button--brand">Doe de quickscan</a>
             </div>
         </header>
     </div>
 </section>
 
-<section class="mb-6 mb-12-sm a a-fi a-del-500">
+<section class="mb-6 mb-8-sm a a-fi a-del-500 js-scroll">
+    <div class="container container--narrow">
+        <p class="txt-body f-grey-4 mxw-700 js-tr tr-fi-up tr-1500">
+            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.
+        </p>
+    </div>
+</section>
+
+<section class="pb-4 pb-8-sm a a-fi a-del-750 js-scroll">
+    <div class="container container--narrow">
+        <hr class="js-tr tr-fi-up tr-1500">
+    </div>
+</section>
+
+<section class="mb-6 mb-12-sm a a-fi a-del-750">
     <div class="container container--narrow">
         <header class="txt-c mb-6 mb-8-sm mxw-950 mh-auto js-scroll">
-            <h2 class="zzp-heading mb-3 js-tr tr-stag">
-                {{ site.data.zzp.usps.title }}
+            <h2 class="segment-heading mb-3 js-tr tr-stag">
+                Voordelen van de NS&#8209;Business Card
             </h2>
-            <div class="zzp-divider js-tr tr-stag"></div>
+            <div class="segment-divider js-tr tr-stag"></div>
         </header>
         <div class="f-grid">
             {% for entry in site.data.zzp.usps.list %}
@@ -45,72 +59,32 @@ subnav: true
     </div>
 </section>
 
-<section class="mb-2 mb-4-sm a a-fi a-del-750">
+<section class="pb-4 pb-8-sm js-scroll">
     <div class="container container--narrow">
-        <figure class="zzp-bc js-scroll js-tr tr-fi tr-800">
-            <img class="zzp-bc__img js-tr tr-fi-up-si tr-1500" src="/assets/img/businesscard-3D.png"
+        <hr class="js-tr tr-fi-up tr-1500">
+    </div>
+</section>
+
+<section class="mb-6 mb-12-sm js-scroll">
+    <div class="container container--narrow">
+        <h2 class="segment-heading mxw-700 mb-3 js-tr tr-stag">
+            Wat betekent dit voor uw organisatie?
+        </h2>
+        <p class="txt-body f-grey-4 mb-3 mxw-700 js-tr tr-stag">
+            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.
+        </p>
+        <div class="js-tr tr-stag">
+            <a href="/businesscard-bestellen" class="button button--brand">Doe de quickscan</a>
+        </div>
+    </div>
+</section>
+
+<section class="mb-2 mb-4-sm a a-fi">
+    <div class="container container--narrow">
+        <figure class="segment-bc js-scroll js-tr tr-fi tr-800">
+            <img class="segment-bc__img js-tr tr-fi-up-si tr-1500" src="/assets/img/businesscard-3D.png"
                 alt="NS-Business Card" />
         </figure>
-    </div>
-</section>
-
-<section class="mb-6 mb-12-sm">
-    <div class="container container--narrow">
-        <div class="zzp-service__map-container">
-            <figure class="zzp-service__map js-scroll js-tr tr-fi-up-si tr-fi-up-si--large tr-1500">
-                {% include zzp/railmap.svg %}
-            </figure>
-        </div>
-        <header class="pos-r mxw-800 mh-auto f-blue txt-c mb-2 mb-4-sm js-scroll">
-            <h2 class="zzp-heading mb-3 js-tr tr-stag">
-                {{ site.data.zzp.services.title }}
-            </h2>
-            <p class="zzp-description f-grey-4 mxw-600 mh-auto js-tr tr-stag">
-                {{ site.data.zzp.services.description }}
-            </p>
-        </header>
-        {% include zzp/service.html %}
-    </div>
-</section>
-
-<section class="gd-r-yellow pos-r pv-6 pv-10-sm">
-    <div class="container container--narrow">
-        <div class="txt-c mxw-900 mh-auto f-grid">
-            {% for entry in site.data.zzp.agility %}
-            <div class="zzp-agility f-grid__unit f-grid__unit--m-1">
-                <figure class="zzp-agility__img-container js-scroll">
-                    <img src="{{ entry.img }}" alt="{{ entry.title }}"
-                        class="zzp-agility__img mb-3 js-tr tr-fi-up tr-1500" />
-                </figure>
-                <div class="zzp-agility__text js-scroll">
-                    <h2 class="f24 f28-sm ls-5 f-blue fw-b lh-title mb-2 js-tr tr-stag">
-                        {{ entry.title }}
-                    </h2>
-                    <p class="f18 f-blue js-tr tr-stag">
-                        {{ entry.description }}
-                    </p>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<section class="gd-r-pale-blue pv-6 pv-12-sm mb-6 mb-12-sm js-scroll">
-    <div class="container container--narrow">
-        <div class="mxw-750 mh-auto txt-c">
-            <h2 class="zzp-heading mb-3 js-tr tr-stag">
-                {{ site.data.zzp.sell.title }}
-            </h2>
-            <p class="zzp-description mb-4 js-tr tr-stag">
-                {{ site.data.zzp.sell.description }}
-            </p>
-            <div class="js-tr tr-stag">
-                <a href="/businesscard-bestellen" class="button button--brand ph-6">
-                    {{ site.data.zzp.sell.cta }}
-                </a>
-            </div>
-        </div>
     </div>
 </section>
 
@@ -127,31 +101,93 @@ subnav: true
             <div class="ph-2 hidden-m"></div>
             <div class="txt-c txt-l-m f-grid__unit f-grid__unit--m-5">
                 <div class="mxw-700 mh-auto-m-max">
-                    <h2 class="zzp-heading fw-normal mb-3 js-tr tr-stag">
-                        {{ site.data.zzp.discount.title }}
+                    <h2 class="segment-heading fw-normal mb-3 js-tr tr-stag">                  
+                        Extra voordeel met een abonnement
                     </h2>
-                    <p class="zzp-description mb-4 js-tr tr-stag">
+                    <p class="segment-description js-tr tr-stag">
                         {{ site.data.zzp.discount.description }}
                     </p>
-                    <p class="f14 f-blue mb-2 js-tr tr-stag">
-                        {{ site.data.zzp.discount.aid }}
-                    </p>
-                    <div class="js-tr tr-stag">
-                        <a href="http://abonnementenwijzer.prod.enigmatry.com/#/"
-                            class="button button--secondary">{{ site.data.zzp.discount.cta }}</a>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<hr class="mb-6 mb-12-sm">
+<section class="pb-4 pb-8-sm js-scroll">
+    <div class="container container--narrow">
+        <hr class="js-tr tr-fi-up tr-1500">
+    </div>
+</section>
+
+<section class="mb-6 mb-8-sm">
+    <div class="container container--narrow">
+        <header class="mb-4 mxw-700 js-scroll">
+            <h2 class="segment-heading js-tr tr-fi-up tr-1500">
+                Hoe werkt het in 3 stappen
+            </h2>
+        </header>
+        <div class="f-grid">
+            <div class="f-grid__unit f-grid__unit--m-1 js-scroll js-tr tr-fi-up tr-1500">
+                <h3 class="h-xxs h--normal mb-2">Stap 1</h3>
+                <ul class="list-tick f-grey-4">
+                    <li>One morning, when Gregor Samsa woke from troubled dreams</li>
+                    <li>When Gregor Samsa woke from troubled dreams</li>
+                    <li>Gregor Samsa woke from troubled dreams</li>
+                    <li>One morning, when Gregor Samsa woke from troubled</li>
+                    <li>Morning, when Gregor Samsa woke from troubled</li>
+                    <li>Samsa woke from troubled dreams</li>
+                </ul>
+            </div>
+            <div class="f-grid__unit f-grid__unit--m-1 js-scroll js-tr tr-fi-up tr-1500">
+                <h3 class="h-xxs h--normal mb-2">Stap 2</h3>
+                <ul class="list-tick f-grey-4">
+                    <li>When Gregor Samsa woke from troubled dreams</li>
+                    <li>Gregor Samsa woke from troubled dreams</li>
+                    <li>One morning, when Gregor Samsa woke from troubled</li>
+                    <li>Morning, when Gregor Samsa woke from troubled</li>
+                    <li>Samsa woke from troubled dreams</li>
+                </ul>
+            </div>
+            <div class="f-grid__unit f-grid__unit--m-1 js-scroll js-tr tr-fi-up tr-1500">
+                <h3 class="h-xxs h--normal mb-2">Stap 3</h3>
+                <ul class="list-tick f-grey-4">
+                    <li>When Gregor Samsa woke from troubled dreams</li>
+                    <li>Gregor Samsa woke from troubled dreams</li>
+                    <li>One morning, when Gregor Samsa woke from troubled</li>
+                    <li>Morning, when Gregor Samsa woke from troubled</li>
+                    <li>Samsa woke from troubled dreams</li>
+                    <li>One morning, when Gregor Samsa woke from troubled dreams</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gd-r-pale-blue pv-6 pv-12-sm mb-6 mb-12-sm js-scroll">
+    <div class="container container--narrow">
+        <div class="mxw-750 mh-auto txt-c">
+            <h2 class="segment-heading mb-3 js-tr tr-stag">
+                {{ site.data.zzp.sell.title }}
+            </h2>
+            <p class="segment-description mb-4 js-tr tr-stag">
+                {{ site.data.zzp.sell.description }}
+            </p>
+            <div class="js-tr tr-stag">
+                <a href="/businesscard-bestellen" class="button button--brand">
+                    Doe de quickscan
+                </a>
+                <a href="/businesscard-bestellen" class="dib pos-r top-10px ml-3-sm mt-1-sm-max">
+                    Bestel NS-Business Card
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="mb-6 mb-12-sm js-scroll">
     <div class="container container--narrow">
         <div class="mxw-800 mh-auto">
-            <h2 class="zzp-heading mb-4 js-tr tr-stag">
+            <h2 class="segment-heading mb-4 js-tr tr-stag">
                 {{ site.data.zzp.faq.title }}
             </h2>
             <div class="js-tr tr-stag">

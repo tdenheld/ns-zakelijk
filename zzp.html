@@ -6,23 +6,23 @@ title: NS-Business Card voor ZZP'ers
 subnav: true
 ---
 
-<section class="zzp-hero mb-6 mb-8-sm a a-fi" id="js-zzp-hero" data-type="video-container">
+<section class="segment-hero mb-6 mb-8-sm a a-fi" id="js-zzp-hero" data-type="video-container">
     <div class="full-absolute o-hidden hidden-xs hidden-sm">
-        <video class="zzp-video" data-type="video" preload="auto" poster="/assets/img/heros/hero-video.jpg" autoplay
+        <video class="segment-video" data-type="video" preload="auto" poster="/assets/img/heros/hero-video.jpg" autoplay
             muted loop>
             <source src="/assets/img/heros/hero-zzp.mp4" type="video/mp4">
             </source>
         </video>
     </div>
-    <div class="zzp-hero__gradient"></div>
-    <figure class="zzp-hero__flow">{% include flows/flow-gradient-white.svg %}</figure>
+    <div class="segment-hero__gradient"></div>
+    <figure class="segment-hero__flow">{% include flows/flow-gradient-white.svg %}</figure>
     <div class="container container--narrow">
         <header class="mxw-700">
             <h1 class="mb-4">
-                <div class="zzp-hero__subtitle mb-2 a a-fi-right-200px a-stag a-del-350">
+                <div class="segment-hero__subtitle mb-2 a a-fi-right-200px a-stag a-del-350">
                     {{ site.data.zzp.title }}
                 </div>
-                <div class="zzp-hero__title a a-fi-right-200px a-stag a-del-350">
+                <div class="segment-hero__title a a-fi-right-200px a-stag a-del-350">
                     {{ site.data.zzp.payoff }}
                 </div>
             </h1>
@@ -36,10 +36,10 @@ subnav: true
 <section class="mb-6 mb-12-sm a a-fi a-del-500">
     <div class="container container--narrow">
         <header class="txt-c mb-6 mb-8-sm mxw-950 mh-auto js-scroll">
-            <h2 class="zzp-heading mb-3 js-tr tr-stag">
+            <h2 class="segment-heading mb-3 js-tr tr-stag">
                 {{ site.data.zzp.usps.title }}
             </h2>
-            <div class="zzp-divider js-tr tr-stag"></div>
+            <div class="segment-divider js-tr tr-stag"></div>
         </header>
         <div class="f-grid">
             {% for entry in site.data.zzp.usps.list %}
@@ -53,8 +53,8 @@ subnav: true
 
 <section class="mb-2 mb-4-sm a a-fi a-del-750">
     <div class="container container--narrow">
-        <figure class="zzp-bc js-scroll js-tr tr-fi tr-800">
-            <img class="zzp-bc__img js-tr tr-fi-up-si tr-1500" src="/assets/img/businesscard-3D.png"
+        <figure class="segment-bc js-scroll js-tr tr-fi tr-800">
+            <img class="segment-bc__img js-tr tr-fi-up-si tr-1500" src="/assets/img/businesscard-3D.png"
                 alt="NS-Business Card" />
         </figure>
     </div>
@@ -62,16 +62,16 @@ subnav: true
 
 <section class="mb-6 mb-12-sm">
     <div class="container container--narrow">
-        <div class="zzp-service__map-container">
-            <figure class="zzp-service__map js-scroll js-tr tr-fi-up-si tr-fi-up-si--large tr-1500">
+        <div class="segment-service__map-container">
+            <figure class="segment-service__map js-scroll js-tr tr-fi-up-si tr-fi-up-si--large tr-1500">
                 {% include zzp/railmap.svg %}
             </figure>
         </div>
         <header class="pos-r mxw-800 mh-auto f-blue txt-c mb-2 mb-4-sm js-scroll">
-            <h2 class="zzp-heading mb-3 js-tr tr-stag">
+            <h2 class="segment-heading mb-3 js-tr tr-stag">
                 {{ site.data.zzp.services.title }}
             </h2>
-            <p class="zzp-description f-grey-4 mxw-600 mh-auto js-tr tr-stag">
+            <p class="segment-description f-grey-4 mxw-600 mh-auto js-tr tr-stag">
                 {{ site.data.zzp.services.description }}
             </p>
         </header>
@@ -83,12 +83,12 @@ subnav: true
     <div class="container container--narrow">
         <div class="txt-c mxw-900 mh-auto f-grid">
             {% for entry in site.data.zzp.agility %}
-            <div class="zzp-agility f-grid__unit f-grid__unit--m-1">
-                <figure class="zzp-agility__img-container js-scroll">
+            <div class="segment-agility f-grid__unit f-grid__unit--m-1">
+                <figure class="segment-agility__img-container js-scroll">
                     <img src="{{ entry.img }}" alt="{{ entry.title }}"
-                        class="zzp-agility__img mb-3 js-tr tr-fi-up tr-1500" />
+                        class="segment-agility__img mb-3 js-tr tr-fi-up tr-1500" />
                 </figure>
-                <div class="zzp-agility__text js-scroll">
+                <div class="segment-agility__text js-scroll">
                     <h2 class="f24 f28-sm ls-5 f-blue fw-b lh-title mb-2 js-tr tr-stag">
                         {{ entry.title }}
                     </h2>
@@ -105,10 +105,10 @@ subnav: true
 <section class="gd-r-pale-blue pv-6 pv-12-sm mb-6 mb-12-sm js-scroll">
     <div class="container container--narrow">
         <div class="mxw-750 mh-auto txt-c">
-            <h2 class="zzp-heading mb-3 js-tr tr-stag">
+            <h2 class="segment-heading mb-3 js-tr tr-stag">
                 {{ site.data.zzp.sell.title }}
             </h2>
-            <p class="zzp-description mb-4 js-tr tr-stag">
+            <p class="segment-description mb-4 js-tr tr-stag">
                 {{ site.data.zzp.sell.description }}
             </p>
             <div class="js-tr tr-stag">
@@ -133,10 +133,10 @@ subnav: true
             <div class="ph-2 hidden-m"></div>
             <div class="txt-c txt-l-m f-grid__unit f-grid__unit--m-5">
                 <div class="mxw-700 mh-auto-m-max">
-                    <h2 class="zzp-heading fw-normal mb-3 js-tr tr-stag">
+                    <h2 class="segment-heading fw-normal mb-3 js-tr tr-stag">
                         {{ site.data.zzp.discount.title }}
                     </h2>
-                    <p class="zzp-description mb-4 js-tr tr-stag">
+                    <p class="segment-description mb-4 js-tr tr-stag">
                         {{ site.data.zzp.discount.description }}
                     </p>
                     <p class="f14 f-blue mb-2 js-tr tr-stag">
@@ -157,7 +157,7 @@ subnav: true
 <section class="mb-6 mb-12-sm js-scroll">
     <div class="container container--narrow">
         <div class="mxw-800 mh-auto">
-            <h2 class="zzp-heading mb-4 js-tr tr-stag">
+            <h2 class="segment-heading mb-4 js-tr tr-stag">
                 {{ site.data.zzp.faq.title }}
             </h2>
             <div class="js-tr tr-stag">
