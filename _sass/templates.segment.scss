@@ -34,8 +34,6 @@
     position: relative;
     min-height: 340px;
     padding: $gutter 0;
-    @include bg(cover);
-    background-image: url('/assets/img/heros/hero-video.jpg');
 
     @include sm {
         padding: $double-gutter 0;
